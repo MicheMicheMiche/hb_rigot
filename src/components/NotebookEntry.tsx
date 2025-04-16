@@ -2,9 +2,10 @@
 import { useState } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
 import { formatDate } from '@/utils/dataLoader';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from '@/components/ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface NotebookEntryProps {
   entry: EntryType;
@@ -12,6 +13,7 @@ interface NotebookEntryProps {
 
 const NotebookEntry = ({ entry }: NotebookEntryProps) => {
   const [expanded, setExpanded] = useState(false);
+  const hasUndecipheredContent = entry.texte.includes('?');
 
   return (
     <Card className="notebook-entry w-full mb-4 shadow-md transition-all duration-300 hover:shadow-lg overflow-hidden">
@@ -26,6 +28,20 @@ const NotebookEntry = ({ entry }: NotebookEntryProps) => {
             </span>
           </div>
           <div className="flex items-center gap-2">
+            {hasUndecipheredContent && (
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="mr-2">
+                      <AlertTriangle className="h-5 w-5 text-amber-500" />
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Certains segments de cette lettre restent à déchiffrer</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            )}
             <div className="text-right">
               <div className="font-serif text-vintage-dark">{entry.affectation.grade}</div>
               <div className="text-sm text-vintage-dark/80">{entry.affectation.regiment}</div>
@@ -39,7 +55,11 @@ const NotebookEntry = ({ entry }: NotebookEntryProps) => {
           <span className="font-serif text-lg">Auteur{entry.auteurs.length > 1 ? 's' : ''}: </span>
           <span className="font-medium">{entry.auteurs.join(', ')}</span>
         </div>
-        <div className="notebook-text text-sm md:text-base leading-relaxed">{entry.texte}</div>
+        <div className="notebook-text text-sm md:text-base leading-relaxed">
+          {entry.texte.split('\n').map((paragraph, idx) => (
+            <p key={idx} className="mb-3">{paragraph}</p>
+          ))}
+        </div>
       </CardContent>
       
       <CardFooter className="border-t border-vintage-dark/20 p-2 bg-vintage-paper flex justify-between">

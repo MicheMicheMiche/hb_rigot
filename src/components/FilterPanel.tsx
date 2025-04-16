@@ -32,6 +32,9 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
   const regiments = getUniqueRegiments(entries);
   const ranks = getUniqueRanks(entries);
 
+  // Get all dates that have entries
+  const datesWithEntries = entries.map(entry => entry.date);
+
   const handleFilterChange = (key: keyof FilterOptions, value: any) => {
     const newFilters = { ...filters, [key]: value };
     setFilters(newFilters);
@@ -79,6 +82,25 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
       filters.regiment !== null || 
       filters.rank !== null || 
       filters.author !== null
+    );
+  };
+  
+  // Function to highlight dates with entries
+  const isDayWithEntry = (day: Date): boolean => {
+    const dateString = format(day, 'yyyy-MM-dd');
+    return datesWithEntries.includes(dateString);
+  };
+
+  // Custom day rendering to highlight dates with entries
+  const renderDay = (day: Date) => {
+    const date = day.getDate();
+    const hasEntry = isDayWithEntry(day);
+    
+    return (
+      <div className={`w-full h-full flex items-center justify-center ${hasEntry ? 'relative' : ''}`}>
+        {date}
+        {hasEntry && <div className="absolute inset-0 border border-vintage-accent rounded-full pointer-events-none"></div>}
+      </div>
     );
   };
 
@@ -134,6 +156,8 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
                   mode="single"
                   selected={startDate}
                   onSelect={handleStartDateChange}
+                  defaultMonth={new Date(1914, 0)}
+                  components={{ Day: renderDay }}
                   initialFocus
                 />
               </PopoverContent>
@@ -156,6 +180,8 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
                   mode="single"
                   selected={endDate}
                   onSelect={handleEndDateChange}
+                  defaultMonth={new Date(1914, 0)}
+                  components={{ Day: renderDay }}
                   initialFocus
                 />
               </PopoverContent>

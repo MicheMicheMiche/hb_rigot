@@ -85,3 +85,27 @@ export function getUniqueRanks(entries: NotebookEntry[]): string[] {
   });
   return Array.from(ranks).sort();
 }
+
+export function getEntriesByDate(entries: NotebookEntry[]): Map<string, NotebookEntry[]> {
+  const entriesByDate = new Map<string, NotebookEntry[]>();
+  
+  entries.forEach(entry => {
+    const date = entry.date;
+    if (!entriesByDate.has(date)) {
+      entriesByDate.set(date, []);
+    }
+    entriesByDate.get(date)!.push(entry);
+  });
+  
+  return entriesByDate;
+}
+
+export function getUniqueDates(entries: NotebookEntry[]): string[] {
+  const dates = new Set<string>();
+  entries.forEach(entry => {
+    if (entry.date) {
+      dates.add(entry.date);
+    }
+  });
+  return Array.from(dates).sort();
+}

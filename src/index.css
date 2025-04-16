@@ -101,3 +101,11 @@
 .notebook-text {
   white-space: pre-line;
 }
+
+.notebook-text p {
+  margin-bottom: 1rem;
+}
+
+.notebook-text p:last-child {
+  margin-bottom: 0;
+}
