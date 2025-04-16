@@ -176,7 +176,7 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
               <SelectValue placeholder="Tous les régiments" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">Tous les régiments</SelectItem>
+              <SelectItem value="all">Tous les régiments</SelectItem>
               {regiments.map((regiment) => (
                 <SelectItem key={regiment} value={regiment}>
                   {regiment}
@@ -199,7 +199,7 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
               <SelectValue placeholder="Tous les grades" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">Tous les grades</SelectItem>
+              <SelectItem value="all">Tous les grades</SelectItem>
               {ranks.map((rank) => (
                 <SelectItem key={rank} value={rank}>
                   {rank}

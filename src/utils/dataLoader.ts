@@ -30,13 +30,13 @@ export function filterEntries(entries: NotebookEntry[], filters: FilterOptions):
     }
 
     // Filter by regiment
-    if (filters.regiment !== null && 
+    if (filters.regiment !== null && filters.regiment !== 'all' && 
         !entry.affectation.regiment.toLowerCase().includes(filters.regiment.toLowerCase())) {
       return false;
     }
 
     // Filter by rank
-    if (filters.rank !== null && 
+    if (filters.rank !== null && filters.rank !== 'all' && 
         !entry.affectation.grade.toLowerCase().includes(filters.rank.toLowerCase())) {
       return false;
     }
