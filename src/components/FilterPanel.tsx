@@ -1,16 +1,12 @@
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
-import { getUniqueRegiments, getUniqueRanks } from '@/utils/dataLoader';
+import { getUniqueRegiments, getUniqueRanks, getUniqueTypes } from '@/utils/dataLoader';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Calendar } from '@/components/ui/calendar';
-import { format } from 'date-fns';
-import { fr } from 'date-fns/locale';
-import { Calendar as CalendarIcon, Filter, X } from 'lucide-react';
+import { Filter, X } from 'lucide-react';
 
 interface FilterPanelProps {
   entries: NotebookEntry[];
@@ -23,36 +19,18 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
     dateRange: { start: null, end: null },
     regiment: null,
     rank: null,
-    author: null
+    author: null,
+    type: null
   });
-
-  const [startDate, setStartDate] = useState<Date | undefined>(undefined);
-  const [endDate, setEndDate] = useState<Date | undefined>(undefined);
   
   const regiments = getUniqueRegiments(entries);
   const ranks = getUniqueRanks(entries);
-
-  // Get all dates that have entries
-  const datesWithEntries = entries.map(entry => entry.date);
+  const types = getUniqueTypes(entries);
 
   const handleFilterChange = (key: keyof FilterOptions, value: any) => {
     const newFilters = { ...filters, [key]: value };
     setFilters(newFilters);
     onFilterChange(newFilters);
-  };
-
-  const handleStartDateChange = (date: Date | undefined) => {
-    setStartDate(date);
-    const dateString = date ? format(date, 'yyyy-MM-dd') : null;
-    const newDateRange = { ...filters.dateRange, start: dateString };
-    handleFilterChange('dateRange', newDateRange);
-  };
-
-  const handleEndDateChange = (date: Date | undefined) => {
-    setEndDate(date);
-    const dateString = date ? format(date, 'yyyy-MM-dd') : null;
-    const newDateRange = { ...filters.dateRange, end: dateString };
-    handleFilterChange('dateRange', newDateRange);
   };
 
   const resetFilters = () => {
@@ -61,16 +39,16 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
       dateRange: { start: null, end: null },
       regiment: null,
       rank: null,
-      author: null
+      author: null,
+      type: null
     });
-    setStartDate(undefined);
-    setEndDate(undefined);
     onFilterChange({
       id: null,
       dateRange: { start: null, end: null },
       regiment: null,
       rank: null,
-      author: null
+      author: null,
+      type: null
     });
   };
 
@@ -81,26 +59,8 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
       filters.dateRange.end !== null || 
       filters.regiment !== null || 
       filters.rank !== null || 
-      filters.author !== null
-    );
-  };
-  
-  // Function to highlight dates with entries
-  const isDayWithEntry = (day: Date): boolean => {
-    const dateString = format(day, 'yyyy-MM-dd');
-    return datesWithEntries.includes(dateString);
-  };
-
-  // Custom day rendering to highlight dates with entries
-  const renderDay = (day: Date) => {
-    const date = day.getDate();
-    const hasEntry = isDayWithEntry(day);
-    
-    return (
-      <div className={`w-full h-full flex items-center justify-center ${hasEntry ? 'relative' : ''}`}>
-        {date}
-        {hasEntry && <div className="absolute inset-0 border border-vintage-accent rounded-full pointer-events-none"></div>}
-      </div>
+      filters.author !== null ||
+      filters.type !== null
     );
   };
 
@@ -135,60 +95,6 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
           />
         </div>
         
-        {/* Date Range Filter */}
-        <div>
-          <Label className="text-sm font-medium mb-1 block">Date</Label>
-          <div className="flex space-x-2">
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button
-                  variant="outline"
-                  className={`w-full flex justify-between items-center text-left font-normal ${
-                    startDate ? "text-black" : "text-muted-foreground"
-                  }`}
-                >
-                  {startDate ? format(startDate, "P", { locale: fr }) : "Début"}
-                  <CalendarIcon className="ml-2 h-4 w-4 opacity-50" />
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent className="w-auto p-0" align="start">
-                <Calendar
-                  mode="single"
-                  selected={startDate}
-                  onSelect={handleStartDateChange}
-                  defaultMonth={new Date(1914, 0)}
-                  components={{ Day: renderDay }}
-                  initialFocus
-                />
-              </PopoverContent>
-            </Popover>
-            
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button
-                  variant="outline"
-                  className={`w-full flex justify-between items-center text-left font-normal ${
-                    endDate ? "text-black" : "text-muted-foreground"
-                  }`}
-                >
-                  {endDate ? format(endDate, "P", { locale: fr }) : "Fin"}
-                  <CalendarIcon className="ml-2 h-4 w-4 opacity-50" />
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent className="w-auto p-0" align="start">
-                <Calendar
-                  mode="single"
-                  selected={endDate}
-                  onSelect={handleEndDateChange}
-                  defaultMonth={new Date(1914, 0)}
-                  components={{ Day: renderDay }}
-                  initialFocus
-                />
-              </PopoverContent>
-            </Popover>
-          </div>
-        </div>
-        
         {/* Regiment Filter */}
         <div>
           <Label htmlFor="regiment-filter" className="text-sm font-medium mb-1 block">
@@ -196,7 +102,7 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
           </Label>
           <Select 
             value={filters.regiment || ''} 
-            onValueChange={(value) => handleFilterChange('regiment', value || null)}
+            onValueChange={(value) => handleFilterChange('regiment', value !== 'all' ? value : null)}
           >
             <SelectTrigger id="regiment-filter" className="w-full">
               <SelectValue placeholder="Tous les régiments" />
@@ -219,7 +125,7 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
           </Label>
           <Select 
             value={filters.rank || ''} 
-            onValueChange={(value) => handleFilterChange('rank', value || null)}
+            onValueChange={(value) => handleFilterChange('rank', value !== 'all' ? value : null)}
           >
             <SelectTrigger id="rank-filter" className="w-full">
               <SelectValue placeholder="Tous les grades" />
@@ -248,6 +154,29 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
             onChange={(e) => handleFilterChange('author', e.target.value || null)}
             className="w-full"
           />
+        </div>
+        
+        {/* Type Filter */}
+        <div>
+          <Label htmlFor="type-filter" className="text-sm font-medium mb-1 block">
+            Type
+          </Label>
+          <Select 
+            value={filters.type || ''} 
+            onValueChange={(value) => handleFilterChange('type', value !== 'all' ? value : null)}
+          >
+            <SelectTrigger id="type-filter" className="w-full">
+              <SelectValue placeholder="Tous les types" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">Tous les types</SelectItem>
+              {types.map((type) => (
+                <SelectItem key={type} value={type}>
+                  {type}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
       </div>
     </div>

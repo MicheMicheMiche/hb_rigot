@@ -1,4 +1,3 @@
-
 export interface NotebookEntry {
   numero: number;
   date: string;
@@ -20,4 +19,5 @@ export interface FilterOptions {
   regiment: string | null;
   rank: string | null;
   author: string | null;
+  type: string | null;
 }

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import NavigationBar from '@/components/NavigationBar';
 
@@ -10,22 +9,29 @@ const Home = () => {
       <div className="py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-vintage-blue">
-              Livre d'Or des Poilus
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-vintage-blue">
+              Livre d'Or - Hôpital Bénévole Rigot
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Une collection de témoignages et messages des soldats français
-              blessés durant la Première Guerre Mondiale.
+            <h2 className="font-serif text-3xl mb-2 font-bold text-vintage-blue">
+              HB n°194 <sup>bis</sup>, Fontaines-sur-Saône
+            </h2>
+            <h2 className="font-serif text-2xl font-bold mb-6 text-vintage-blue">
+              17 octobre 1914 - 24 janvier 1917
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Une collection historique de témoignanges de poilus soignés durant la Grande guerre à l'hôpital bénévole Rigot, maison de particulier transformée en centre de soins pour l'occasion.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper">
               <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Les Lettres</h2>
               <p className="text-gray-700 mb-4">
-                Découvrez les témoignages émouvants des soldats soignés à l'hôpital temporaire
-                de Fontaines-sur-Saône entre 1914 et 1918. Chaque entrée représente
-                un moment d'histoire préservé dans le temps.
+                <span className="font-bold">253 témoignages</span> de poilus passés par l'hôpital bénévole de Fontaînes-sur-Saône - dit Rigot - entre 1914 et 1917.
+                Chacun d'entre eux a été soigneusement retranscrit et numérisé.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Simples soldats, sergents, caporaux, fantassins, aérostiers, dragons... tous s'expriment de façon personnelle. Messages de remerciements, poèmes, lettres d'éloges à leurs camarades ; d'un trait hâtif ou d'une plume appliquée...
               </p>
               <Link 
                 to="/lettres" 
@@ -35,12 +41,14 @@ const Home = () => {
               </Link>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper">
               <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">L'Hôpital Bénévole</h2>
               <p className="text-gray-700 mb-4">
-                En savoir plus sur l'hôpital bénévole de Fontaines-sur-Saône, sa création, 
-                son personnel dévoué et son rôle crucial dans les soins apportés aux soldats
-                blessés du front.
+                Au cours de la Première guerre mondiale, de nombreux hôpitaux temporaires sont constitués à l'arrière du front.
+                L'hôpital bénévole n°194 <sup>bis</sup> est établi à Fontaines-sur-Saône, par Ernest Rigot qui met sa demeure à disposition de la Croix-Rouge et de l'armée.
+              </p>
+              <p className="text-gray-700 mb-4">
+                En savoir plus sur l'hôpital Rigot : l'ébalissement, le personnel, son rôle dans le système hospitalier durant la Grande guerre. 
               </p>
               <Link 
                 to="/hopital" 
@@ -50,24 +58,38 @@ const Home = () => {
               </Link>
             </div>
           </div>
+
+          <div className="bg-vintage-paper p-4 border border-gray-300 rounded-lg shadow-md mb-12 flex justify-center items-center">
+            <div className="flex justify-center items-center max-w-lg">
+              <img src="/assets/photos/front1.jpg"></img>
+              <img src="/assets/photos/front2.jpg"></img>
+            </div>
+          </div>
           
-          <div className="bg-vintage-paper p-6 rounded-lg shadow-md border border-gray-200 mb-12">
-            <h2 className="font-serif text-2xl font-bold mb-4 text-center text-vintage-blue">À propos du projet</h2>
+          <div className="bg-vintage-paper p-6 rounded-lg shadow-md border border-gray-200 mb-12 transition-colors duration-300 hover:bg-vintage-paper/80">
+            <h2 className="font-serif text-2xl font-bold mb-8 text-center text-vintage-blue">À propos du projet</h2>
             <p className="text-gray-700 mb-3">
-              Ce site présente la numérisation et la transcription d'un "Livre d'Or" conservé par une famille française.
-              Ce document historique contient des messages et des dessins réalisés par des soldats français soignés
-              dans un hôpital temporaire pendant la Première Guerre mondiale.
+              <span className="font-bold">Ernest Rigot</span> (13 juin 1877 - 20 novembre 1961) était mon arrière-arrière-grand-père.
             </p>
             <p className="text-gray-700 mb-3">
-              Chaque entrée a été soigneusement transcrite pour préserver ces témoignages pour les générations futures,
-              offrant un aperçu intime de l'expérience des soldats blessés et de leur gratitude envers le personnel
-              médical qui les a soignés.
+              Issu d'une famille de notaires, il disposait d'une grande maison à <span className="font-bold">Fontaines-sur-Saône (Rhône)</span>, transformée à l'entrée en guerre en hôpital bénévole.
+              Les quelques centaines de poilus qui y ont été soignés ont rempli et signé un  <span className="font-bold">carnet</span> à la fin de leur séjour. Ils y témoignent leur reconnaissance auprès du personnel et chérissent la parenthèse d'accalmie que constitue leur séjour avant de reprendre les combats. Certains citent même "l'esprit de famille" qu'ils y ont trouvé. Ce carnet a été soigneusement conservé par ma famille. 
+            </p>
+            <p className="text-gray-700 mb-10">
+              Ce site rassemble chacun de ces témoignages, numérisé et transcrit, dans un souci de préservation pour les générations futures.
+              Ils sont ceux de poilus, jeunes et moins jeunes, issus de toutes catégories sociales, reconnaissants d'avoir pu se reposer loin des tranchées, ne serait-ce que pour quelques jours, avant de se replonger dans l'enfer de la guerre.
+            </p>
+            <p className="text-gray-800 mb-3 font-medium">
+              A noter que ce carnet n'est PAS un document administatif recensant de façon exhaustive tous les blessés traités dans cet hôpital. Il s'agit bien d'un livre d'or, rempli et signé par ceux qui le souhaitaient, avant leur départ.
+            </p>
+            <p className="text-gray-800 mb-3 font-medium">
+              Les fautes d'orthographe ou de grammaire ont été corrigées pour des questions de lisibilité, mais j'ai tâché de conserver la structure des phrases, d'époque, ainsi que leur syntaxe. Certains passages, en particulier les signatures, sont encore en cours de déchiffrage - ils sont marqués d'un « (?) ».
             </p>
           </div>
         </div>
         
         <footer className="mt-16 text-center text-sm text-gray-500">
-          <p>© 2025 Livre d'Or des Poilus - Archive numérique des témoignages de la Grande Guerre</p>
+          <p>© Alexandre Cochard</p>
         </footer>
       </div>
     </div>

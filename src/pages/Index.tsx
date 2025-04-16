@@ -1,24 +1,29 @@
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { NotebookEntry as EntryType, FilterOptions } from '@/types/notebook';
 import { loadNotebookEntries, filterEntries } from '@/utils/dataLoader';
 import NotebookEntry from '@/components/NotebookEntry';
 import FilterPanel from '@/components/FilterPanel';
 import NavigationBar from '@/components/NavigationBar';
+import Timeline from '@/components/Timeline';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/sonner";
-import { Loader } from 'lucide-react';
+import { Loader, ChevronUp, ChevronDown, ArrowUp } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const [entries, setEntries] = useState<EntryType[]>([]);
   const [filteredEntries, setFilteredEntries] = useState<EntryType[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const [allExpanded, setAllExpanded] = useState(false);
+  const entriesRef = useRef<HTMLDivElement>(null);
   const [filters, setFilters] = useState<FilterOptions>({
     id: null,
     dateRange: { start: null, end: null },
     regiment: null,
     rank: null,
-    author: null
+    author: null,
+    type: null
   });
 
   useEffect(() => {
@@ -44,24 +49,44 @@ const Index = () => {
     setFilteredEntries(filterEntries(entries, filters));
   }, [entries, filters]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const handleFilterChange = (newFilters: FilterOptions) => {
     setFilters(newFilters);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const toggleAllEntries = () => {
+    setAllExpanded(!allExpanded);
+  };
+
+  const scrollToEntry = (entryId: number) => {
+    const entryElement = document.getElementById(`entry-${entryId}`);
+    if (entryElement) {
+      entryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
     <div className="min-h-screen bg-vintage-light">
       <NavigationBar />
       
-      <div className="py-8 px-4 sm:px-6 lg:px-8">
+      <div className="py-2 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <header className="text-center mb-8">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-vintage-blue">
-              Livre d'Or des Poilus
+              Livre d'Or - Toutes les lettres
             </h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Messages et témoignages des soldats blessés soignés dans un hôpital temporaire français
-              durant la Première Guerre Mondiale.
-            </p>
           </header>
 
           <FilterPanel entries={entries} onFilterChange={handleFilterChange} />
@@ -77,26 +102,70 @@ const Index = () => {
             </div>
           ) : (
             <div className="space-y-4">
-              <div className="mb-4 px-2">
+              <div className="mb-4 px-2 flex justify-between items-center">
                 <span className="text-sm text-gray-500">
                   {filteredEntries.length === entries.length 
                     ? `Affichage de toutes les ${entries.length} entrées` 
                     : `${filteredEntries.length} entrée${filteredEntries.length > 1 ? 's' : ''} trouvée${filteredEntries.length > 1 ? 's' : ''} sur ${entries.length}`}
                 </span>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  onClick={toggleAllEntries}
+                  className="flex items-center gap-1"
+                >
+                  {allExpanded ? (
+                    <>
+                      <ChevronUp size={16} />
+                      <span>Replier tout</span>
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown size={16} />
+                      <span>Déplier tout</span>
+                    </>
+                  )}
+                </Button>
               </div>
-              <ScrollArea className="h-full">
-                {filteredEntries.map((entry) => (
-                  <NotebookEntry key={entry.numero} entry={entry} />
-                ))}
-              </ScrollArea>
+
+              <Timeline 
+                entries={entries} 
+                filteredEntries={filteredEntries}
+                onEntryClick={scrollToEntry}
+                filters={filters}
+                onFilterChange={handleFilterChange}
+              />
+              
+              <div ref={entriesRef} className="mt-8">
+                <ScrollArea className="h-full">
+                  {filteredEntries.map((entry) => (
+                    <div id={`entry-${entry.numero}`} key={entry.numero}>
+                      <NotebookEntry 
+                        entry={entry} 
+                        forceExpanded={allExpanded}
+                      />
+                    </div>
+                  ))}
+                </ScrollArea>
+              </div>
             </div>
           )}
         </div>
         
         <footer className="mt-16 text-center text-sm text-gray-500">
-          <p>© 2025 Livre d'Or des Poilus - Archive numérique des témoignages de la Grande Guerre</p>
+          <p>© Alexandre Cochard</p>
         </footer>
       </div>
+
+      {showBackToTop && (
+        <Button
+          className="fixed bottom-6 right-6 rounded-full bg-vintage-accent text-white shadow-lg hover:bg-vintage-accent/80 h-12 w-12 p-0 z-50"
+          onClick={scrollToTop}
+          aria-label="Back to top"
+        >
+          <ArrowUp size={24} />
+        </Button>
+      )}
     </div>
   );
 };

@@ -1,4 +1,3 @@
-
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
 
 export async function loadNotebookEntries(): Promise<NotebookEntry[]> {
@@ -50,6 +49,12 @@ export function filterEntries(entries: NotebookEntry[], filters: FilterOptions):
         return false;
       }
     }
+    
+    // Filter by type
+    if (filters.type !== null && filters.type !== 'all' && 
+        entry.type.toLowerCase() !== filters.type.toLowerCase()) {
+      return false;
+    }
 
     return true;
   });
@@ -84,6 +89,16 @@ export function getUniqueRanks(entries: NotebookEntry[]): string[] {
     }
   });
   return Array.from(ranks).sort();
+}
+
+export function getUniqueTypes(entries: NotebookEntry[]): string[] {
+  const types = new Set<string>();
+  entries.forEach(entry => {
+    if (entry.type) {
+      types.add(entry.type);
+    }
+  });
+  return Array.from(types).sort();
 }
 
 export function getEntriesByDate(entries: NotebookEntry[]): Map<string, NotebookEntry[]> {

@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
 import { formatDate } from '@/utils/dataLoader';
 import { ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
@@ -9,11 +9,38 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 interface NotebookEntryProps {
   entry: EntryType;
+  forceExpanded?: boolean;
 }
 
-const NotebookEntry = ({ entry }: NotebookEntryProps) => {
+const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => {
   const [expanded, setExpanded] = useState(false);
   const hasUndecipheredContent = entry.texte.includes('?');
+  
+  // Update expanded state when forceExpanded changes
+  useEffect(() => {
+    setExpanded(forceExpanded);
+  }, [forceExpanded]);
+
+  // Format date function to handle missing day or month
+  const formatDisplayDate = (dateString: string) => {
+    if (!dateString) return 'Pas de date renseignée';
+    
+    try {
+      const [year, month, day] = dateString.split('-');
+      
+      if (year && month && day) {
+        return `${day}/${month}/${year}`;
+      } else if (year && month) {
+        return `${month}/${year}`;
+      } else if (year) {
+        return year;
+      } else {
+        return 'Pas de date renseignée';
+      }
+    } catch (error) {
+      return 'Pas de date renseignée';
+    }
+  };
 
   return (
     <Card className="notebook-entry w-full mb-4 shadow-md transition-all duration-300 hover:shadow-lg overflow-hidden">
@@ -24,7 +51,7 @@ const NotebookEntry = ({ entry }: NotebookEntryProps) => {
               N°{entry.numero}
             </span>
             <span className="text-sm md:text-base text-vintage-dark">
-              {formatDate(entry.date)}
+              {formatDisplayDate(entry.date)}
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -57,7 +84,7 @@ const NotebookEntry = ({ entry }: NotebookEntryProps) => {
         </div>
         <div className="notebook-text text-sm md:text-base leading-relaxed">
           {entry.texte.split('\n').map((paragraph, idx) => (
-            <p key={idx} className="mb-3">{paragraph}</p>
+            <p key={idx} className="mb-4">{paragraph}</p>
           ))}
         </div>
       </CardContent>
@@ -88,7 +115,7 @@ const NotebookEntry = ({ entry }: NotebookEntryProps) => {
         <div className="p-4 bg-gray-100 animate-fade-in">
           <div className="max-w-full mx-auto rounded overflow-hidden shadow-md">
             <img 
-              src={`/assets/photos/${entry.numero}.jpeg`} 
+              src={`/assets/photos/${entry.numero}.jpg`} 
               alt={`Page originale ${entry.numero}`} 
               className="w-full h-auto"
               onError={(e) => {

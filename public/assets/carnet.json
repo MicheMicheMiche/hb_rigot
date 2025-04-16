@@ -1,15 +1,14 @@
-
 [
   {
     "numero": 1,
     "date": "1914-11-8",
-    "texte": "Fontaines sur Saône, le 8 novembre 1914\nAprès vingt jours passés à l'hôpital temporaire de Fontaines-sur-Saône, « comme blessé », je ne puis me retirer sans adresser au tout sympathique Monsieur Rigot « propriétaire de l'établissement » mes vivres félicitations, pour la façon irréprochable dont il a installé ce petit asile ; où nos bons blessés et malades pourront trouver tout le confortable qui leur est nécessaire.\nJ'en profiterai pour exprimer aussi toute ma gratitude aux bonnes sœurs Franciscaines ainsi qu'à Madame Jauve de la Croix rouge, pour la façon merveilleuse dont elles prodiguent leurs soins à nos admirables soldats. A tous l'expression de mes sentiments dévoués. Vive la France.\nEtienne Bonnet, Soldat territorial au 2ème régiment de zouaves.\n",
+    "texte": "Fontaines sur Saône, le 8 novembre 1914\nAprès vingt jours passés à l’hôpital temporaire de Fontaines-sur-Saône, « comme blessé », je ne puis me retirer sans adresser au tout sympathique Monsieur Rigot « propriétaire de l’établissement » mes vivres félicitations, pour la façon irréprochable dont il a installé ce petit asile ; où nos bons blessés et malades pourront trouver tout le confortable qui leur est nécessaire.\nJ’en profiterai pour exprimer aussi toute ma gratitude aux bonnes sœurs Franciscaines ainsi qu’à Madame Jauve de la Croix rouge, pour la façon merveilleuse dont elles prodiguent leurs soins à nos admirables soldats. A tous l’expression de mes sentiments dévoués. Vive la France.\nEtienne Bonnet, Soldat territorial au 2ème régiment de zouaves.\n",
     "auteurs": ["BONNET Etienne"],
     "affectation": {
       "regiment": "2e Régiment de Zouaves",
-      "affect2" : "",
-      "affect3" : "",
-      "affect4" : "",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
       "grade"   : "Soldat"
     },
     "type": "Lettre"
@@ -21,24 +20,738 @@
     "auteurs": ["Illisible"],
     "affectation": {
       "regiment": "3e Régiment de Zouaves",
-      "affect2" : "",
-      "affect3" : "",
-      "affect4" : "",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
       "grade"   : "Soldat"
     },
     "type": "Lettre"
   },
   {
     "numero": 3,
-    "date": "1914-11-11",
-    "texte": "Fontaines sur Saône, le 11 novembre 1914\nJe m'associe à tous les sentiments qu'a exprimé ce jour notre camarade Mr Bonnet – J'ajoute que ce que j'ai éprouvé à l'hospice de Fontaines sur Saône n'a été qu'une suite ininterrompue de bien être – soins attentifs et désintéressés, qu'en partant, j'emporterai de tous un souvenir charmant et ému pour tous les témoignages d'affection véritable qu'on a bien voulu me prodiguer.\nVive la France,\nBertrand",
-    "auteurs": ["BERTRAND"],
+    "date": "1914-11-9",
+    "texte": "Fontaines, le 9 novembre 1914\nMes sincères remerciements à monsieur le Directeur Rigot ainsi qu’à ces Dames sœurs et la croix rouge pour le long repos prit en ce charmant établissement.\nHelzet d’Hilaire, 3ème zouaves.\n",
+    "auteurs": ["D'HILAIRE Helzet"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 4,
+    "date": "1914-11-17",
+    "texte": "Fontaines-sur-Saône, 17 novembre 1914\nAprès 28 jours passés à l’hôpital temporaire Rigot, où j’ai été admis comme malade, je ne puis me retirer sans adresser mes plus sincères remerciements au sympathique Directeur de l’établissement M. Rigot et aux sœurs Franciscaines, ainsi qu’à Madame Jauve, dame infirmière de la croix rouge, pour les bons soins qu’elles m’ont donné et à leur dévouement pour moi pendant mon séjour à l’hôpital, dont je garderai toujours le souvenir.\nM. Dalençon, 3ème zouave\n",
+    "auteurs": ["LEPROU P."],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "62e Compagnie"         ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 5,
+    "date": "1914-11-17",
+    "texte": "Fontaines-sur-Saône, 17 novembre 1914\nJe ne voudrais quitter l’établissement de M. Rigot sans lui adresser mes plus sincères remerciements ainsi qu’aux sœurs Franciscaines et à Mme. Jauve de la Croix rouge pour les bons soins qu’elles nous ont prodigués pendant les 10 jours de ma convalescence.\nP. Leprou, 62ème compagnie, 3ème zouave",
+    "auteurs": ["LEPROU P."],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "62e Compagnie"         ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 6,
+    "date": "1914-11-17",
+    "texte": "Fontaines-sur-Saône, 17 novembre 1914\nJe ne puis quitter l’établissement hospitalier que M. Rigot a l’ingémientre (?) idée de fonder suis eut du loisir que lui offre sa agréable propriété. Je lui adresse tous mes remerciements de l’habilité qu’il a mise à son installation, son confort que jouissent tous les défenseurs de notre belle chère Patrie,\nJe remercie de tout cœur les bonnes sœurs Franciscaines Mme Jauves de la Croix rouge pour les bons soins qu’elels m’ont toujours prodigué pendant mon court séjour à l’hôpital.\nE. Jauvert (?) Pujol, 63ème compagnie, 3ème zouaves\n",
+    "auteurs": ["PUJOL Jauvert"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "63e Compagnie"         ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 7,
+    "date": "1914-11",
+    "texte": "Je ne puis quitter l’hôpital Rigot sans adresser à ce dernier beaucoup de remerciements et d’éloges pour la bonne marche de son asile d’où je sors aujourd’hui avec un bon souvenir. Mes vivres remerciements aux bonnes sœurs sans oublier Madame Jauve si dévouée et serviable. Je n’oublierai pas non plus les délicieux bonbons qui m’ont été offerts par cette dernière. Il est inutile de dire la façon que j’ai été soigné par le docteur Flécher (?) auquel je dois une vive reconnaissance.\n(Signature), Soldat au 2ème zouaves\n",
+    "auteurs": ["Illisible"],
+    "affectation": {
+      "regiment": "2e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 8,
+    "date": "1914-11",
+    "texte": "N’ayant qu’à me louer des bons soins qui m’ont été prodigués à l’hôpital administré par le sympathique M. Rigot, je ne veux le quitter sans décrire toute la reconnaissance que je dois à ce dernier ainsi qu’aux bonnes sœurs, Mme. Jauve et M. Flécher docteur pour leur serviable attitude.\nJean Guidot (?), Soldat au 2ème zouaves\n",
+    "auteurs": ["GUIDOT Jean"],
+    "affectation": {
+      "regiment": "2e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 9,
+    "date": "1914-11",
+    "texte": "Je ne puis que me louer des bons soins qui m’ont été prodigués pendant mon séjour à l’hôpital créé et administré par le tout honorable Monsieur Rigot, et obligé par les bonnes sœurs Franciscaines et par la toute bonne Mme. Jauve de la Croix rouge.\nJe les prie tous à cet effet d’agréer l’expression de mes sentiments les meilleurs.\nManuel Sutter (?)\n",
+    "auteurs": ["SUTTER Manuel"],
+    "affectation": {
+      "regiment": " "     ,
+      "affect2" : ""      ,
+      "affect3" : ""      ,
+      "affect4" : ""      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 10,
+    "date": "1914-11-19",
+    "texte": "Fontaines-sur-Saône, le 19 (29?) novembre 1914\nAprès un mois passé dans l’établissement Rigot transformé en hôpital je ne puis le quitter sans adresser à M. Rigot le très honorable administrateur, mes remerciements de la bonne marche de son asile. Remercie infiniment mes bonnes sœurs ainsi que Madame Jouve de la Croix rouge de leurs bons soins qu’elles m’ont prodigués pendant mon séjour dans cet établissement.\nRemerciements sincères à tout d’un vieux Zouave algérien.\n(Signature), 2ème zouaves\n",
+    "auteurs": ["Illisible"],
+    "affectation": {
+      "regiment": "2e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 11,
+    "date": "1914-12-3",
+    "texte": "Fontaines, le 3/12/14\nAvant de quitter l’Hôpital Rigot où j’ai été soigné avec les plus grands soins, je tiens à adresser à M. Rigot ainsi qu’aux bonnes sœurs et à Mme. Jouve mes plus sincères remerciements.\nM. Lemonnain (Lemmonier ? Lemmonir ? Lemonnair ?), 3ème zouaves\n",
+    "auteurs": ["LEMONNAIN M."],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 12,
+    "date": "1914-12-3",
+    "texte": "Fontaines-sur-Saônes, le 3/12/14\nAvant de quitter l’Hôpital Rigot où j’ai été soigné pendant 5 (?) jours, je ne puis partir sans adresser à tous mes plus sincères remerciements pour les bons soins dont j’ai été l’objet.\n(Signature) (Thomas ?), 3ème zouaves",
+    "auteurs": ["Illisible"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 13,
+    "date": "1914-12",
+    "texte": "Je ne voudrais quitter l’Hôpital temporaire Rigot où j’ai été soigné pendant 1 mois avec les plus grands soins sans adresser à M. Rigot ainsi qu’aux bonnes sœurs et à Madame Jouve mes plus sincères remerciements. J’emporte de l’Hôpital les meilleurs souvenirs et 8 kg de graisse. A tous merci et Vive la France et la classe (?)\nUn vieux Zouave.\nA. Vreboc (?), 2ème zouaves\n",
+    "auteurs": ["Illisible"],
+    "affectation": {
+      "regiment": "2e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 14,
+    "date": "1914-12-11",
+    "texte": "Fontaines, 11 décembre 1914\nAprès huit jours passés à l’hôpital que la générosité de M. Rigot a mis à la disposition de nos soldats, je ne saurais partir sans exprimer (?) tous mes remerciements, pour les bons soins qui m’ont été prodigués et sans rendre hommage à l’inlassable dévouement du Docteur, de M. Rigot, des sœurs Franciscaines ainsi qu’à Mme. Jouve, dame de la Croix Rouge.\nJ’emporte un peu plus de santé et n’oublierai jamais toutes ces boutées (?)\nJ. Carvais (?) classe 1892\nG. V. C. (?) du Rhône\n",
+    "auteurs": ["CARVAIS J."],
+    "affectation": {
+      "regiment": "Illisible",
+      "affect2" : ""         ,
+      "affect3" : ""         ,
+      "affect4" : ""         ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 15,
+    "date": "1914-12-28",
+    "texte": "Fontaines-sur-Saône, le 28 décembre 1914\nJe ne peux quitter l’Hôpital temporaire de M. Rigot sans adresser à tout le monde mes sincères remerciements pour les bons soins que j’ai reçus ici pendant 70 (10 ?) jours.\nEdouard Brossant (?), Soldat au 3ème zouaves",
+    "auteurs": ["BROSSANT Edouard"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 16,
+    "date": "1914-12-28",
+    "texte": "Fontaines-sur-Saône, le 28/12/14\nAvant de quitter l’hôpital temporaire de M. Rigot (où j’ai reçu pendant un mois des soins dévoués), je tiens à remercier tout le monde, et a les assurer de ma reconnaissance.\nBurgaz, caporal 3ème régiment des zouaves\n",
+    "auteurs": ["BURGAZ"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Caporal"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 17,
+    "date": "1914-12-28",
+    "texte": "Fontaines, le 28/12 1914\nRemerciements sincères à toutes les sœurs, dame infirmière pour les soins dévoués que j’ai reçus du 1er novembre au 28 décembre. Je garderai de cet hôpital un long souvenir ainsi que des bons services qu’à bien boulu me témoigner Monsieur l’administrateur.\nMonnier Paul Hermin (?)\n",
+    "auteurs": ["MONNIER Paul Hermin"],
     "affectation": {
       "regiment": "Inconnu",
-      "affect2" : "",
-      "affect3" : "",
-      "affect4" : "",
-      "grade"   : "Inconnu"
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 18,
+    "date": "1915-1-5",
+    "texte": "Fontaines-sur-Saône, 5 (?) janvier 1915\nJe ne veux pas quitter l’hôpital temporaire de M. Rigot sans lui adresser mes meilleurs remerciements ainsi qu’à la sœur Int (?) Jean qui par ses bons soins ma remis la santé ainsi que madame Joueve Dame de la croix rouge.\nBoulet Léon\n",
+    "auteurs": ["BOULET Léon"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 19,
+    "date": "1915-1-5",
+    "texte": "Fontaines, le 5 janvier 1915\nAvant de quitter l’hôpital temporaire de Monsieur Rigot où j’ai reçu pendant 18 jours des soins dévoués et je tiens à remercier tous les personnels de l’hôpital.\n(Signature)\n",
+    "auteurs": ["Illisible"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 20,
+    "date": "1915-1",
+    "texte": "Je ne veux quitter l’hôpital temporaire de M. Rigot sans le remercier, ainsi que tout le personnel de son hôpital dont j’ai reçu de très bons soins 20 novembre au 15 (?) janvier. De tous, je garderai un excellent souvenir.\nPesset (?), 3ème zouaves",
+    "auteurs": ["PESSET"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 21,
+    "date": "1915-1-26",
+    "texte": "Fontaines sur Saône, le 26/01/1915\nJe tiens à remercier M. Rigot de tout cœur pour la bonne organisation de l’hôpital qu’il a eu l’ingéniosité de fonder.\nJe remercie sœur St Jean ainsi que Mme Jouve pour les soins si dévoués qu’elles nous consacrent.\nA tous je leur adresser mes plus sincères remerciements.\nJeremiam Baelle (?), caporal (?), 2ème zouaves\n",
+    "auteurs": ["BAELLE Jeremiam"],
+    "affectation": {
+      "regiment": "2e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Caporal"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 22,
+    "date": "1915-1-27",
+    "texte": "Fontaines sur Saône, le 27/01/1915\nAvant de quitter l’établissement hospitalier dans lequel je suis resté trois semaines, je tiens à remercier Monsieur Rigot qui a été très aimable de transformer sa maison en un lieu de refuge pour les pauvres blessés.\nJe tiens également à remercier Sœur St Jean ainsi que Mme. Jouve de leurs bons soins qu’elles ne cessent jamais de nous donner.\n(Signature), 2(3?)ème zouaves\n",
+    "auteurs": ["Illisible"],
+    "affectation": {
+      "regiment": "2e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 23,
+    "date": "1915-2-3",
+    "texte": "Fontaines sur Saône, le 3 février 1915\nEn quittant l’hôpital Rigot, je tiens à remercier notre excellente sœur et madame Jouve, notre sympathique infirmière, pour les soins dévoués qu’elles m’ont prodigués pendant le cours de ma maladie. Toute ma gratitude aussi à monsieur Rigot qui a su mener la lourde tache de procurer aux malades et blessés tout le réconfort dont ils ont besoin.\nMorgan Giviot, 3ème zouaves\n",
+    "auteurs": ["GIVIOT Morgan"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 24,
+    "date": "1915-2-3",
+    "texte": "Fontaines sur Saône, le 3 février 1915\nAprès avoir passé trente jours à l’hôpital, je ne peux partir de cet établissement sans remercier le Directeur M. Rigot, et sans oublier la sœur St Jean et ainsi que Mme. Jouve des bons soins que j’ai obtenus. Je garderais toujours les meilleurs souvenirs de mon passage à Fontaines s/ Saône.\nSauveur Balzan, 3ème zouaves.\nVive la France\n",
+    "auteurs": ["BALZAN Sauveur"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 25,
+    "date": "1915-2-3",
+    "texte": "Fontaines-sur-Saône, le 3/2/1915\nAvant de partir, je veux remercier M. Rigot ainsi que la sœur Saint Jean et madame Jouve des soins qu’ils m’ont donné pour guérir ma maladie que j’ai eue.\nFournier Ernest\n",
+    "auteurs": ["FOURNIER Ernest"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 26,
+    "date": "1915-2-3",
+    "texte": "Fontaines-sur-Saône, le 3-2-1915\nJe remercie de grand cœur l’hôpital temporaire Rigot, le personnel des grands soins qui m’ont prodigué pendant mon séjour à l’hôpital, ainsi que Monsieur Rigot et notre dévouée bonne sœur St Jean pour les bons soins et merci beaucoup à Mme. Jouve.\nMidioni (?), 3e zouaves\n",
+    "auteurs": ["MIDIONI"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 27,
+    "date": "1915-2-3",
+    "texte": "Fontaines s/ Saône, le 3/2 1915\nAvant de quitter cet hôpital, je tiens à remercier sœur St Jean ainsi que Madame Jouve, dont ils m’ont donné les meilleurs soins, et je remercie M. Rigot, du bon accueil.\nRicht (?)\n",
+    "auteurs": ["RICHT"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 28,
+    "date": "1915-2-3",
+    "texte": "Fontaines s/ Saône, le 3/2/1915\nJe remercie de tout cœur M. Rigot, directeur de l’hôpital, ainsi que sœur St Jean, et Mme. Jouve des bons soins que j’ai reçus, pendant les trente jours que j’ai passés.\n(Signature)\n",
+    "auteurs": ["Inconnu"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 29,
+    "date": "1915-2-3",
+    "texte": "Fontaines sur Saône, le 3 février\nJe tiens avant mon départ à remercier tout le personnel dévoué de l’hôpital Rigot.\nAux sœurs Saint Jean et Madame Jouve de leur bon soin que j’ai reçu pendant mon séjour.\nEn particulier à monsieur Rigot pour avoir mis gracieusement et avec désintéressement ces immeubles à la disposition de la croix rouge pour soulager les misères que la guerre entraîne.\nQue la Providence daigne accorder ses faveurs sur cette maison et la préserve de tout mal ainsi que son personnel dévoué.\nMerci aux bienfaiteurs et au personnel de l’hôpital Rigot, je n’oublierai jamais.\nPoncet Marcel\nSergent 3e zouaves, 4ème Compagnie, Bataillon H\n",
+    "auteurs": ["PONCET Marcel"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "4e Compagnie"          ,
+      "affect3" : "Bataillon H"           ,
+      "affect4" : ""                      ,
+      "grade"   : "Sergent"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 30,
+    "date": "1915-2-11",
+    "texte": "Fontaines s/ Saône, 11 février 1915\nAprès avoir passé cent-quatorze jours à l’hôpital Rigot, je m’empresse de remercier le Directeur M. Rigot, et ainsi que de tout le personnel de cet hôpital, la sœur St Jean et sans oublier Mme. Jouve, des bons soins qu’elles m’ont prodigués.\nJe garderai toujours les meilleurs souvenirs de mon passage à Fontaines s/ Saône, de cette maison si hospitalière.\nG. Martet (?) 3e zouave, 61ème compagnie\n",
+    "auteurs": ["MARTET G."],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "61e Compagnie"         ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 31,
+    "date": "1915-2-14",
+    "texte": "Fontaines, 14 février 1915\nJe ne veux quitter l’hôpital temporaire Rigot sans adresser à tout le monde mes sincères remerciements pour les bons soins que j’ai reçus ici pendant 91 jours.\n(Signature)\n",
+    "auteurs": ["Illisible"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 32,
+    "date": "1915-3-1",
+    "texte": "Fontaines sur Saône, le 1er 3/ 1915\nJe ne peux quitter l’ambulance Rigot sans adresser mes plus vifs remerciements à Monsieur Rigot, directeur, à la sœur St Jean, à sa sœur de cette dernière, madame Jouve, et à Monsieur l’infirmier Phochouat dont je ne peux garder le meilleur souvenir de tous les bons soins que j’ai reçus.\nTous mes meilleurs remerciements.\nBaroin, 3ème zouaves.\n",
+    "auteurs": ["BAROIN"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 33,
+    "date": "1915-3-1",
+    "texte": "Fontaines, le 1er mars 1915\nC’est avec une grande amertume que je quitte l’hôpital de Monsieur Rigot pour lui-même et ses dévoués collaborateurs, à sœur St Jean, Madame Jouve, ainsi que Monsieur l’Infirmier. A tous, mes sincères remerciements pour leur dévouement sans bornes et qui jamais ne s’est démenti un seul instant. Je leur prie d’agrée ma grande reconnaissance.\nEncore merci ?\nPaul Mare, 131e Infanterie\n",
+    "auteurs": ["MARE Paul"],
+    "affectation": {
+      "regiment": "131e Régiment d'Infanterie",
+      "affect2" : ""                          ,
+      "affect3" : ""                          ,
+      "affect4" : ""                          ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 34,
+    "date": "1915-3-1",
+    "texte": "Fontaines sur Saône, le 1er mars 1915\nAprès avoir passé 15 jours heureux dans l’hôpital Rigot auquel je fais mes remerciements pour les soins dévoués aux malades par le personnel, pour ma part je remercie la sœur St Jean et Mme. Jouve et l’infirmier bien dévoués. Aussi je remercie du fond du cœur M. Rigot et son personnel.\nPeyrache Antoine, 6e Colonial\n",
+    "auteurs": ["PEYRACHE Antoine"],
+    "affectation": {
+      "regiment": "6e Régiment d'Infanterie Coloniale",
+      "affect2" : ""                                  ,
+      "affect3" : ""                                  ,
+      "affect4" : ""                                  ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 35,
+    "date": "1915-3-1",
+    "texte": "Fontaines sur Saône, le 1er mars 1915\nAu bout de ces quinze jours trop courts à mon gré je tiens à remercier Monsieur Rigot ainsi que ses collaborateurs, Sœur St. Jean, Madame Jouve, et Monsieur l’Infirmier pour les bons soins que j’ai reçus.\nA tous, mes sincères remerciements. Je n’oublierai pas ces quelques jours ni la maison si hospitalière de M. Rigot.\nEscoffon André, 5ème Colonial\n",
+    "auteurs": ["ESCOFFON André"],
+    "affectation": {
+      "regiment": "5e Régiment d'Infanterie Coloniale",
+      "affect2" : ""                                  ,
+      "affect3" : ""                                  ,
+      "affect4" : ""                                  ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 36,
+    "date": "1915-3-1",
+    "texte": "Lattier (?) et la 14ème section, 1er mars\nFontaines sur Saône\nJe suis heureux d’avoir passé 15 jours chez vous que je soi (?) bien été soigné. Je vous remercie beaucoup et Madame Jouve et sa sœur et l’infirmier. Je vous remercie du fond de mon cœur (?) Monsieur Rigot et son personnel.\nFontaine sur Saône\n",
+    "auteurs": ["LATTIER"],
+    "affectation": {
+      "regiment": "Inconnu"    ,
+      "affect2" : "14e Section",
+      "affect3" : ""           ,
+      "affect4" : ""           ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 37,
+    "date": "1915-3-14",
+    "texte": "Fontaine, le 14 mars 1915\nAvant de quitter l’hôpital temporaire Rigot, je tiens à remercier la Sœur Saint Jean et ainsi que madame Jouve et mademoiselle Savont et ainsi que monsieur Rigot et monsieur Fléchet et ainsi que monsieur l’infirmier reçoivent (?) mes meilleurs vœux.\nLimont Gacon Jean Marie, 3e zouave, 62e Compagnie, Sathonay\n",
+    "auteurs": ["LIMONT Gacon Jean Marie"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves" ,
+      "affect2" : "62e Compagnie, Sathonay",
+      "affect3" : ""                       ,
+      "affect4" : ""                       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 38,
+    "date": "1915-3-14",
+    "texte": "Fontaine, le 14-3-15\nAprès avoir été soigné pendant 99 jours à l’hôpital temporaire Rigot, je tiens à remercier d’abord M. Rigot qui n’a pas hésité à mettre son établissement à la disposition de la croix rouge et qui a su si bien organiser cette petite formation sanitaire, ainsi que madame Caille (?) notre dévouée Directrice et le Docteur Flechet qui n’a pas hésité par n’importe quel temps à venir prodiguer ses soins à tous les malades, et je remercie sincèrement sœur St Jean et madame Jouve quoique cette dernière soit partie, car elles n’ont cessé un seul instant sans (?) me prodiguer leurs soins les plus dévoués. Et M. Chacfronet (?) notre dévoué infirmier.\nA tous, mes plus sincères remerciements.\nBaref (?) Jules, 3e zouaves\n",
+    "auteurs": ["BAREF Jules"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 39,
+    "date": "1915-3-14",
+    "texte": "Fontaines-s-Saône, le 14-3-15\nAvant de quitter l’hôpital Rigot, je tiens à remercier notre aimable sœur St Jean pour ces grands soins si dévoués qu’elle m’a prodigué pendant mon séjour à l’hôpital, ainsi qu’à madame Jouve malgré son départ avant (?) je lui offre ma meilleure sympathie, madame (?) Caille notre dévouée Directrice pour ces belles visites, le docteur Fléchet, je lui avoue ma meilleure affection c’est il a pu me surmonter (?) de mes grosses blessures. Sans oublier M. Rigot qui a bien voulu mettre si gracieusement son établissement à la disposition de la croix rouge pour soulager les misères que l’horreur de la guerre entraîne, et M. Chachaud (?) notre dévoué infirmier pour sa belle intention à agir envers nous.\nAvoué (?) ma meilleure sympathie\nSaint (?) Jean, 1er classe, 3e zouaves\n",
+    "auteurs": ["SAINT-? Jean"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat, 1ère classe"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 40,
+    "date": "1915-3-14",
+    "texte": "Fontaines sur Saône, le 14 mars 1914 (sic)\nC’est après avoir reçu les meilleurs soins pendant plus de quatre mois à l’hôpital temporaire Rigot que je viens remercier notre dévoué administrateur qui a bien voulu mettre son habitation à la disposition de l’autorité militaire pour y fonder ce petit hôpital où j’ai reçu les meilleurs soins. J’en remercie sincèrement M. Rigot qui fait tout son possible chaque jour pour les militaires de son ambulance. Je veux aussi remercier Mme. Caillies, notre directrice qui se fait un devoir chaque jour de nous être bonne pour beaucoup de choses. Je remercie aussi M. le major Fléchet de tous ses bons soins.\nIl me reste encore sœur St Jean dont j’en garderai toujours le souvenir ainsi que de Mme. Jouve qui n’ont cessé de nous donner les meilleurs soins et de nous remonter dans les moments de souffrance. Donc je remercie sincèrement Sœur St Jean qui ne se lasse de nous donner les soins les plus tendres qu’on puisse recevoir. Je remercie aussi sincèrement M. Chachuat notre dévoué infirmier qui nous rend tous ses meilleurs soins.\nTous mes meilleurs remerciements à tout le personnel de l’hôpital Rigot.\nGagare (?) Tompas (?), 3ème zouaves, 64ème compagnie Sathonay (?)\n",
+    "auteurs": ["GAGARE Tompas"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "64e Compagnie"         ,
+      "affect3" : "Camp de Sathonay"      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 41,
+    "date": "1915-3-14",
+    "texte": "Fontaines-s-Saône, le 14 mars 1914 et 15\nJe ne puis passer quitter l’hôpital Rigot sans remercier tout le personnel qui se sont tant dévoués pour moi pendant quatre mois et demi. Je tiens à remercier bien sincèrement Monsieur Rigot, l’administrateur. Je m’empresse à remercier Sœur Saint Jean qui s’est tant dévouée pour moi. Donc je ne l’oublierai jamais. Je remercie donc égalemen Madame Jouve, la bonne infirmière qui était si dévouée à mon égard.\nJe remercie bien sincèrement Monsieur le major Fléchet qui a fait tout son possible pour me soulager. Merci aussi à Madame Caillies de Salliès notre dévouée Directrice, qui généralement par ses visites journalières a su distraire pendant mon séjour à l’hôpital.\nMerci aussi à Monsieur Chachuat (?), notre dévoué et sympathique infirmier qui a su nous donner ses meilleurs soins. Merci aussi à Mademoiselle Caron, infirmière de la Croix-rouge qui se dévoue pour nous donner ses bons soins. Merci aussi à Madame Dupriez (?) qui se dévoue également pour nous.\nJ’adresse à tout le personnel de la maison mes meilleurs remerciements et vœux de bonheur.\nPereol (?) Joseph, 3e zouaves, 62ème compagnie, Camps de Sathonay\n",
+    "auteurs": ["PEREOL Joseph"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "62e Compagnie"         ,
+      "affect3" : "Camp de Sathonay"      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 42,
+    "date": "1915-3-14",
+    "texte": "Fontaines-sur-Saône, 14 mars 1915\nPendant la durée de 60 jours à l’hôpital Rigot, je ne puis quitter cet établissement sans remercie le bien généraux donateur Monsieur Rigot ainsi que Madame Caillies notre dévouée Directrice.\nIl me reste encore à remercier la bonne sœur St. Jean qui s’est tant dévouée pour moi. Je ne puis oublier M. Chachuat qui s’est tant dévoué pour moi également et que je garderai mon meilleur respect.\nJe ne puis adresser que tous mes meilleurs remerciements à tout le personnel et l’hôpital Rigot.\nAroncle (?) Ald (?)\n3 zouaves, 62e Compagnie\nVive la France\n",
+    "auteurs": ["ARONCLE Ald"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "62e Compagnie"         ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 43,
+    "date": "1915-3-21",
+    "texte": "Fontaine, le 21 mars 1915\nJe remercie de grand cœur le personnel de l’hôpital Rigot des grands soins qui m’ont prodigué pendant mon séjour à l’hôpital, sans oublier sœur Saint Jean et Mademoiselle Sason (?) ainsi que monsieur Rigot\nVincent Marcel (?), 3e zouaves, 64e Compagnie\n",
+    "auteurs": ["MARCEL Vincent"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "64e Compagnie"         ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 44,
+    "date": "1915-3-21",
+    "texte": "Fontaine, le 21 mars 1915\nPendant la durée de deux mois à l’hôpital Rigot, je remercie tout le personnel de l’hôpital ainsi que monsieur Rigot et la sœur Singens (?).\nPesqice (?) Pierre\n3e zouave, 61e Compagnie\n",
+    "auteurs": ["PESQICE Pierre"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : "61e Compagnie"         ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 45,
+    "date": "1915-4-4",
+    "texte": "Fontaines sur, le 4 avril 1915\nDu 1er mars au 4 avril, j’ai reçu à l’hôpital Rigot les meilleurs soins qui exigeait mon état. Douleurs arthritiques (?).\nJe remercie bien chaleureusement tout le personnel de l’hôpital, sans oublier personne, personne. Je remercie d’une manière spéciale Monsieur Rigot, la sœur ainsi que M. l’infirmier de leurs bons soins vigilants.\nLe 4/4/1915\nClaude Gireux (?)\n(dépôt) – 14 lect (?) Inf. (?) La Duchère, Lyon\n",
+    "auteurs": ["GIREUX Claude"],
+    "affectation": {
+      "regiment": "Illisible",
+      "affect2" : ""         ,
+      "affect3" : ""         ,
+      "affect4" : ""         ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 46,
+    "date": "1915-4-4",
+    "texte": "Du 1er mars au 4 avril, j’ai reçu les meilleurs soins au sujet de ma maladie « bronchite ». Je quitte cet hôpital en emportant les meilleurs souvenirs. J’adresse à tout le personnel un chaleureux remerciement et tout spécialement à la chère sœur, M. Rigot, et à M. l’infirmier.\nLe 4 avril 1915\nDépôt. Montessuy – Neuville sur Saône. (?) 14 Sect. Rue des Bokesh (?)\n",
+    "auteurs": ["Inconnu"],
+    "affectation": {
+      "regiment": "Illisible",
+      "affect2" : ""         ,
+      "affect3" : ""         ,
+      "affect4" : ""         ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 47,
+    "date": "1915-4-4",
+    "texte": "Je certifie avoir été bien soigné à l’hôpital Rigot de ma sciatique. Aussi je pars, content de tous les bons soins du personnel, à tous j’adresse mes remerciements.\nD’une manière spéciale je dresse aux bons soins frnteulins (?) de la sœur. Mon souvenir va particulièrement (?) à M. Rigot à et l’infirmier.\nLe 4 avril 1915\n2nard (?) 11 d’artillerie\nRésident à Julette (?) Drôme\n",
+    "auteurs": ["Inconnu"],
+    "affectation": {
+      "regiment": "11e Régiment d'Artillerie",
+      "affect2" : ""                         ,
+      "affect3" : ""                         ,
+      "affect4" : ""                         ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 48,
+    "date": "1915-4-4",
+    "texte": "Le 4 avril 1915\nJe ne puis partir de cet hôpital sans remercier tout le personnel en adressant à la sœur Saint Jean, Monsieur Rigot, monsieur l’infirmier les bons soins qu’ils m’ont prodigués pendant le séjour à l’hôpital.\nLe 4 avril 1915. Choyer Jean Marin Cancal (?)\n",
+    "auteurs": ["CHOYER Jean Marin Cancal"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 49,
+    "date": "1915-4-4",
+    "texte": "Je ne puis partir de cet hôpital sans remercier la sœur St Jean et ainsi que tout le personnel, ainsi que Monsieur Rigot des bons soins qu’ils m’ont prodigués pendant le séjour à l’hôpital.\nCoulmiers, 5e colonial\n",
+    "auteurs": ["COULMIERS"],
+    "affectation": {
+      "regiment": "5e Régiment d'Infanterie Coloniale",
+      "affect2" : ""                                  ,
+      "affect3" : ""                                  ,
+      "affect4" : ""                                  ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 50,
+    "date": "1915-4-4",
+    "texte": "Fontaines-sur-Saône, 4 avril 1915\nEn quittant cette maison hospitalière où j’ai reçu depuis le 1er janvier tous les soins que nécessitait mon état, je tiens à remercier particulièrement M. Rigot, notre dévoué administrateur, M. le Major et la Sœur St Jean, tous dignes de ma plus vive reconnaissance, ainsi que le personnel auxiliaire de l’hôpital.\nMartin Hillarf (?), 3e (?) zouaves\n",
+    "auteurs": ["HILLARF Martin"],
+    "affectation": {
+      "regiment": "3e Régiment de Zouaves",
+      "affect2" : ""                      ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 51,
+    "date": "1915-4-4",
+    "texte": "Fontaines-sur-Saône, 4 avril 1915\nC’est avec ma plus profonde reconnaissance que je viens remercier Monsieur Rigot pour sa toute paternelle hospitalité. Mes remerciements à M. le Major et à Sœur Saint Jean pour leurs bons soins. Je n’oublie pas non plus M. l’abbé Chachuat ainsi que Mlle. Sarrou qui ont tous contribué à me garder toujours un souvenir de mon séjour ici. Merci donc à tous.\nR. Martinet, 2e zouaves, 14e section, Infirmier\n",
+    "auteurs": ["MARTINET R."],
+    "affectation": {
+      "regiment": "2e Régiment de Zouaves",
+      "affect2" : "14e Section"           ,
+      "affect3" : ""                      ,
+      "affect4" : ""                      ,
+      "grade"   : "Infirmier"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 52,
+    "date": "1915-4-19",
+    "texte": "Fontaines, 19 avril 1915\nJe ne voudrais pas quitter l’hôpital sans témoigner ma vive reconnaissance et remercier Monsieur Rigot de son dévouement ainsi que Monsieur le Major et Sœur St Jean de leurs bons soins.\nJe n’oublie pas non plus le personnel qui tous font pour être agréable.\nSort (?) François. 5e colonial\n",
+    "auteurs": ["SORT François"],
+    "affectation": {
+      "regiment": "5e Régiment d'Infanterie Coloniale",
+      "affect2" : ""                                  ,
+      "affect3" : ""                                  ,
+      "affect4" : ""                                  ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 53,
+    "date": "1915-4-26",
+    "texte": "Fontaines, le 26 avril 1915\nAyant passé un mois à l’hôpital Rigot, nous ne pouvons partir sans remercier très sincèrement M. le Major Fléchet, M. le Directeur, la sœur St Jean et Mme Sarrou qui se sont dévoués pour nous prodiguer leurs bons soins, ainsi que tout le personnel de la cuisine qui a fait de son mieux pour nous être agréable.\nLes malades du Gavillon (?) reconnaissants\nMollard. Gas Simon. Brochet. (Signature)\n",
+    "auteurs": ["MOLLARD", "GAS Simon", "BROCHET"],
+    "affectation": {
+      "regiment": "Inconnu",
+      "affect2" : ""       ,
+      "affect3" : ""       ,
+      "affect4" : ""       ,
+      "grade"   : "Soldat"
+    },
+    "type": "Lettre"
+  },
+  {
+    "numero": 54,
+    "date": "1915-4-26",
+    "texte": "Fontaines, 26 avril 1915\nAprès avoir passé 30 jours à l’hôpital Rigot, je pars en emportant que de bons souvenirs.\nJe démontre à Monsieur Rigot, notre bien dévoué Directeur, d’accepter ma plus vive reconnaissance qui s’adresse bien sincèrement à Monsieur le Major Fléchet.\nJe remercie bien sincèrement Sœur St Jean que l’on trouve toujours très dévouée auprès des malades. Je n’oublie pas non plus Monsieur l’Infirmier, ainsi que le personnel qui s’empresse toujours à la moindre demande des malades.\nMerci à tous de vos bons soins et à tous ma plus vive reconnaissance.\nClaude Segone (?). 6e Colonial\n",
+    "auteurs": ["SEGONE Claude"],
+    "affectation": {
+      "regiment": "6e Régiment d'Infanterie Coloniale",
+      "affect2" : ""                                  ,
+      "affect3" : ""                                  ,
+      "affect4" : ""                                  ,
+      "grade"   : "Soldat"
     },
     "type": "Lettre"
   }

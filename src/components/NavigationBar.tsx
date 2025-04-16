@@ -9,23 +9,23 @@ const NavigationBar = () => {
           <div className="flex space-x-8">
             <Link 
               to="/" 
-              className="font-serif text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
+              className="text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
             >
               Accueil
             </Link>
             <span className="text-vintage-dark/30">|</span>
             <Link 
               to="/lettres" 
-              className="font-serif text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
+              className="text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
             >
-              Les lettres
+              Liste des Témoignages
             </Link>
             <span className="text-vintage-dark/30">|</span>
             <Link 
               to="/hopital" 
-              className="font-serif text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
+              className="text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
             >
-              L'hôpital bénévole
+              L'hôpital Bénévole Rigot
             </Link>
           </div>
         </div>
