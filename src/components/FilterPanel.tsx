@@ -380,7 +380,7 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
               return (
                 <div 
                   key={`gray-${entry.numero}`}
-                  className="absolute w-3 h-3 rounded-full bg-gray-300 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[4.5px] hover:h-[4.5px] z-20"
+                  className="absolute w-3 h-3 rounded-full bg-gray-300 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[16px] hover:h-[22px] z-20"
                   style={{ left: `${position}%`, top: '50%' }}
                   onMouseEnter={(e) => handleEntryHover(entry.numero, e)}
                   onMouseLeave={handleEntryLeave}
@@ -404,7 +404,7 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
               return (
                 <div 
                   key={`blue-${entry.numero}`}
-                  className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[4.5px] hover:h-[4.5px] z-30 ${isInFilteredEntries ? 'bg-vintage-blue' : 'bg-gray-300'}`}
+                  className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[16px] hover:h-[22px] z-30 ${isInFilteredEntries ? 'bg-vintage-blue' : 'bg-gray-300'}`}
                   style={{ left: `${position}%`, top: '50%' }}
                   onMouseEnter={(e) => handleEntryHover(entry.numero, e)}
                   onMouseLeave={handleEntryLeave}

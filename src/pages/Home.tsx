@@ -28,7 +28,7 @@ const Home = () => {
               <div className="flex-grow">
                 <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Les témoignages</h2>
                 <p className="text-gray-700 mb-4">
-                  <span className="font-bold">200 témoignages</span> de poilus passés par l'hôpital bénévole de Fontaînes-sur-Saône - dit Rigot - entre fin 1914 et début 1917.
+                  <span className="font-bold">199 témoignages</span> de poilus passés par l'hôpital bénévole de Fontaînes-sur-Saône - dit Rigot - entre fin 1914 et début 1917.
                   Chacun d'entre eux a été soigneusement retranscrit et numérisé.
                 </p>
                 <p className="text-gray-700 mb-4">

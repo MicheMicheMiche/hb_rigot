@@ -21,6 +21,9 @@ const Hospital = () => {
               Ces hôpitaux bénévoles sont mis sur pied dans des couvents, des écoles, des hôtels, des usines, des théâtres mais aussi chez des particuliers. Ils varient largement en taille : de quelques dizaines de lits à plusieurs centaines.
               Les numéros d'identification (n°194 bis pour celui de Fontaines-sur-Saône) sont attribués par l'administration militaire de la région.
             </p>
+            <p className="text-gray-700 mb-3">
+              Les hôpitaux bénévoles recevaient un financement sous la forme de prix de journée forfaitaire.
+            </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-12">
@@ -67,20 +70,44 @@ const Hospital = () => {
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-12">
             <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Le personnel</h2>
             <p className="text-gray-700 mb-3">
-              Ernest Rigot dirige et administre l'hôpital bénévole.
+              <span className="font-bold">Administration</span> : Ernest Rigot.
             </p>
             <p className="text-gray-700 mb-3">
-              Parmi le personnel soignant régulièrement cité, l'on retrouve des Soeurs Franciscaines (Soeurs Saint-Jean, Sacré-Coeur et Xavier), des infirmières de la Croix-Rouge (Mme. Jouve), un abbé infirmier (M. Chachuat), ainsi que des médecins militaires (Major Jouvet).
+              <span className="font-bold">Direction</span> : Mme. Callies de Salies.
             </p>
             <p className="text-gray-700 mb-3">
-              Les poilus évoquent également le personnel de maison, en particulier les cuisinières.
+              <span className="font-bold">Infirmières de la Croix-rouge</span> : Mme. Jouve, Mlle. Germain(e?), Mlle. Meyer, Mlle. Magnin (Magnien ? Maguin ?), Mme. Talon.
+            </p>
+            <p className="text-gray-700 mb-3">
+              <span className="font-bold">Soeurs infirmières</span> : Soeur St-Jean, soeur Julie, soeur Sacré-Coeur, soeur Xavier, soeur Philomène.
+            </p>
+            <p className="text-gray-700 mb-3">
+              <span className="font-bold">Docteurs</span> : Major Fléchet, Dr. Moindrot.
+            </p>
+            <p className="text-gray-700 mb-3">
+              <span className="font-bold">Infirmier</span> : Abbé Chachuat.
+            </p>
+            <p className="text-gray-700 mb-3">
+              <span className="font-bold">Personnel de service</span> : Mlle Caron/Sarron/Sarrou, Mme. Dupuis/Dupuy, Mlle. Mélanie.
+            </p>
+            <p className="text-gray-700 mb-3">
+              <span className="font-bold">Cuisine</span> : Marie, Maria, Mme. Zalan.
+            </p>
+            <p className="text-gray-700 mb-3">
+              <span className="font-bold">Comptable</span> : M. Simon.
+            </p>
+            <p className="text-gray-700 mb-3">
+              <span className="font-bold">Reste à classer</span> : Mme. Couson, Mme. Chalou.
             </p>
           </div>
 
-          <div className="bg-vintage-paper p-4 border border-gray-300 rounded-lg shadow-md mb-12 flex justify-center items-center">
+          <div className="bg-vintage-paper p-4 border border-gray-300 rounded-lg shadow-md mb-12 justify-center items-center">
             <div className="flex justify-center items-center">
               <img src="/assets/photos/groupe.jpg"></img>
             </div>
+            <p className="text-sm text-gray-500 mt-2 text-center">
+              La religieuse assise devant au centre est probablement une soeur de Saint-Joseph de Lyon.<br></br> Les deux infirmières en arrière sont probablement des infirmières de la Croix-rouge.
+            </p>
           </div>
           
         </div>
