@@ -18,14 +18,14 @@ const NavigationBar = () => {
               to="/lettres" 
               className="text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
             >
-              Liste des Témoignages
+              Les témoignages
             </Link>
             <span className="text-vintage-dark/30">|</span>
             <Link 
               to="/hopital" 
               className="text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
             >
-              L'hôpital Bénévole Rigot
+              L'hôpital bénévole Rigot
             </Link>
           </div>
         </div>

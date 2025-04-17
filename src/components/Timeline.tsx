@@ -20,8 +20,8 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
   const [hoveredPosition, setHoveredPosition] = useState<{ x: number, y: number } | null>(null);
 
   // Define timeline range
-  const startDate = new Date(1914, 9, 1); // October 1914
-  const endDate = new Date(1917, 11, 31); // December 1917
+  const startDate = new Date(1914, 7, 1); // October 1914
+  const endDate = new Date(1917, 4, 31); // December 1917
   const totalTimespan = endDate.getTime() - startDate.getTime();
 
   // Update the timeline width on resize
