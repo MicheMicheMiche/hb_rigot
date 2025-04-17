@@ -4,7 +4,6 @@ import { loadNotebookEntries, filterEntries } from '@/utils/dataLoader';
 import NotebookEntry from '@/components/NotebookEntry';
 import FilterPanel from '@/components/FilterPanel';
 import NavigationBar from '@/components/NavigationBar';
-import Timeline from '@/components/Timeline';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/sonner";
 import { Loader, ChevronUp, ChevronDown, ArrowUp } from 'lucide-react';
@@ -46,7 +45,13 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
-    setFilteredEntries(filterEntries(entries, filters));
+    try {
+      const filtered = filterEntries(entries, filters);
+      setFilteredEntries(filtered);
+    } catch (error) {
+      console.error('Error filtering entries:', error);
+      toast.error("Erreur lors du filtrage des entrées");
+    }
   }, [entries, filters]);
 
   useEffect(() => {
@@ -70,13 +75,6 @@ const Index = () => {
     setAllExpanded(!allExpanded);
   };
 
-  const scrollToEntry = (entryId: number) => {
-    const entryElement = document.getElementById(`entry-${entryId}`);
-    if (entryElement) {
-      entryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-vintage-light">
       <NavigationBar />
@@ -89,7 +87,12 @@ const Index = () => {
             </h1>
           </header>
 
-          <FilterPanel entries={entries} onFilterChange={handleFilterChange} />
+          <FilterPanel 
+            entries={entries} 
+            filteredEntries={filteredEntries}
+            onFilterChange={handleFilterChange} 
+            filters={filters}
+          />
 
           {loading ? (
             <div className="flex justify-center items-center h-64">
@@ -127,14 +130,6 @@ const Index = () => {
                   )}
                 </Button>
               </div>
-
-              <Timeline 
-                entries={entries} 
-                filteredEntries={filteredEntries}
-                onEntryClick={scrollToEntry}
-                filters={filters}
-                onFilterChange={handleFilterChange}
-              />
               
               <div ref={entriesRef} className="mt-8">
                 <ScrollArea className="h-full">

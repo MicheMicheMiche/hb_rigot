@@ -1,47 +1,132 @@
-
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
 import { getUniqueRegiments, getUniqueRanks, getUniqueTypes } from '@/utils/dataLoader';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Slider } from "@/components/ui/slider";
+import { format, parse } from 'date-fns';
+import { fr } from 'date-fns/locale';
 import { Filter, X } from 'lucide-react';
 
 interface FilterPanelProps {
   entries: NotebookEntry[];
+  filteredEntries: NotebookEntry[];
   onFilterChange: (filters: FilterOptions) => void;
+  filters: FilterOptions;
 }
 
-const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
-  const [filters, setFilters] = useState<FilterOptions>({
-    id: null,
-    dateRange: { start: null, end: null },
-    regiment: null,
-    rank: null,
-    author: null,
-    type: null
-  });
+const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: FilterPanelProps) => {
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const [timelineWidth, setTimelineWidth] = useState(0);
+  const [sliderValues, setSliderValues] = useState([0, 100]);
+  const [hoveredEntryId, setHoveredEntryId] = useState<number | null>(null);
+  const [hoveredPosition, setHoveredPosition] = useState<{ x: number, y: number } | null>(null);
   
   const regiments = getUniqueRegiments(entries);
   const ranks = getUniqueRanks(entries);
   const types = getUniqueTypes(entries);
 
+  // Define timeline range
+  const startDate = new Date(1914, 8, 1); // September 1914
+  const endDate = new Date(1917, 2, 31); // March 1917
+  const totalTimespan = endDate.getTime() - startDate.getTime();
+
+  // Update the timeline width on resize
+  useEffect(() => {
+    const updateWidth = () => {
+      if (timelineRef.current) {
+        setTimelineWidth(timelineRef.current.offsetWidth);
+      }
+    };
+    
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
+  // When filter date range changes, update the slider
+  useEffect(() => {
+    if (filters.dateRange.start || filters.dateRange.end) {
+      const start = filters.dateRange.start 
+        ? getPositionForDate(parse(filters.dateRange.start, 'yyyy-MM-dd', new Date())) 
+        : 0;
+      const end = filters.dateRange.end 
+        ? getPositionForDate(parse(filters.dateRange.end, 'yyyy-MM-dd', new Date())) 
+        : 100;
+      setSliderValues([start, end]);
+    } else {
+      setSliderValues([0, 100]);
+    }
+  }, [filters.dateRange]);
+
+  // Get date from a position percentage
+  const getDateForPosition = (position: number): Date => {
+    const timeAtPosition = startDate.getTime() + (position / 100) * totalTimespan;
+    return new Date(timeAtPosition);
+  };
+
+  // Get position percentage for a date
+  const getPositionForDate = (date: Date): number => {
+    const timeAtDate = date.getTime();
+    return Math.max(0, Math.min(100, ((timeAtDate - startDate.getTime()) / totalTimespan) * 100));
+  };
+
+  // Get position percentage for an entry
+  const getEntryPosition = (entry: NotebookEntry): number => {
+    if (!entry.date) return -1;
+    
+    try {
+      const [year, month, day] = entry.date.split('-').map(Number);
+      let entryDate;
+      
+      if (year && month && day) {
+        entryDate = new Date(year, month - 1, day);
+      } else if (year && month) {
+        entryDate = new Date(year, month - 1, 1);
+      } else if (year) {
+        entryDate = new Date(year, 0, 1);
+      } else {
+        return -1;
+      }
+      
+      return getPositionForDate(entryDate);
+    } catch (error) {
+      return -1;
+    }
+  };
+
+  // Determine if entry is within the selected date range based on position
+  const isEntryInSelectedDateRange = (entry: NotebookEntry): boolean => {
+    const position = getEntryPosition(entry);
+    if (position < 0) return false;
+    
+    // Use the slider values to directly determine if an entry is in the selected range
+    return position >= sliderValues[0] && position <= sliderValues[1];
+  };
+
+  // When slider changes, update the date filter
+  const handleSliderChange = (values: number[]) => {
+    setSliderValues(values);
+    const startDate = getDateForPosition(values[0]);
+    const endDate = getDateForPosition(values[1]);
+    
+    onFilterChange({
+      ...filters,
+      dateRange: {
+        start: format(startDate, 'yyyy-MM-dd'),
+        end: format(endDate, 'yyyy-MM-dd')
+      }
+    });
+  };
+
   const handleFilterChange = (key: keyof FilterOptions, value: any) => {
     const newFilters = { ...filters, [key]: value };
-    setFilters(newFilters);
     onFilterChange(newFilters);
   };
 
   const resetFilters = () => {
-    setFilters({
-      id: null,
-      dateRange: { start: null, end: null },
-      regiment: null,
-      rank: null,
-      author: null,
-      type: null
-    });
     onFilterChange({
       id: null,
       dateRange: { start: null, end: null },
@@ -64,6 +149,64 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
     );
   };
 
+  const scrollToEntry = (entryId: number) => {
+    const entryElement = document.getElementById(`entry-${entryId}`);
+    if (entryElement) {
+      entryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  // Generate years and specific months ticks for the timeline
+  const generateTimelineTicks = () => {
+    const ticks = [];
+    
+    // Years: 1914, 1915, 1916, 1917
+    for (let year = 1914; year <= 1917; year++) {
+      const date = new Date(year, 0, 1);
+      const position = getPositionForDate(date);
+      
+      // Only add years that are within our timeline range
+      if (position >= 0 && position <= 100) {
+        ticks.push({
+          date,
+          position,
+          isYear: true,
+          label: year.toString(),
+        });
+      }
+      
+      // Add specific months: April (3), July (6), October (9)
+      const highlightMonths = [3, 6, 9]; // 0-indexed: April, July, October
+      
+      for (const month of highlightMonths) {
+        const monthDate = new Date(year, month, 1);
+        const monthPosition = getPositionForDate(monthDate);
+        
+        // Only add months that are within our timeline range
+        if (monthPosition >= 0 && monthPosition <= 100) {
+          ticks.push({
+            date: monthDate,
+            position: monthPosition,
+            isYear: false,
+            label: format(monthDate, 'MMM', { locale: fr }),
+          });
+        }
+      }
+    }
+    
+    return ticks.sort((a, b) => a.position - b.position);
+  };
+  
+  const handleEntryHover = (entryId: number, event: React.MouseEvent) => {
+    setHoveredEntryId(entryId);
+    setHoveredPosition({ x: event.clientX, y: event.clientY });
+  };
+  
+  const handleEntryLeave = () => {
+    setHoveredEntryId(null);
+    setHoveredPosition(null);
+  };
+
   return (
     <div className="bg-white shadow-md rounded-md p-4 mb-6 border border-gray-200">
       <div className="flex items-center justify-between mb-4">
@@ -78,7 +221,7 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
         )}
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-6">
         {/* ID Filter */}
         <div>
           <Label htmlFor="id-filter" className="text-sm font-medium mb-1 block">
@@ -177,6 +320,112 @@ const FilterPanel = ({ entries, onFilterChange }: FilterPanelProps) => {
               ))}
             </SelectContent>
           </Select>
+        </div>
+      </div>
+      
+      {/* Timeline */}
+      <div className="mt-2 border-t pt-4">
+        <div className="flex justify-between items-center mb-2">
+          <span className="text-sm font-medium">Période: </span>
+          <div className="text-sm text-gray-500">
+            {format(getDateForPosition(sliderValues[0]), 'MMM yyyy', { locale: fr })} - {format(getDateForPosition(sliderValues[1]), 'MMM yyyy', { locale: fr })}
+          </div>
+        </div>
+        
+        <div className="pt-8 pb-6 px-2 relative" ref={timelineRef}>
+          {/* Month and Year ticks */}
+          {generateTimelineTicks().map((tick, index) => (
+            <div 
+              key={index} 
+              className={`absolute ${tick.isYear ? 'h-full top-0 border-r border-gray-300' : 'h-[50%] top-[25%] border-r border-gray-200'}`}
+              style={{ left: `${tick.position}%` }}
+            >
+              <span className={`absolute -top-6 transform -translate-x-1/2 text-xs ${tick.isYear ? 'text-gray-500' : 'text-gray-400'}`}>
+                {tick.label}
+              </span>
+            </div>
+          ))}
+          
+          {/* Custom slider styling */}
+          <div className="relative z-20">
+            <Slider
+              value={sliderValues}
+              min={0}
+              max={100}
+              step={0.1}
+              onValueChange={handleSliderChange}
+              className="z-30"
+            />
+            
+            {/* Custom circles for slider ends */}
+            <div 
+              className="absolute w-5 h-5 rounded-full border-2 border-blue-500 bg-white z-40 transform -translate-x-1/2 -translate-y-1/2"
+              style={{ left: `${sliderValues[0]}%`, top: '50%' }}
+            />
+            <div 
+              className="absolute w-5 h-5 rounded-full border-2 border-blue-500 bg-white z-40 transform -translate-x-1/2 -translate-y-1/2"
+              style={{ left: `${sliderValues[1]}%`, top: '50%' }}
+            />
+          </div>
+          
+          {/* Entry dots - first layer (gray dots) */}
+          <div className="absolute top-1/2 left-0 right-0 h-0 z-10">
+            {entries.map(entry => {
+              const position = getEntryPosition(entry);
+              if (position < 0) return null;
+              
+              const isInSelectedRange = isEntryInSelectedDateRange(entry);
+              if (isInSelectedRange) return null; // Skip if in selected range (will be rendered as blue)
+              
+              return (
+                <div 
+                  key={`gray-${entry.numero}`}
+                  className="absolute w-3 h-3 rounded-full bg-gray-300 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[4.5px] hover:h-[4.5px] z-20"
+                  style={{ left: `${position}%`, top: '50%' }}
+                  onMouseEnter={(e) => handleEntryHover(entry.numero, e)}
+                  onMouseLeave={handleEntryLeave}
+                  onClick={() => scrollToEntry(entry.numero)}
+                />
+              );
+            })}
+          </div>
+          
+          {/* Entry dots - second layer (blue dots) */}
+          <div className="absolute top-1/2 left-0 right-0 h-0 z-25">
+            {entries.map(entry => {
+              const position = getEntryPosition(entry);
+              if (position < 0) return null;
+              
+              const isInSelectedRange = isEntryInSelectedDateRange(entry);
+              if (!isInSelectedRange) return null; // Skip if not in selected range
+              
+              const isInFilteredEntries = filteredEntries.some(filteredEntry => filteredEntry.numero === entry.numero);
+              
+              return (
+                <div 
+                  key={`blue-${entry.numero}`}
+                  className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[4.5px] hover:h-[4.5px] z-30 ${isInFilteredEntries ? 'bg-vintage-blue' : 'bg-gray-300'}`}
+                  style={{ left: `${position}%`, top: '50%' }}
+                  onMouseEnter={(e) => handleEntryHover(entry.numero, e)}
+                  onMouseLeave={handleEntryLeave}
+                  onClick={() => scrollToEntry(entry.numero)}
+                />
+              );
+            })}
+          </div>
+          
+          {/* Hover tooltip */}
+          {hoveredEntryId && hoveredPosition && (
+            <div 
+              className="fixed z-50 bg-black text-white px-2 py-1 text-xs rounded pointer-events-none"
+              style={{ 
+                left: hoveredPosition.x + 10, 
+                top: hoveredPosition.y - 10
+              }}
+            >
+              Entrée N°{hoveredEntryId}
+            </div>
+          )}
         </div>
       </div>
     </div>

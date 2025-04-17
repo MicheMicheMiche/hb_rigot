@@ -39,6 +39,24 @@ const Hospital = () => {
               Aujourd'hui, cette maison n'est plus dans la famille. Le terrain a été aménagé et des immeubles d'habitation ont été construits dans l'ancien jardin.
             </p>
           </div>
+
+          {/* Interactive map component */}
+          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-12">
+            <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Localisation de l'hôpital</h2>
+            <div className="aspect-video overflow-hidden rounded-lg shadow-lg border border-gray-300">
+              <iframe 
+                src="https://www.oldmapsonline.org/fr/maps/6ec60904-d201-4b91-b78d-0ccc715c7241/compare?gid=a91ef686-4b40-436f-97b1-530249877412#position=15.7841/45.83706/4.84552&year=1841" 
+                width="100%" 
+                height="100%" 
+                allow="fullscreen" 
+                className="w-full h-full" 
+                title="Carte historique de Fontaines-sur-Saône"
+              ></iframe>
+            </div>
+            <p className="text-sm text-gray-500 mt-2 text-center">
+              Carte de la région de Fontaines-sur-Saône (Rhône) où se situait l'hôpital bénévole.
+            </p>
+          </div>
           
           <div className="bg-vintage-paper p-4 border border-gray-300 rounded-lg shadow-md mb-12 flex justify-center items-center">
             <div className="flex justify-center items-center">

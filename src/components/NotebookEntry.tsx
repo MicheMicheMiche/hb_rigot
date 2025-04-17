@@ -1,7 +1,5 @@
-
 import { useState, useEffect } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
-import { formatDate } from '@/utils/dataLoader';
 import { ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from '@/components/ui/button';
@@ -42,6 +40,31 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
     }
   };
 
+  // Get all non-empty affectation fields
+  const getAffectationInfo = () => {
+    const affInfo = [];
+    
+    if (entry.affectation.regiment) {
+      affInfo.push(entry.affectation.regiment);
+    }
+    
+    if (entry.affectation.affect2) {
+      affInfo.push(entry.affectation.affect2);
+    }
+    
+    if (entry.affectation.affect3) {
+      affInfo.push(entry.affectation.affect3);
+    }
+    
+    if (entry.affectation.affect4) {
+      affInfo.push(entry.affectation.affect4);
+    }
+    
+    return affInfo;
+  };
+
+  const affectationInfo = getAffectationInfo();
+
   return (
     <Card className="notebook-entry w-full mb-4 shadow-md transition-all duration-300 hover:shadow-lg overflow-hidden">
       <CardHeader className="border-b border-vintage-dark/20 bg-vintage-paper">
@@ -71,7 +94,13 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
             )}
             <div className="text-right">
               <div className="font-serif text-vintage-dark">{entry.affectation.grade}</div>
-              <div className="text-sm text-vintage-dark/80">{entry.affectation.regiment}</div>
+              <div className="flex flex-col items-end">
+                {affectationInfo.map((info, index) => (
+                  <div key={index} className="text-sm text-vintage-dark/80">
+                    {info}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +144,7 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
         <div className="p-4 bg-gray-100 animate-fade-in">
           <div className="max-w-full mx-auto rounded overflow-hidden shadow-md">
             <img 
-              src={`/assets/photos/${entry.numero}.jpg`} 
+              src={`/assets/photos/${entry.numero}.jpeg`} 
               alt={`Page originale ${entry.numero}`} 
               className="w-full h-auto"
               onError={(e) => {

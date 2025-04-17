@@ -24,36 +24,44 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper">
-              <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Les témoignages</h2>
-              <p className="text-gray-700 mb-4">
-                <span className="font-bold">200 témoignages</span> de poilus passés par l'hôpital bénévole de Fontaînes-sur-Saône - dit Rigot - entre fin 1914 et début 1917.
-                Chacun d'entre eux a été soigneusement retranscrit et numérisé.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Simples soldats, sergents, caporaux, fantassins, aérostiers, dragons... tous s'expriment de façon personnelle. Messages de remerciements, poèmes, lettres d'éloges à leurs camarades ; d'un trait hâtif ou d'une plume appliquée...
-              </p>
-              <Link 
-                to="/lettres" 
-                className="inline-block px-4 py-2 bg-vintage-accent text-white font-medium rounded-md hover:bg-vintage-accent/80 transition-colors">
-                Parcourir les témoignages
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper flex flex-col">
+              <div className="flex-grow">
+                <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Les témoignages</h2>
+                <p className="text-gray-700 mb-4">
+                  <span className="font-bold">200 témoignages</span> de poilus passés par l'hôpital bénévole de Fontaînes-sur-Saône - dit Rigot - entre fin 1914 et début 1917.
+                  Chacun d'entre eux a été soigneusement retranscrit et numérisé.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Simples soldats, sergents, caporaux, fantassins, aérostiers, dragons... tous s'expriment de façon personnelle. Messages de remerciements, poèmes, lettres d'éloges à leurs camarades ; d'un trait hâtif ou d'une plume appliquée...
+                </p>
+              </div>
+              <div className="mt-auto pt-4">
+                <Link 
+                  to="/lettres" 
+                  className="inline-block px-4 py-2 bg-vintage-accent text-white font-medium rounded-md hover:bg-vintage-accent/80 transition-colors">
+                  Parcourir les témoignages
               </Link>
+              </div>
             </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper">
-              <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">L'Hôpital Bénévole</h2>
-              <p className="text-gray-700 mb-4">
-                Au cours de la Première guerre mondiale, de nombreux hôpitaux temporaires sont constitués à l'arrière du front.
-                L'hôpital bénévole n°194 <sup>bis</sup> est établi à Fontaines-sur-Saône, par Ernest Rigot qui met sa demeure à disposition de la Croix-Rouge et de l'armée.
-              </p>
-              <p className="text-gray-700 mb-4">
-                En savoir plus sur l'hôpital Rigot : l'ébalissement, le personnel, son rôle dans le système hospitalier durant la Grande guerre. 
-              </p>
-              <Link 
-                to="/hopital" 
-                className="inline-block px-4 py-2 bg-vintage-accent text-white font-medium rounded-md hover:bg-vintage-accent/80 transition-colors">
-                En savoir plus
-              </Link>
+    
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper flex flex-col">
+              <div className="flex-grow">
+                <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">L'Hôpital Bénévole</h2>
+                <p className="text-gray-700 mb-4">
+                  Au cours de la Première guerre mondiale, de nombreux hôpitaux temporaires sont constitués à l'arrière du front.
+                  L'hôpital bénévole n°194 <sup>bis</sup> est établi à Fontaines-sur-Saône, par Ernest Rigot qui met sa demeure à disposition de la Croix-Rouge et de l'armée.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  En savoir plus sur l'hôpital Rigot : l'ébalissement, le personnel, son rôle dans le système hospitalier durant la Grande guerre. 
+                </p>
+              </div>
+              <div className="mt-auto pt-4">
+                <Link 
+                  to="/hopital" 
+                  className="inline-block px-4 py-2 bg-vintage-accent text-white font-medium rounded-md hover:bg-vintage-accent/80 transition-colors">
+                  En savoir plus
+                </Link>
+              </div>
             </div>
           </div>
 

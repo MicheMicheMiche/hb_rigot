@@ -29,21 +29,28 @@ export function filterEntries(entries: NotebookEntry[], filters: FilterOptions):
     }
 
     // Filter by regiment
-    if (filters.regiment !== null && filters.regiment !== 'all' && 
-        !entry.affectation.regiment.toLowerCase().includes(filters.regiment.toLowerCase())) {
-      return false;
+    if (filters.regiment !== null && filters.regiment !== 'all') {
+      const regimentValue = entry.affectation?.regiment || '';
+      if (typeof regimentValue !== 'string' || !regimentValue.toLowerCase().includes(filters.regiment.toLowerCase())) {
+        return false;
+      }
     }
 
     // Filter by rank
-    if (filters.rank !== null && filters.rank !== 'all' && 
-        !entry.affectation.grade.toLowerCase().includes(filters.rank.toLowerCase())) {
-      return false;
+    if (filters.rank !== null && filters.rank !== 'all') {
+      const rankValue = entry.affectation?.grade || '';
+      if (typeof rankValue !== 'string' || !rankValue.toLowerCase().includes(filters.rank.toLowerCase())) {
+        return false;
+      }
     }
 
     // Filter by author
     if (filters.author !== null) {
+      if (!Array.isArray(entry.auteurs)) {
+        return false;
+      }
       const authorMatches = entry.auteurs.some(
-        author => author.toLowerCase().includes(filters.author!.toLowerCase())
+        author => typeof author === 'string' && author.toLowerCase().includes(filters.author!.toLowerCase())
       );
       if (!authorMatches) {
         return false;
@@ -51,9 +58,11 @@ export function filterEntries(entries: NotebookEntry[], filters: FilterOptions):
     }
     
     // Filter by type
-    if (filters.type !== null && filters.type !== 'all' && 
-        entry.type.toLowerCase() !== filters.type.toLowerCase()) {
-      return false;
+    if (filters.type !== null && filters.type !== 'all') {
+      const typeValue = entry.type || '';
+      if (typeof typeValue !== 'string' || typeValue.toLowerCase() !== filters.type.toLowerCase()) {
+        return false;
+      }
     }
 
     return true;
@@ -74,7 +83,7 @@ export function formatDate(dateString: string): string {
 export function getUniqueRegiments(entries: NotebookEntry[]): string[] {
   const regiments = new Set<string>();
   entries.forEach(entry => {
-    if (entry.affectation.regiment) {
+    if (entry.affectation?.regiment && typeof entry.affectation.regiment === 'string') {
       regiments.add(entry.affectation.regiment);
     }
   });
@@ -84,7 +93,7 @@ export function getUniqueRegiments(entries: NotebookEntry[]): string[] {
 export function getUniqueRanks(entries: NotebookEntry[]): string[] {
   const ranks = new Set<string>();
   entries.forEach(entry => {
-    if (entry.affectation.grade) {
+    if (entry.affectation?.grade && typeof entry.affectation.grade === 'string') {
       ranks.add(entry.affectation.grade);
     }
   });
@@ -94,7 +103,7 @@ export function getUniqueRanks(entries: NotebookEntry[]): string[] {
 export function getUniqueTypes(entries: NotebookEntry[]): string[] {
   const types = new Set<string>();
   entries.forEach(entry => {
-    if (entry.type) {
+    if (entry.type && typeof entry.type === 'string') {
       types.add(entry.type);
     }
   });
