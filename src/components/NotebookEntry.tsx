@@ -144,7 +144,7 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
         <div className="p-4 bg-gray-100 animate-fade-in">
           <div className="max-w-full mx-auto rounded overflow-hidden shadow-md">
             <img 
-              src={`/assets/photos/${entry.numero}.jpeg`} 
+              src={`/assets/photos/${entry.numero}.jpg`} 
               alt={`Page originale ${entry.numero}`} 
               className="w-full h-auto"
               onError={(e) => {

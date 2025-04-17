@@ -29,8 +29,8 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
   const types = getUniqueTypes(entries);
 
   // Define timeline range
-  const startDate = new Date(1914, 8, 1); // September 1914
-  const endDate = new Date(1917, 2, 31); // March 1917
+  const startDate = new Date(1914, 8, 1);
+  const endDate = new Date(1917, 4, 12);
   const totalTimespan = endDate.getTime() - startDate.getTime();
 
   // Update the timeline width on resize
@@ -160,8 +160,8 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
   const generateTimelineTicks = () => {
     const ticks = [];
     
-    // Years: 1914, 1915, 1916, 1917
-    for (let year = 1914; year <= 1917; year++) {
+    // Years: 1915, 1916, 1917
+    for (let year = 1915; year <= 1917; year++) {
       const date = new Date(year, 0, 1);
       const position = getPositionForDate(date);
       
@@ -183,7 +183,7 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
         const monthPosition = getPositionForDate(monthDate);
         
         // Only add months that are within our timeline range
-        if (monthPosition >= 0 && monthPosition <= 100) {
+        if (monthPosition >= 0 && monthPosition < 100) {
           ticks.push({
             date: monthDate,
             position: monthPosition,
@@ -337,10 +337,10 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
           {generateTimelineTicks().map((tick, index) => (
             <div 
               key={index} 
-              className={`absolute ${tick.isYear ? 'h-full top-0 border-r border-gray-300' : 'h-[50%] top-[25%] border-r border-gray-200'}`}
+              className={`absolute ${tick.isYear ? 'h-full top-0 border-r border-gray-300' : 'h-[35%] top-[35%] border-r border-gray-200'}`}
               style={{ left: `${tick.position}%` }}
             >
-              <span className={`absolute -top-6 transform -translate-x-1/2 text-xs ${tick.isYear ? 'text-gray-500' : 'text-gray-400'}`}>
+              <span className={`absolute -top-5 transform -translate-x-1/2 text-xs ${tick.isYear ? 'text-gray-500' : 'text-gray-400'}`}>
                 {tick.label}
               </span>
             </div>

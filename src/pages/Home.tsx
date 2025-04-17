@@ -52,7 +52,7 @@ const Home = () => {
                   L'hôpital bénévole n°194 <sup>bis</sup> est établi à Fontaines-sur-Saône, par Ernest Rigot qui met sa demeure à disposition de la Croix-Rouge et de l'armée.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  En savoir plus sur l'hôpital Rigot : l'ébalissement, le personnel, son rôle dans le système hospitalier durant la Grande guerre. 
+                  En savoir plus sur l'hôpital Rigot : l'établissement, le personnel, son rôle dans le système hospitalier dans la Grande Guerre. 
                 </p>
               </div>
               <div className="mt-auto pt-4">
