@@ -1220,8 +1220,8 @@
   {
     "numero": 88,
     "date": "1915-8-8",
-    "texte": "Fontaine, le 8 août 1915\nJe ne voudrais pas quitter l’hôpital sans témoigner tous mes remerciements à M. Rigot et sœur St Jean ainsi que me major et infirmier.\nJe n’oublie pas non plus tout le personnel pour leurs bons soins.\nLinch Ejebbest (?), 35e Colonial\n",
-    "auteurs": ["EJEBBEST Linch"],
+    "texte": "Fontaines, le 8 août 1915\nJe ne voudrais pas quitter l’hôpital sans témoigner tous mes remerciements à M. Rigot et sœur St Jean ainsi que le major et infirmier.\nJe n’oublie pas non plus tout le personnel pour leurs bons soins.\nLinch Gilbert, 35e Colonial\n",
+    "auteurs": ["LINCH Gilbert"],
     "affectation": {
       "regiment": "35ᵉ Régiment d'Infanterie Coloniale",
       "affect2": "",
@@ -1248,11 +1248,11 @@
   {
     "numero": 90,
     "date": "1915-8-30",
-    "texte": "Fontaines, le 30 août 1915\nEn quittant l’hôpital, je tiens à remercie Monsieur Rigot et sœur St Jean, ainsi que tout le personnel au service de l’hôpital, des bons soins que nous avons reçus, et du dévouement avec lesquels ils nous sont donnés. J’emporterai les meilleurs souvenirs et j’en remercie bien tout le monde.\nPaul Bouche, 10e Génie, Compagnie 96/2 (?), Céoul (?)\n",
+    "texte": "Fontaines, le 30 août 1915\nEn quittant l’hôpital, je tiens à remercie Monsieur Rigot et sœur St Jean, ainsi que tout le personnel au service de l’hôpital, des bons soins que nous avons reçus, et du dévouement avec lesquels ils nous sont donnés. J’emporterai les meilleurs souvenirs et j’en remercie bien tout le monde.\nPaul Bouche, 10e Génie, Compagnie 26/2 (96/2 ?), Toul\n",
     "auteurs": ["BOUCHE Paul"],
     "affectation": {
       "regiment": "10ᵉ Régiment du Génie",
-      "affect2": "Compagnie 96/2",
+      "affect2": "Compagnie 26/2",
       "affect3": "",
       "affect4": "",
       "grade": "Soldat"
@@ -1262,7 +1262,7 @@
   {
     "numero": 91,
     "date": "1915-8-30",
-    "texte": "Fontaines, le 30 août 1915\nQuittant l’hôpital à l’absence de Monsieur Rigot. Je ne puis partir sans lui présenter mes remerciements ainsi que sœur St Jean et à tout le personnel du service.\nJe n’oublierai jamais les bons soins que j’ai reçus ici pendant ma maladie, ainsi que les paroles consolatrices de notre sympathique Directeur et bienfaiteur Monsieur Rigot.\nGaillaguet Jacques\n214e Infanterie, 17e Compagnie\n",
+    "texte": "Fontaines, le 30 août 1915\nQuittant l’hôpital à l’absence de Monsieur Rigot, je ne puis partir sans lui présenter mes remerciements ainsi qu'à sœur St Jean et à tout le personnel du service.\nJe n’oublierai jamais les bons soins que j’ai reçus ici pendant ma maladie, ainsi que les paroles consolatrices de notre sympathique Directeur et bienfaiteur Monsieur Rigot.\nGaillaguet Jacques\n214e Infanterie, 17e Compagnie\n",
     "auteurs": ["GAILLAGUET Jacques"],
     "affectation": {
       "regiment": "214ᵉ Régiment d'Infanterie",
@@ -1275,8 +1275,8 @@
   },
   {
     "numero": 92,
-    "date": "1915",
-    "texte": "Ecart horté (?) au lieutenant Rostan à l’occasion de sa décoration (croix de guerre).\nVoulez-vous me permettre, mon lieutenant, d’être sur leur demande, le très indigne interprète de mes camarades, pour vous exprimer nos sentiments à l’occasion de la haute distinction qui vient de vous être conférée.\nJe n’ai certes pas l’intention de répéter les paroles élogieuses qui vous ont été déjà adressées et auxquelles, soyez-en certain, nous nous associons de tout cœur. Nous voulons seulement vous apporter l’hommage de l’admiration respectueuse de ceux que la hiérarchie militaire a fait vos subordonnés. Ce n’est pas la médaille qui fait l’honneur de ceux de votre trempe, c’est vous qui l’honorez ; des hommes tels que vous n’en font que rehausser le prestige et l’éclat. \nNous formons le vœu unanime que, bientôt, dans la paix et dans la victoire, vous puissiez jouir au milieu des vôtres de la gloire que vous avez si vaillamment conquise au péril de votre vie sur le champ des Epharges (?).\nJe saisis cette occasion pour adresser à Monsieur Rigot, administrateur de l’hôpital, où nous avons trouvé, au retour des tranchées et avant d’y retourner, une aussi charmante et si douce hospitalité, nos remerciements les plus sincères.\nNotre gratitude s’adresse également à sœur St Jean, à nos infirmières, à notre infirmier et à tous ceux qui dépensent ici leur activité et leur dévouement pour nous faire oublier les dures épreuves d’une année de guerre et remplace nos familles depuis si longtemps absentes.\nBuvons à tous ceux vers qui va notre reconnaissance, à la victoire et à la paix prochaine.\nMaurice Driat, caporal 356e de ligne, 23e Compagnie\nFontaines s. Saône, ce 19 septembre 1915\n",
+    "date": "1915-9-19",
+    "texte": "Ecart (?) porté au lieutenant Rostan à l’occasion de sa décoration (croix de guerre).\nVoulez-vous me permettre, mon lieutenant, d’être sur leur demande, le très indigne interprète de mes camarades, pour vous exprimer nos sentiments à l’occasion de la haute distinction qui vient de vous être conférée.\nJe n’ai certes pas l’intention de répéter les paroles élogieuses qui vous ont été déjà adressées et auxquelles, soyez-en certain, nous nous associons de tout cœur. Nous voulons seulement vous apporter l’hommage de l’admiration respectueuse de ceux que la hiérarchie militaire a fait vos subordonnés. Ce n’est pas la médaille qui fait l’honneur de ceux de votre trempe, c’est vous qui l’honorez ; des hommes tels que vous n’en font que rehausser le prestige et l’éclat. \nNous formons le vœu unanime que, bientôt, dans la paix et dans la victoire, vous puissiez jouir au milieu des vôtres de la gloire que vous avez si vaillamment conquise au péril de votre vie sur le champ des Echanges (?).\nJe saisis cette occasion pour adresser à Monsieur Rigot, administrateur de l’hôpital, où nous avons trouvé, au retour des tranchées et avant d’y retourner, une aussi charmante et si douce hospitalité, nos remerciements les plus sincères.\nNotre gratitude s’adresse également à sœur St Jean, à nos infirmières, à notre infirmier et à tous ceux qui dépensent ici leur activité et leur dévouement pour nous faire oublier les dures épreuves d’une année de guerre et remplacer nos familles depuis si longtemps absentes.\nBuvons à tous ceux vers qui va notre reconnaissance, à la victoire et à la paix prochaine.\nMaurice Driat, caporal 356e de ligne, 23e Compagnie\nFontaines s. Saône, ce 19 septembre 1915\n",
     "auteurs": ["DRIAT Maurice"],
     "affectation": {
       "regiment": "356ᵉ Régiment d'Infanterie",
@@ -1290,10 +1290,10 @@
   {
     "numero": 93,
     "date": "1915-9-15",
-    "texte": "Fontaines sur Saône, ce dimanche 19/9/15\nA la veille de quitter l’hôpital 194 bis, nous voulons laisser un témoignage de notre très vive gratitude à ceux et à celles qui nous ont prodigué leurs soins délicats et qui, par leur inlassable dévouement nous ont rendu inoubliable ce séjour, quoique loin de nos foyers, depuis si longtemps désertés.\nNous ne saurions priser trop haut ces formations privées où le soldat, retour du front, retrouve un peu de la douceur familiale et où une discipline vraiment paternelle fait oublier les heures tragiques vécues sur le champ de bataille.\nIci, nous sommes tous frères et les égards, dont nous sommes si indifféremment l’objet constant, nous font préférer infiniment les installations de ce genre aux autres, sortes de caserne de la douleur, où nous ne pouvons jouir d’un repas d’esprit et de l’indépendance dont on a tant besoin quand on en revient. Du grand drame (?) !\nChacun peut s’y lier (?), pour le mieux de sa santé, et sans les limites permises, - qu’on se garde bien d’ailleurs d’outrepasser – à ses délassements favoris.\nChacun, grâce au tact de tous, peut agir, croire et penser librement, sans que le moindre obstacle l’en vienne empêcher.\nC’est avec regret que nous quittons ces bords hospitaliers et verdoyants de la Saône, où nous avons été heureux, où nous avons guéri en nous croyant au sein de nos familles, chacun chez osi.\nJ. Pecguet (?), 168e Infanterie.\nDriat, 354e\nDesfrez, 164e Infanterie\nH Ledu Roslon (?)\nBablet (Rablez ?), 29e Infanterie\nFresco Rochet Chailloz\nHophilippe 88 rue des Entrepreneurs, Paris 15e (?)\nBasilelli (?) Catherine\n(Signature)\n",
-    "auteurs": ["PECGUET, J.", "DRIAT", "DESFREZ", "LEDU ROSLON H.", "BABLET (RABLEZ ?)", "ROCHET CHAILLOZ Fresco", "BASILELLI Catherine"],
+    "texte": "Fontaines sur Saône, ce dimanche 19/9/15\nA la veille de quitter l’hôpital 194 bis, nous voulons laisser un témoignage de notre très vive gratitude à ceux et à celles qui nous ont prodigué leurs soins délicats et qui, par leur inlassable dévouement nous ont rendu inoubliable ce séjour, quoique loin de nos foyers, depuis si longtemps désertés.\nNous ne saurions priser trop haut ces formations privées où le soldat, retour du front, retrouve un peu de la douceur familiale et où une discipline vraiment paternelle fait oublier les heures tragiques vécues sur le champ de bataille.\nIci, nous sommes tous frères et les égards, dont nous sommes indifféremment l’objet constant, nous font préférer infiniment les installations de ce genre aux autres, sortes de caserne de la douleur, où nous ne pouvons jouir du repos d’esprit et de l’indépendance dont on a tant besoin quand on en revient. Du grand drame !\nChacun peut s’y livrer, pour le mieux de sa santé, et dans les limites permises, - qu’on se garde bien d’ailleurs d’outrepasser – à ses délassements favoris.\nChacun, grâce au tact de tous, peut agir, croire et penser librement, sans que le moindre obstacle l’en vienne empêcher.\nC’est avec regret que nous quittons ces bords hospitaliers et verdoyants de la Saône, où nous avons été heureux, où nous avons guéri en nous croyant au sein de nos familles, chacun chez soi.\nJ. Pecquet, 168e Infanterie.\nDriat, 356e\nDesfrez, 164e Infanterie\nH Ledu Roslon (?)\nBablet, 29e Infanterie\nFresco Rochet Chailloz\nHophilippe 88 rue des Entrepreneurs, Paris 15e (?)\nBasilelli (?) Catherine\n(Signature)\n",
+    "auteurs": ["PECQUET, J.", "DRIAT", "DESFREZ", "LEDU ROSLON H.", "BABLET", "ROCHET CHAILLOZ Fresco", "BASILELLI Catherine"],
     "affectation": {
-      "regiment": ["168ᵉ Régiment d'Infanterie", "354ᵉ Régiment d'Infanterie", "164ᵉ Régiment d'Infanterie", "29ᵉ Régiment d'Infanterie"],
+      "regiment": ["168ᵉ Régiment d'Infanterie", "356ᵉ Régiment d'Infanterie", "164ᵉ Régiment d'Infanterie", "29ᵉ Régiment d'Infanterie"],
       "affect2": "",
       "affect3": "",
       "affect4": "",
