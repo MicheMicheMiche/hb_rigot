@@ -621,7 +621,7 @@
     "texte": "Fontaines sur, le 4 avril 1915\nDu 1er mars au 4 avril, j’ai reçu à l’hôpital Rigot les meilleurs soins qui exigeait mon état « douleurs arthritiques ».\nJe remercie bien chaleureusement tout le personnel de l’hôpital, sans oublier personne, personne. Je remercie d’une manière spéciale Monsieur Rigot, la sœur ainsi que M. l’infirmier de leurs bons soins vigilants.\nLe 4/4/1915\nClaude Gireud (?)\n(dépôt) – 14 Sect. Inf. Mtaires, La Duchère, Lyon\n",
     "auteurs": ["GIREUD Claude"],
     "affectation": {
-      "regiment": "14e Section d'Infirmiers Militaires",
+      "regiment": "14ᵉ Section d'Infirmiers Militaires",
       "affect2" : ""         ,
       "affect3" : ""         ,
       "affect4" : ""         ,
@@ -730,8 +730,8 @@
   {
     "numero": 53,
     "date": "1915-4-26",
-    "texte": "Fontaines, le 26 avril 1915\nAyant passé un mois à l’hôpital Rigot, nous ne pouvons partir sans remercier très sincèrement M. le Major Fléchet, M. le Directeur, la sœur St Jean et Mme Sarrou qui se sont dévoués pour nous prodiguer leurs bons soins, ainsi que tout le personnel de la cuisine qui a fait de son mieux pour nous être agréable.\nLes malades du Gavillon (?) reconnaissants\nMollard. Gas Simon. Brochet. (Signature)\n",
-    "auteurs": ["MOLLARD", "GAS Simon", "BROCHET"],
+    "texte": "Fontaines, le 26 avril 1915\nAyant passé un mois à l’hôpital Rigot, nous ne pouvons partir sans remercier très sincèrement M. le Major Fléchet, M. le Directeur, la sœur St Jean et Mme Sarrou qui se sont dévoués pour nous prodiguer leurs bons soins, ainsi que tout le personnel de la cuisine qui a fait de son mieux pour nous être agréable.\nLes malades du Pavillon (?) reconnaissants\nMollard. Gas Simon. Brochet. (Signature)\n",
+    "auteurs": ["MOLLARD", "GAS Simon", "BROCHET", "Illisible"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2" : ""       ,
@@ -744,8 +744,8 @@
   {
     "numero": 54,
     "date": "1915-4-26",
-    "texte": "Fontaines, 26 avril 1915\nAprès avoir passé 30 jours à l’hôpital Rigot, je pars en emportant que de bons souvenirs.\nJe démontre à Monsieur Rigot, notre bien dévoué Directeur, d’accepter ma plus vive reconnaissance qui s’adresse bien sincèrement à Monsieur le Major Fléchet.\nJe remercie bien sincèrement Sœur St Jean que l’on trouve toujours très dévouée auprès des malades. Je n’oublie pas non plus Monsieur l’Infirmier, ainsi que le personnel qui s’empresse toujours à la moindre demande des malades.\nMerci à tous de vos bons soins et à tous ma plus vive reconnaissance.\nClaude Segone (?). 6e Colonial\n",
-    "auteurs": ["SEGONE Claude"],
+    "texte": "Fontaines, 26 avril 1915\nAprès avoir passé 30 jours à l’hôpital Rigot, je pars en emportant que de bons souvenirs.\nJe demande à Monsieur Rigot, notre bien dévoué Directeur, d’accepter ma plus vive reconnaissance qui s’adresse bien sincèrement à Monsieur le Major Fléchet.\nJe remercie bien sincèrement Sœur St Jean que l’on trouve toujours très dévouée auprès de ses malades. Je n’oublie pas non plus Monsieur l’Infirmier, ainsi que le personnel qui s’empresse toujours à la moindre demande du malade.\nMerci à tous de vos bons soins et à tous ma plus vive reconnaissance.\nClaude Ligoire (?). 6e Colonial\n",
+    "auteurs": ["LIGOIRE (?) Claude"],
     "affectation": {
       "regiment": "6ᵉ Régiment d'Infanterie Coloniale",
       "affect2" : ""                                  ,
@@ -758,7 +758,7 @@
   {
     "numero": 55,
     "date": "1915-5-10",
-    "texte": "Fontaines sur Saône, 10 mai 1915\nCe n’est qu’à regrets que je quitte le bon hôpital Rigot, les trente jours sont bien vite passés, aussi ma reconnaissance à Monsieur Rigot et Monsieur le Major.\nMerci à la Sœur St Jean et à Monsieur l’Infirmier pour tous les bons soins qu’ils n’ont cessé de me donner durant toute ma convalescence, ainsi qu’à tout le personnel de l’hôpital auquel j’adresse ma plus profonde reconnaissance.\nJules Boiron, 14e section COA (?)\n",
+    "texte": "Fontaines sur Saône, 10 mai 1915\nCe n’est qu’à regrets que je quitte le bon hôpital Rigot, les trente jours sont bien vite passés, aussi ma reconnaissance à Monsieur Rigot et Monsieur le Major.\nMerci à la Sœur St Jean et à Monsieur l’Infirmier pour tous les bons soins qu’ils n’ont cessé de me donner durant toute ma convalescence, ainsi qu’à tout le personnel de l’hôpital auquel j’adresse ma plus profonde reconnaissance.\nJules Boiron, 14e section C.O.A.\n",
     "auteurs": ["BOIRON Jules"],
     "affectation": {
       "regiment": "14ᵉ Section de Commis et d'Ouvriers Militaires d'Administration",
@@ -772,8 +772,8 @@
   {
     "numero": 56,
     "date": "1915-5-10",
-    "texte": "Fontaines-sur-Saône, le 10 mai 1915\nEtant venue l’heure de notre départ, nous ne pouvons quitter le bel établissement du sympathique monsieur Rigot, sans témoigner notre vive reconnaissance à sœur Saint Jean pour ses soins maternels, et à tout le personnel hospitalier.\nH. Chamoret, 5e Colonial\nJ. Houallnat (?), 5e Colonial\nLongeon, 5e Colonial\n",
-    "auteurs": ["CHAMORET H.", "HOUALLNAT J.", "LONGEON"],
+    "texte": "Fontaines-sur-Saône, le 10 mai 1915\nEtant venue l’heure de notre départ, nous ne pouvons quitter le bel établissement du sympathique monsieur Rigot, sans témoigner notre vive reconnaissance à sœur Saint Jean pour ses soins maternels, et à tout le personnel hospitalier.\nH. Chamoret (Chamout?), 5e Colonial\nJ. Noalhat (?), 5e Colonial\nLongeon, 5e Colonial\n",
+    "auteurs": ["CHAMORET (CHAMOUT?) H.", "NOALHAT (?) J.", "LONGEON"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
       "affect2" : ""                                  ,
@@ -786,8 +786,8 @@
   {
     "numero": 57,
     "date": "1915-5-10",
-    "texte": "Fontaines, le 10/5/1915\nC’est avec un profond regret que je quitte l’hôpital, établissement qui fait l’éloge de tous ses pensionnaires grâce au dévouement et aux bons (?) de tout son personnel.\nQue Monsieur Rigot me permette de lui adresse ma vive reconnaissance ; tous mes remerciements à Sœur St Jean ainsi qu’à ces dames et notre sympathique Infirmier M. Chachuat. A tous, merci.\nA Affoglio, 14e section d’Infirmiers",
-    "auteurs": ["AFFOGLIO A."],
+    "texte": "Fontaines, le 10/5 1915\nC’est avec un profond regret que je quitte l’hôpital, établissement qui fait l’éloge de tous ses pensionnaires, grâce au dévouement et aux bons (?) de tout son personnel.\nQue Monsieur Rigot me permette de lui adresser ma vive reconnaissance ; tous mes remerciements à Sœur St Jean ainsi qu’à ces dames et notre sympathique Infirmier M. Chachuat. A tous, merci.\nA Daffoglio, 14e section d’Infirmiers",
+    "auteurs": ["DAFFOGLIO A."],
     "affectation": {
       "regiment": "14ᵉ Section d'Infirmiers Militaires",
       "affect2" : ""                                   ,
@@ -800,7 +800,7 @@
   {
     "numero": 58,
     "date": "1915-5-16",
-    "texte": "Fontaines-s-Saône, le 16 mai 1915\nJe ne saurais comment remercier M. Rigot de mon long séjour à l’hôpital dont il est administrateur et propriétaire, et à son amitié paternelle envers les blessés et malades. Je remercie le personnel, en particulier Sœur St Jean, d’un dévouement extraordintaire, ainsi que M. Chachuat, Mlle. Sarron, et tout le personnel au service.\nJe n’oublierai pas M. le major, très actif et surtout très aimable.\nDonc je quitte l’hôpital avec un éternel souvenir.\nA tous, merci.\nBrisson Rémi (?), caporal\n3e Régiment de zouaves\n",
+    "texte": "Fontaines-s-Saône, le 16 mai 1915\nJe ne saurais comment remercier M. Rigot de mon long séjour à l’hôpital dont il est administrateur et propriétaire, et à son amitié paternelle envers les blessés et malades. Je remercie le personnel, en particulier Sœur St Jean, d’un dévouement extraordintaire, ainsi que M. Chachuat, Mlle. Sarron, et tout le personnel au service.\nJe n’oublierai pas M. le major, très actif et surtout très aimable.\nDonc je quitte l’hôpital avec un éternel souvenir.\nA tous, merci.\nBrisson Rémi, caporal\n3e Régiment de zouaves\n",
     "auteurs": ["BRISSON Rémi"],
     "affectation": {
       "regiment": "3ᵉ Régiment de Zouaves",
@@ -814,8 +814,8 @@
   {
     "numero": 59,
     "date": "1915-5-16",
-    "texte": "Fontaines-s-Saône, le 16 mai 1915\nC’est avec beaucoup de regrets que je quitte la maison de Monsieur Rigot, ainsi que ses serviteurs qui (?) donner les plus grands soins qu’ils ne pouvaient. Je leur souhaite de tout cœur une chance et santé parfaite, sans jamais les oublier. Mes plus grands remerciements à M. Rigot et à ses serviteurs. Donc je quitte l’hôpital avec l’éternel souvenir.\nCorfay Louis, 5e Régiment d’infanterie Coloniale (?)",
-    "auteurs": ["CORFAY Louis"],
+    "texte": "Fontaines s-Saône, le 16 mai 1915\nC’est avec beaucoup de regrets que je quitte la maison de Monsieur Rigot, ainsi que ses serviteurs qui m'ayant (?) donné les plus grands soins qu’ils ne pouvaient. Je leur souhaite de tout cœur une chance et santé parfaite, sans jamais les oublier. Mes plus grands remerciements à M. Rigot et à ses serviteurs. Donc je quitte l’hôpital avec l’éternel souvenir.\nCorlay Louis, 5e Régiment d’infanterie Coloniale",
+    "auteurs": ["CORLAY Louis"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
       "affect2" : ""                                  ,
@@ -842,8 +842,8 @@
   {
     "numero": 61,
     "date": "1915-5-16",
-    "texte": "Toute ma reconnaissance au personnel pour les bons soins dont j’ai été l’objet pendant mon séjour à l’hôpital.\nColle (?)",
-    "auteurs": ["COLLE"],
+    "texte": "Toute ma reconnaissance au personnel pour les bons soins dont j’ai été l’objet pendant mon séjour à l’hôpital.\nCroble (?)",
+    "auteurs": ["CROBLE (?)"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2" : ""       ,
@@ -856,8 +856,8 @@
   {
     "numero": 62,
     "date": "1915-5-23",
-    "texte": "Fontaines-sur-Saône, le 23 mai 1915\nAprès avoir passé un mois dans notre cher hôpital, je ne sais comment m’exprimer pour remercier notre bon administrateur M. Rigot, ainsi que sœur St Jean et tout le personnel pour les bons soins dont ils m’ont apporté pour le rétablissement de ma santé. Ma plus vive sympathie à M. l’infirmier et à tous, merci et ma profonde reconnaissance.\nGaston (?) François\n",
-    "auteurs": ["GASTON François"],
+    "texte": "Fontaines sur Saône, le 23 mai 1915\nAprès avoir passé un mois dans votre cher hôpital, je ne sais comment m’exprimer pour remercier notre bon administrateur M. Rigot, ainsi que sœur St Jean et tout le personnel pour les bons soins dont ils m’ont apporté pour le rétablissement de ma santé. Ma plus vive sympathie à M. l’infirmier et à tous, merci et ma profonde reconnaissance.\nCurton François\n",
+    "auteurs": ["CURTON François"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2" : ""       ,
@@ -884,7 +884,7 @@
   {
     "numero": 64,
     "date": "1915-5-24",
-    "texte": "Fontaines sur Saône, le 24 mai\nAvant mon départ, je ne peux quitter l’hôpital temporaire Rigot sans l’en remercier des soins dont j’ai reçu pendant la durée de ma convalescence grâce au dévouement du personnel, citant Sœur St Jean, M. Chachuat infirmier, M. Dupuis, Mme Couson, enfin à notre aimable administrateur M. Rigot dont je garderai le bien meilleur souvenir. A tous, merci.\nUn soldat du 6e Colonial\nRomain Gauthier\n",
+    "texte": "Fontaines s/ Saône, le 24 mai\nAvant mon départ, je ne peux quitter l’hôpital temporaire Rigot sans l’en remercier des soins dont j’ai reçu pendant la durée de ma convalescence grâce au dévouement du personnel, citant Sœur St Jean, M. Chachuat infirmier, M. Dupuis, Mlle. Couson, enfin à notre aimable administrateur M. Rigot dont je garderai le bien meilleur souvenir. A tous, merci.\nUn soldat du 6e Colonial\nRomain Gauthier\n",
     "auteurs": ["GAUTHIER Romain"],
     "affectation": {
       "regiment": "6ᵉ Régiment d'Infanterie Coloniale",
@@ -912,8 +912,8 @@
   {
     "numero": 66,
     "date": "1915-6-1",
-    "texte": "Fontaines-sur-Saône, 1er juin 1915\nA l’expiration de mes quinze jours de convalescence, je ne puis quitter l’hôpital Rigot sans adresser à son sympathique Directeur mes plus fervents sentiments de reconnaissance pour l’ardeur et la bonté toute paternelle qu’il apporte chaque jour à son œuvre si noble pour le bonheur de tous ses convalescents.\nA sœur St Jean, mille remerciements pour son dévouement et son attention délicate envers ses malades. Toute ma reconnaissance à M. l’infirmier ainsi qu’à tout le personnel de la maison pour le dévouement qu’ils m’ont prodigué.\nUn enfant de la Haute-Savoie qui emporte un éternel souvenir de l’hôpital Rigot\nFrancis Bulpard (?)\n",
-    "auteurs": ["BULPARD Françis"],
+    "texte": "Fontaines-sur-Saône, 1er juin 1915\nA l’expiration de mes quinze jours de convalescence, je ne puis quitter l’hôpital Rigot sans adresser à son sympathique Directeur mes plus fervents sentiments de reconnaissance pour l’ardeur et la bonté toute paternelle qu’il apporte chaque jour à son œuvre si noble pour le bonheur de tous ses convalescents.\nA sœur St Jean, mille remerciements pour son dévouement et son attention délicate envers ses malades. Toute ma reconnaissance à M. l’infirmier ainsi qu’à tout le personnel de la maison pour le dévouement qu’ils m’ont prodigué.\nUn enfant de la Haute-Savoie qui emporte un éternel souvenir de l’hôpital Rigot\nFrancis Buffard\n",
+    "auteurs": ["BUFFARD Françis"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2" : ""       ,
@@ -926,8 +926,8 @@
   {
     "numero": 67,
     "date": "1915-6-1",
-    "texte": "Fontaines sur Saône, le 1er juin\nPendant vingt jours que j’ai été en convalescence à l’hôpital temporaire de M. Rigot, je veux remercier tout le personnel pour les soins que j’ai reçus. Je n’aurai pas demandé mieux que de rester plus longtemps. Je remercie M. Rigot, la sœur St Jean, M. l’infirmier et tout le personnel.\nUn auvergnat. Chaudaire (?) au 5e (?) Colonial, 21e compagnie\n",
-    "auteurs": ["CHAUDAIRE"],
+    "texte": "Fontaines sur Saône, le 1er juin\nPendant vingt jours que j’ai été en convalescence à l’hôpital temporaire de M. Rigot, je peux remercier tout le personnel pour les soins que j’ai reçus. Ah, j’aurais pas demandé mieux que d'y rester plus longtemps. Je remercie M. Rigot, la sœur St Jean, M. l’infirmier et tout le personnel.\nUn auvergnat. Chautard (?) au 5e (?) Colonial, 21e compagnie\n",
+    "auteurs": ["CHAUTARD"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
       "affect2" : "21ᵉ Compagnie"                     ,
@@ -940,7 +940,7 @@
   {
     "numero": 68,
     "date": "1915-5-31",
-    "texte": "Fontaines-s-S, 31/5/1915\nMerci de tout cœur, pour les bons soins que j’ai reçus, à Monsieur Rigot, directeur, et aussi à tout le personnel de l’hôpital temporaire 194.\n(Signature) Gaillard (?) Pierre, 5e Colonial\n",
+    "texte": "Fontaines.s.s, 31/5 15\nMerci de tout cœur, pour les bons soins que j’ai reçus, à Monsieur Rigot, directeur, et aussi à tout le personnel de l’hôpital temporaire 194.\n(Signature) Gaillard Pierre, 5e Colonial\n",
     "auteurs": ["GAILLARD Pierre"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
@@ -954,7 +954,7 @@
   {
     "numero": 69,
     "date": "1915-6-1",
-    "texte": "Fontaines sur Saône, 1er juin 1915\nMonsieur le Directeur,\nJe ne peux quitter votre hôpital sans vous remercier du bon accueil que vous m’avez fait, et dont je garderai un long souvenir. Je remercie également tout le personnel de votre établissement.\nJeanne Emile (inscrit maritime) (?), soldat au 5e Colonial",
+    "texte": "Fontaines sur Saône, 1er juin 1915\nMonsieur le Directeur,\nJe ne peux quitter votre hôpital sans vous remercier du bon accueil que vous m’avez fait, et dont je garderai un long souvenir. Je remercie également tout le personnel de votre établissement.\nJeanne Emile (inscrit maritime), soldat au 5e Colonial",
     "auteurs": ["JEANNE Emile"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
@@ -968,8 +968,8 @@
   {
     "numero": 70,
     "date": "1915-6-14",
-    "texte": "Fontaines, le 14 juin 1915\nAprès avoir passé exactement trois mois à l’hôpital 194 bis, ce serait ingrat de partir sans remercier de tout cœur l’aimable administrateur Monsieur Rigot, qui a mis sa propriété à la disposition des pauvres malades.\nAh ! C’est avec beaucoup de regret que je pars d’ici, je ne trouverai pas ailleurs les bons soins dont j’ai été entourés pendant tout mon séjour ici.\nC’est à la bonne sœur St Jean que je dois toute ma vive reconnaissance et mes remerciements les plus sincères pour tous les bons soins qu’elle m’a constamment prodigués.\nJe ne veux pas oublier le sympathique Monsieur Chachuat pour ses bonnes gaufrettes (?), pour son zèle et son dévouement ; l’aimable Madame Dupuy pour son inlassable dévouement à mon égard, et enfin, tous mes éloges à tout le personnel.\nJ’adresse également tous mes compliments à l’aimable directrice Madame Cailles.\nJulien Gabriel\nArtilleur du 1er régiment d’artillerie coloniale à la Rochelle (?)\n",
-    "auteurs": ["GABRIEL Julien"],
+    "texte": "Fontaines, le 14 juin 1915\nAprès avoir passé exactement trois mois à l’hôpital 194 bis, ce serait ingrat de partir sans remercier de tout cœur l’aimable administrateur Monsieur Rigot, qui a mis sa propriété à la disposition des pauvres malades.\nAh ! C’est avec beaucoup de regret que je pars d’ici, je ne trouverai pas ailleurs les bons soins dont j’ai été entourés pendant tout mon séjour ici.\nC’est à la bonne sœur St Jean que je dois toute ma vive reconnaissance et mes remerciements les plus sincères pour tous les bons soins qu’elle m’a constamment prodigués.\nJe ne veux pas oublier le sympathique Monsieur Chachuat pour ses bonnes gaufrettes (?), pour son zèle et son dévouement ; l’aimable Madame Dupuy pour son inlassable dévouement à mon égard, et enfin, tous mes éloges à tout le personnel.\nJ’adresse également tous mes compliments à l’aimable directrice Madame Cailles.\nJoulin Gabriel\nArtilleur du 1er régiment d’artillerie coloniale à la Rochelle (?)\n",
+    "auteurs": ["JOULIN Gabriel"],
     "affectation": {
       "regiment": "1ᵉʳ Régiment d'Artillerie Coloniale",
       "affect2" : ""                                  ,
@@ -982,7 +982,7 @@
   {
     "numero": 71,
     "date": "1915-6-14",
-    "texte": "Fontaines, le 14 juin 1915\nHélas ! Quinze jours se sont bien vite écoulés dans ce bel établissement hospitalier où j’ai passé d’agréables moments.\nJ’adresse l’expression de ma vive sympathie à l’aimable directeur Monsieur Rigot pour la bonne marche de son hôpital.\n(?) mes vifs remerciements à ma bonne sœur Saint Jean pour son entier dévouement et pour tous les bons soins qu’elle m’a prodigués pendant tout mon séjour ici. Que Dieu le Tout-Puissant veuille bien lui accorder une protection qu’elle mérité bien (?).\nTous mes remerciements à l’aimable Madame Dupuy pour les soins tout particuliers qu’elle a apportés à mon égard, et enfin mes félicitations à tout le personnel pour le bon fonctionnement de l’hôpital.\nMichel Chaukrann (?), 2e Régiment de Zouaves\n",
+    "texte": "Fontaines, le 14 juin 1915\nHélas ! Quinze jours se sont bien vite écoulés dans ce bel établissement hospitalier où j’ai passé d’agréables moments.\nJ’adresse l’expression de ma vive sympathie à l’aimable directeur Monsieur Rigot pour la bonne marche de son hôpital.\nTous mes vifs remerciements à ma bonne sœur Saint-Jean pour son entier dévouement et pour tous les bons soins qu’elle m’a prodigués pendant tout mon séjour ici. Que Dieu le Tout-Puissant veuille bien lui accorder une protection qu’elle mérite si bien.\nTous mes remerciements à l’aimable Madame Dupuy pour les soins tout particuliers qu’elle a apportés à mon égard, et enfin mes félicitations à tout le personnel pour le bon fonctionnement de l’hôpital.\nMichel Chaukrann, 2e Régiment de Zouaves\n",
     "auteurs": ["CHAUKRANN Michel"],
     "affectation": {
       "regiment": "2ᵉ Régiment de Zouaves",
@@ -996,7 +996,7 @@
   {
     "numero": 72,
     "date": "1915-6-14",
-    "texte": "Fontaines-sur-Saône, 14 juin 1915\nC’est avec un vif regret que je pars de Fontaines, où j’ai passé d’agréables jours de convalescence, et avant de quitter cette ambulance si hospitalière, je serais un homme sans cœur et si ingrat si je venais en remercier tout particulièrement le sympathique Directeur Monsieur Rigot.\nMes remerciements sincères à la bonne Sœur St Jean, A Mme Cailles, l’Infirmier (?), l’infirmier ainsi qu’à tout le personnel, des soins qui m’ont été donnés pendant mon séjour dans cet établissement avec un dévouement digne de tout éloge.\nAvec la vive reconnaissance que j’ai (?) forte, j’aime à redire (?) fois à tous merci.\nJoseph Décotte, 5e Colonial, 28e Compagnie. Dépôt Lerin (?) Lyon. Un auvergnat\n",
+    "texte": "Fontaines-sur-Saône, 14 juin 1915\nC’est avec un vif regret que je pars de Fontaines, où j’ai passé d’agréables jours de convalescence, et avant de quitter cette ambulance si hospitalière, je serais un homme sans cœur et un ingrat, si je ne venais en remercier tout particulièrement le sympathique Directeur Monsieur Rigot.\nMes remerciements sincères à la bonne Sœur St Jean, A Mme. Cailles, l’Infirmier, l’infirmière, ainsi qu’à tout le personnel, des soins qui m’ont été donnés pendant mon séjour dans cet établissement avec un dévouement digne de tout éloge.\nAvec la vive reconnaissance que j'en emporte, j’aime à redire une dernière fois à tous merci.\nJoseph Décotte, 5e Colonial, 28e Compagnie. Dépôt Serin, Lyon. Un auvergnat\n",
     "auteurs": ["DECOTTE Joseph"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
@@ -1010,8 +1010,8 @@
   {
     "numero": 73,
     "date": "1915-6",
-    "texte": "C’est avec reconnaissance que je remercie tous les membres de l’hôpital pour les bons soins que j’y ai reçus.\nPerron Jean, 6e Coloniale\n",
-    "auteurs": ["PERRON Jean"],
+    "texte": "C’est avec reconnaissance que je remercie tous les membres de l’hôpital pour les bons soins que j’y ai reçus.\nPerson Jean, 6e Coloniale\n",
+    "auteurs": ["PERSON Jean"],
     "affectation": {
       "regiment": "6ᵉ Régiment d'Infanterie Coloniale",
       "affect2" : ""                                  ,
@@ -1024,7 +1024,7 @@
   {
     "numero": 74,
     "date": "1915-6-15",
-    "texte": "Fontaines sur Saône, 15 juin 1915\nAprès avoir passé quinze jours de repos à l’hôpital Rigot, je regrette beaucoup la quitter. Je remercie beaucoup M. le directeur et tout le personnel qui sont plein de dévouement.\nRallier Gustave, 5e Coloniale, dépôt Sorin\n",
+    "texte": "Fontaines sur Saône, 15 juin 1905 (?)\nAprès avoir passé quinze jours de repos à l’hôpital Rigot, je regrette beaucoup la quitter. Je remercie beaucoup M. le directeur et tout le personnel qui sont plein de dévouement.\nRallier Gustave, 5e Coloniale, dépôt Serin\n",
     "auteurs": ["RALLIER Gustave"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
@@ -1038,8 +1038,8 @@
   {
     "numero": 75,
     "date": "1915-6-21",
-    "texte": "Fontaines s Saône, 21 juin 1915\nTous nos remerciements à M. le Docteur et M. l’administrateur Rigot, ainsi qu’à la bonne sœur St Jean, à M. l’Infirmier et aux Infirmières de l’hôpital 194 bis pour les bons soins qu’ils nous ont prodigués pendant notre séjour dans cet agréable hôpital. Toute notre reconnaissance.\nDubiaissax (?), Jugairt (?), (Signature), Louis, Anthoniaz, Desvarenge (?)",
-    "auteurs": ["DUBIAISSAX", "JUGAIRT", "LOUIS", "ANTHONIAZ", "DESVARENGE"],
+    "texte": "Fontaines s Saône, 21 juin 1915\nTous nos remerciements à M. le Docteur et M. l’administrateur Rigot, ainsi qu’à la bonne sœur St Jean, à M. l’Infirmier et aux Infirmières de l’hôpital 194 bis pour les bons soins qu’ils nous ont prodigués pendant notre séjour dans cet agréable hôpital. Toute notre reconnaissance.\nDubreisson, Jugaut, Tofuy (?) Louis, Anthoniaz, Desvarennes",
+    "auteurs": ["DUBREISSON", "JUGAUT", "TOFUY (?) Louis", "ANTHONIAZ", "DESVARENNES"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2" : ""       ,
@@ -1051,9 +1051,9 @@
   },
   {
     "numero": 76,
-    "date": "1915",
-    "texte": "Avant de quitter l’établissement hospitalier n° 194 bis, je me fais le devoir de remercier très sincèrement son administrateur, M. Rigot, dont la bonté est digne d’éloges, et dont je garderai un souvenir éternel.\nJe ne veux pas oublier non plus son sympathique personnel, à qui je dois une profonde reconnaissance, tout en priant d’accepter mes meilleurs remerciements.\nEncore une fois, merci à tous.\nActuellement au 5e Colonial à Lyon. (?) Huchez (?). -propre- à St Agnan (?)\n29 juin 1915\n",
-    "auteurs": ["Inconnu"],
+    "date": "1915-6-28",
+    "texte": "Avant de quitter l’établissement hospitalier n° 194 bis, je me fais le devoir de remercier très sincèrement son administrateur, M. Rigot, dont la bonté est digne d’éloges, et dont je garderai un souvenir éternel.\nJe ne veux pas oublier non plus son sympathique personnel, à qui je dois une profonde reconnaissance, tout en le priant d’accepter mes meilleurs remerciements.\nEncore une fois, merci à tous.\nActuellement au 5e Colonial à Lyon. Yves Plucherez (?). -propre- (propriétaire?) à St-Agnan (Saône et Loire)\n28 juin 1915\n",
+    "auteurs": ["PLUCHEREZ Yves"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
       "affect2" : ""                                  ,
@@ -1066,7 +1066,7 @@
   {
     "numero": 77,
     "date": "1915",
-    "texte": "Avant de partir de l’hôpital 194 bis, je tiens à revenir remercier l’honorable administrateur qu’est M. Rigot, ainsi que ses dévoués auxiliaires, dont bonne sœur St Jean, toujours pleine de dévouement pour les malades, Mlle. Saron pour ses bons services, M. l’infirmier, M. Dupuis, (?) (?) remplies de dévouement et de cœur pour ceux qui ont à cœur d’aller défendre la France.\nAussi à M. Rigot, et à tout son personnel, je leur dis merci de tout cœur.\nRieubard Saktat (?), au 5e Colonial",
+    "texte": "Avant de partir de l’hôpital 194 bis, je tiens à venir remercier l’honorable administrateur qu’est M. Rigot, ainsi que ses dévoués auxiliaires, dont bonne sœur St Jean, toujours pleine de dévouement pour les malades, Mlle. Saron pour ses bons services, M. l’infirmier, M. Dupuis, tous et toutes remplis de dévouement et de cœur pour ceux qui ont à cœur d’aller défendre la France.\nAussi à M. Rigot, et à tout son personnel, je leur dis merci de tout cœur.\nRieubard Saktat (?), au 5e Colonial",
     "auteurs": ["RIEUBARD Saktat"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
@@ -1080,8 +1080,8 @@
   {
     "numero": 78,
     "date": "1915",
-    "texte": "Avant de partir de l’hôpital 194 bis, je saurais trop remercier l’honorable administrateur M. Rigot, ainsi que tous les personnels. (?) bonne sœur St Jean, toujours pleins de dévouement pour nous. Mlle. Saron, pour ses bons services, ainsi que M. l’infirmier, et je remercie bien aussi M. Dupuis (?) tous les dévouements qu’elle a eu pour ceux qui ont à cœur d’aller défendre la France.\nAussi à M. Rigot et à tout son personnel, je leur dis merci d’un grand cœur.\nArthur Samoths, 14e section.\nC.O.A. au fort St Jean (?)\nLyon, (Signature)\n",
-    "auteurs": ["SAMOTHS Arthur"],
+    "texte": "Avant de partir de l’hôpital 194 bis, je saurais trop remercier l’honorable administrateur M. Rigot, ainsi que tous le personnel, dont bonne sœur St Jean, toujours pleins de dévouement pour nous. Mlle. Saron, pour ses bons services, ainsi que M. l’infirmier, et je remercie bien aussi Mme. Dupuis de tout le dévouement qu’elle a eu pour ceux qui ont à cœur d’aller défendre la France.\nAussi à M. Rigot et à tout son personnel, je leur dis merci d’un grand cœur.\nArthur Lamotte (?), 14e section du C.O.A. au fort St-Jean, Lyon, Rhône\n",
+    "auteurs": ["LAMOTTE (?) Arthur"],
     "affectation": {
       "regiment": "14ᵉ Section de Commis et d'Ouvriers Militaires d'Administration",
       "affect2": "",
@@ -1094,7 +1094,7 @@
   {
     "numero": 79,
     "date": "1915",
-    "texte": "Avant de quitter cet établissement hospitalier, j’adresse à tout le personnel, particulièrement à M. Rigot, Directeur de ce dit établissement, tous mes remerciements pour les bons soins qui m’ont été prodigués.\nJ.Meyer, propriétaire grue (?). Nommé Blida Algérie (?)\n",
+    "texte": "Avant de quitter cet établissement hospitalier, j’adresse à tout le personnel, particulièrement à M. Rigot, Directeur de ce dit établissement, tous mes remerciements pour les bons soins qui m’ont été prodigués.\nJ. Meyer, propriétaire (rue Naïmi (?), Blida, Algérie)\n",
     "auteurs": ["MEYER J."],
     "affectation": {
       "regiment": "",
@@ -1108,7 +1108,7 @@
   {
     "numero": 80,
     "date": "1915",
-    "texte": "Au moment de quitter cet hôpital, je tiens à exprimer au personnel et particulièrement à M. Rigot, Directeur, mes plus sincères remerciements pour les bons soins qui m’ont été prodigués. Encore une fois à tous je dis merci.\nClément\n5ème Colonial, Lyon. Ouvrier des P.T.T. à Zorrlon (?)\n",
+    "texte": "Au moment de quitter cet hôpital, je tiens à exprimer, au personnel et particulièrement à M. Rigot, Directeur ; mes plus sincères remerciements pour les bons soins qui m’ont été prodigués. Encore une fois à tous je dis merci.\nClément\n5ème Colonial, Lyon. Ouvrier des P.T.T. à Toulon, Var\n",
     "auteurs": ["CLEMENT"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
@@ -1122,7 +1122,7 @@
   {
     "numero": 81,
     "date": "1915-7-12",
-    "texte": "Fontaines-sur-Saône, le 12 juillet 1915\nAprès avoir passé un mois à l’hôpital Rigot dont j’en emporte un éternel souvenir, je saurais comment remercier M. Rigot dont il est l’administrateur, et de son amitié qu’il a envers nous. Je dois aussi mes remerciements à Sœur St Jean qui d’un dévouement extraordinaire m’a donné tous les soins (?). Ainsi qu’à M. l’infirmier et à tout le personnel.\nA tous, j’adresse mes sincères remerciements.\nClos Gibert, un parisien\n5e Colonial, 23 Compagnie à Lyon\n4 Grande rue à Asnières (?), Paris\n",
+    "texte": "Fontaines-sur-Saône, le 12 juillet 1915\nAprès avoir passé un mois à l’hôpital Rigot dont j’en emporte un éternel souvenir, je saurais comment remercier M. Rigot dont il est l’administrateur, et de son amitié qu’il a envers nous. Je dois aussi mes remerciements à Sœur St Jean qui d’un dévouement extraordinaire m’a donné tous les soins nécessaires. Ainsi qu’à M. l’infirmier et à tout le personnel.\nA tous, j’adresse mes sincères remerciements.\nClos Gibert, un parisien\n5e Colonial, 23 Compagnie à Lyon\n4 grande rue à Asnières, Paris\n",
     "auteurs": ["CLOS Gibert"],
     "affectation": {
       "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
@@ -1136,11 +1136,11 @@
   {
     "numero": 82,
     "date": "1915-7-11",
-    "texte": "Fontaines-sur-Saône, le 11 juillet 1915\nJe ne peux quitter l’hôpital de Fontaines-sur-Saône sans exprimer à Monsieur l’administrateur Rigot mes plus vifs sentiments de reconnaissance pour la bienveillance dont il fait preuve à l’égard de tous les hospitalisés. J’adresse également tous mes remerciements à sœur St Jean, toujours pleine de dévouement, ainsi que M. l’Infirmier ; sans oublier Madame Dupuy ainsi que Mlle. Sarou, auquel j’adresse à tous mes plus vifs remerciements pour leurs bons soins qu’ils m’ont prodigués ; en les assurant que je garderai de mon séjour parmi eux un profond souvenir plein de gratitude.\nEncore une fois, merci à tous.\nBarcefourresse. Dariel (?) (Signature). Basses (Signature).\n14e section de G.O.A.\nFort St Jean, Lyon\n",
-    "auteurs": ["BARCEFOURRESSE Dariel"],
+    "texte": "Fontaines-sur-Saône, le 11 juillet 1915\nJe ne puis quitter l’hôpital de Fontaines-sur-Saône sans exprimer à Monsieur l’administrateur Rigot mes plus vifs sentiments de reconnaissance pour la bienveillance dont il fait preuve à l’égard de tous les hospitalisés. J’adresse également tous mes remerciements à sœur St Jean, toujours pleine de dévouement ; ainsi que M. l’Infirmier ; sans oublier Madame Dupuy ainsi que Mlle. Saroun, auxquels j’adresse à tous mes plus vifs remerciements pour leurs bons soins qu’ils m’ont prodigués ; en les assurant que je garderai de mon séjour parmi eux un profond souvenir plein de gratitude.\nEncore une fois : merci à tous.\nDaniel Henri. Barcelonnette, Basses Alpes.\n14e section de C.O.A.\nFort St-Jean, Lyon\n",
+    "auteurs": ["DANIEL Henri (ou HENRI Daniel)"],
     "affectation": {
       "regiment": "14ᵉ Section de Commis et d'Ouvriers Militaires d'Administration",
-      "affect2": "23ᵉ Compagnie",
+      "affect2": "",
       "affect3": "",
       "affect4": "",
       "grade": "Soldat"
@@ -1150,11 +1150,11 @@
   {
     "numero": 83,
     "date": "1915-7-11",
-    "texte": "Fontaines-sur-Saône, le 11/7 1915\nAvant de quitter l’hôpital 194 bis, je tiens à venir remercier le sympathique directeur M. Rigot pour toute la bonté qu’il a vis-à-vis de tous les malades, je remercie aussi la bonne sœur St Jean pour ses bons soins et son dévouement inlassable pour ses malades, Mlle. Sarrou et M. Dupuis pour leurs bons services, notre aimable infirmier, et tout le personnel qui fait honneur à l’hôpital.\nAussi, à tous et à toutes, encore une fois merci, et les prient d’accepter ma vive reconnaissance.\nSoul Jean, caporal au 5e Colonial\nDeucerenne, 6e Colonial.\nLaroche Jean, 6e Colonial\nDagoureo France (?)\nDessasset (?) Maurice, 6e Colonial\n",
-    "auteurs": ["SOUL Jean","DEUCERENNE","LAROCHE Jean","FAGOUREO France","DESSASSET Maurice"],
+    "texte": "Fontaines-s-Saône, le 11/7 1915\nAvant de quitter l’hôpital 194 bis, je tiens à venir remercier le sympathique directeur M. Rigot pour toute la bonté qu’il a vis-à-vis de tous les malades, je remercie aussi la bonne sœur St Jean pour ses bons soins et son dévouement inlassable pour ses malades, Mlle. Saron et Mme. Dupuis pour leurs bons services, notre aimable infirmier, et tout le personnel qui fait honneur à l’hôpital.\nAussi, à tous et à toutes, encore une fois merci, et les prient d’accepter ma vive reconnaissance.\nSoul Jean, caporal au 5e Colonial\nDeucerenne, 6e Colonial.\nLaroche Jean, 6e Colonial\nDajouris (?) Françis\nDurand J. Maurice, 6e Colonial\n",
+    "auteurs": ["SOUL Jean","DEUCERENNE","LAROCHE Jean","DAJOURIS (?) Françis","DURAND J. Maurice"],
     "affectation": {
-      "regiment": ["5ᵉ Régiment d'Infanterie Coloniale","6ᵉ Régiment d'Infanterie Coloniale"],
-      "affect2": "",
+      "regiment": "5ᵉ Régiment d'Infanterie Coloniale",
+      "affect2": "6ᵉ Régiment d'Infanterie Coloniale",
       "affect3": "",
       "affect4": "",
       "grade": ["Soldat","Caporal"]
@@ -1164,8 +1164,8 @@
   {
     "numero": 84,
     "date": "1915-7-17",
-    "texte": "Fontaines S-Saône, le 17/7 1915\nJe ne puis quitter l’hôpital 194 bis sans exprimer à Monsieur l’administrateur Rigot mes plus vifs sentiments de reconnaissance pour la bienveillance dont il fait preuve à l’égard de tous les hospitaliers.\nJ’adresse également tous mes remerciements à Sœur St Jean, toujours pleine de dévouement, ainsi que M. l’infirmier, sans oublier Madame Dufruiy, ainsi que Mlle. Saron, auquel j’adresse à tous mes plus vifs remerciements pour leurs bons soins qu’ils m’ont prodigués en les assurant que je garderai de mon séjour parmi eux un profond souvenir plein de gratitude.\nEncore une fois : merci à tous.\nSoldat au 1er Colonial, 27e Compagnie, Fort (?) Jrence (?), Lyon\nBrunf Dominique",
-    "auteurs": ["BRUNF Dominique"],
+    "texte": "Fontaines s-Saône, le 17/7 1915\nJe ne puis quitter l’hôpital 194 bis sans exprimer à Monsieur l’administrateur Rigot mes plus vifs sentiments de reconnaissance pour la bienveillance dont il fait preuve à l’égard de tous les hospitaliers.\nJ’adresse également tous mes remerciements à Sœur St Jean, toujours pleine de dévouement, ainsi que M. l’infirmier, sans oublier Madame Dupuy ainsi que Mlle. Saron, auxquels j’adresse à tous mes plus vifs remerciements pour leurs bons soins qu’ils m’ont prodigués en les assurant que je garderai de mon séjour parmi eux un profond souvenir plein de gratitude.\nEncore une fois : merci à tous.\nSoldat au 1er Colonial, 27e Compagnie, Fort St-Irénée, Lyon\nBrunf (Brunel?) Dominique",
+    "auteurs": ["BRUNF (BRUNEL?) Dominique"],
     "affectation": {
       "regiment": "1ᵉʳ Régiment d'Infanterie Coloniale",
       "affect2": "27ᵉ Compagnie",
@@ -1178,8 +1178,8 @@
   {
     "numero": 85,
     "date": "1915-8-1",
-    "texte": "Fontaines s Saône, le 1er aout 1915\nC’est avec un profond regret que je quitte cette maison si hospitalière où l’on est si bien. On s’y croit vraiment en famille grâce aux affections quasi paternelles de Monsieur l’Administrateur et sa constante solidarité à donner à ses « pupilles », je puis bien dire ainsi, tout le confort possible et même parfois du superflu.\nQue Monsieur Rigot me permette de lui adresser mes plus vifs et bien sincères remerciements et mes sentiments de profonde reconnaissance. Merci également à Sœur St Jean, à Monsieur l’Infirmier et à tout le personnel pour leurs bons soins. J’emporte de l’hôpital Rigot le souvenir d’une fraîche et bienfaisante (?), rencontrée par bonheur après les visions horribles de la guerre. Encore une fois, je dis merci à tous et je laisse ici l’expression imparfaite de ma reconnaissance (?)\n44e Territorial. 7 juillet – 2 août 1915. (Signature)",
-    "auteurs": ["Inconnu"],
+    "texte": "Fontaines s Saône, le 1er aout 1915\nC’est avec un profond regret que je quitte cette maison si hospitalière où l’on est si bien. On s’y croit vraiment en famille grâce aux affections quasi paternelles de Monsieur l’Administrateur et sa constante solidarité à donner à ses « pupilles », je puis bien dire ainsi, tout le confort possible et même parfois du superflu.\nQue Monsieur Rigot me permette de lui adresser mes plus vifs et bien sincères remerciements et mes sentiments de profonde reconnaissance. Merci également à Sœur St Jean, à Monsieur l’Infirmier et à tout le personnel pour leurs bons soins. J’emporte de l’hôpital Rigot le souvenir d’une fraîche et bienfaisante oasis, rencontrée par bonheur après les visions horribles de la guerre. Encore une fois, je dis merci à tous et je laisse ici l’expression imparfaite de ma reconnaissance (?)\n44e Territorial. 7 juillet – 2 août 1915. J (?) Fausson",
+    "auteurs": ["FAUSSON J. (?)"],
     "affectation": {
       "regiment": "44ᵉ Régiment d'Infanterie Territoriale",
       "affect2": "",
@@ -1192,7 +1192,7 @@
   {
     "numero": 86,
     "date": "1915-8-1",
-    "texte": "Fontaines, le 1er août 1915\nAvant de quitter cette maison hospitalière, je veux à tous adresser un salut plein de reconnaissance pour les bons soins dont je suis était (?) entouré pendant mon doux mais trop court séjour que j’ai eu le bonheur de passer parmi vous.\nMon salut trop modeste ne saurait assez vous récompenser de tous les efforts que vous faites pour nous tous depuis de si longs jours, j’espère que notre chère Patrie saura le jour venu vous récompenser mieux que nous ses enfants, car si notre tâche est dure sur les champs de batailles, la vôtre l’est bien encore davantage dans cette maison pleine de sacrifices et de dévouements ; il nous est plus facile à nous de tuer ou de blesser nos ennemis, qu’à vous de guérir vos amis.\nAussi j’adresse à vous mes plus vifs et sincères remerciements.\nT. Reynier\n51e d’Infanterie\n",
+    "texte": "Fontaines, le 1er août 1915\nAvant de quitter cette maison hospitalière, je veux à tous adresser un salut plein de reconnaissance pour les bons soins dont j'étais (?) entouré pendant mon doux mais trop court séjour que j’ai eu le bonheur de passer parmi vous.\nMon salut trop modeste ne saurait assez vous récompenser de tous les efforts que vous faites pour nous tous depuis de si longs jours, j’espère que notre chère Patrie saura le jour venu vous récompenser mieux que nous ses enfants, car si notre tâche est dure sur les champs de batailles, la vôtre l’est bien encore davantage dans cette maison pleine de sacrifices et de dévouements ; il nous est plus facile à nous de tuer ou de blesser nos ennemis, qu’à vous de guérir vos amis.\nAussi j’adresse à tous mes plus vifs et sincères remerciements.\nT. Reynier\n51e d’Infanterie\n",
     "auteurs": ["REYNIER T."],
     "affectation": {
       "regiment": "51ᵉ Régiment d'Infanterie",

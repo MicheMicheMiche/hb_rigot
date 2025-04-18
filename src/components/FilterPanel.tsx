@@ -264,7 +264,7 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
         {/* Rank Filter */}
         <div>
           <Label htmlFor="rank-filter" className="text-sm font-medium mb-1 block">
-            Grade
+            Grade ou fonction
           </Label>
           <Select 
             value={filters.rank || ''} 
