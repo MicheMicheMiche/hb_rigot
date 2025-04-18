@@ -356,12 +356,12 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
           </div>
         </div>
         
-        <div className="pt-8 pb-6 px-2 relative" ref={timelineRef}>
+        <div className="pt-10 pb-6 px-2 relative" ref={timelineRef}>
           {/* Month and Year ticks */}
           {generateTimelineTicks().map((tick, index) => (
             <div 
               key={index} 
-              className={`absolute ${tick.isYear ? 'h-full top-0 border-r border-gray-300' : 'h-[30%] top-[40%] border-r border-gray-200'}`}
+              className={`absolute ${tick.isYear ? 'h-full top-4 border-r border-gray-300' : 'h-[30%] top-[40%] border-r border-gray-200'}`}
               style={{ left: `${tick.position}%` }}
             >
               <span className={`absolute -top-5 transform -translate-x-1/2 text-xs ${tick.isYear ? 'text-gray-500' : 'text-gray-400'}`}>

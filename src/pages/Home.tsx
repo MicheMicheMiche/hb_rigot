@@ -143,8 +143,8 @@ const Home = () => {
 
           {/* Photo Gallery - Scrollable on Mobile */}
           <div className="bg-vintage-paper p-4 border border-gray-300 rounded-lg shadow-md mb-12">
-            <ScrollArea className="w-full">
-              <div className="flex space-x-2 pb-2">
+            <ScrollArea className="w-full h-72">
+              <div className="flex justify-center space-x-4 pb-2">
                 <img src="/assets/photos/front1.jpg" alt="Photo historique 1" className="h-64 object-contain" />
                 <img src="/assets/photos/front2.jpg" alt="Photo historique 2" className="h-64 object-contain" />
               </div>

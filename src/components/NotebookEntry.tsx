@@ -115,7 +115,9 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
         </div>
         <div className={`notebook-text text-sm md:text-base leading-relaxed ${isPoem ? 'poem-text' : ''}`}>
           {entry.texte.split('\n').map((paragraph, idx) => (
-            <p key={idx} className={isPoem ? 'mb-0' : 'mb-4'}>{paragraph}</p>
+            <p key={idx} className={isPoem ? 'mb-0 leading-normal' : 'mb-4'}>
+              {paragraph}
+            </p>
           ))}
         </div>
       </CardContent>
