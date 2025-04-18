@@ -109,3 +109,16 @@
 .notebook-text p:last-child {
   margin-bottom: 0;
 }
+
+/* Specific styling for poem entries */
+.poem-text p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.poem-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}

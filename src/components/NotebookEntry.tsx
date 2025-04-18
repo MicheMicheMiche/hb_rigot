@@ -114,11 +114,23 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
           <span className="font-medium">{entry.auteurs.join(', ')}</span>
         </div>
         <div className={`notebook-text text-sm md:text-base leading-relaxed ${isPoem ? 'poem-text' : ''}`}>
-          {entry.texte.split('\n').map((paragraph, idx) => (
-            <p key={idx} className={isPoem ? 'mb-0 leading-normal' : 'mb-4'}>
-              {paragraph}
-            </p>
-          ))}
+          {isPoem ? (
+            // For poem type, don't add paragraph margin and use tighter line height
+            <div className="space-y-0 leading-snug">
+              {entry.texte.split('\n').map((line, idx) => (
+                <p key={idx} className="my-0 py-0">
+                  {line}
+                </p>
+              ))}
+            </div>
+          ) : (
+            // For regular entries, use normal paragraph spacing
+            entry.texte.split('\n').map((paragraph, idx) => (
+              <p key={idx} className="mb-4">
+                {paragraph}
+              </p>
+            ))
+          )}
         </div>
       </CardContent>
       

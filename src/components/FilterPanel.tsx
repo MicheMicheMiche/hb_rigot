@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
 import { getUniqueRegiments, getUniqueRanks, getUniqueTypes } from '@/utils/dataLoader';
@@ -29,12 +28,10 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
   const ranks = getUniqueRanks(entries);
   const types = getUniqueTypes(entries);
 
-  // Define timeline range - adjusted for more precise date handling
-  const startDate = new Date(1914, 8, 1); // September 1, 1914
-  const endDate = new Date(1917, 4, 12);  // May 12, 1917
+  const startDate = new Date(1914, 8, 1);
+  const endDate = new Date(1917, 4, 12);
   const totalTimespan = endDate.getTime() - startDate.getTime();
 
-  // Update the timeline width on resize
   useEffect(() => {
     const updateWidth = () => {
       if (timelineRef.current) {
@@ -47,7 +44,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
-  // When filter date range changes, update the slider
   useEffect(() => {
     if (filters.dateRange.start || filters.dateRange.end) {
       const start = filters.dateRange.start 
@@ -62,19 +58,16 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
     }
   }, [filters.dateRange]);
 
-  // Get date from a position percentage
   const getDateForPosition = (position: number): Date => {
     const timeAtPosition = startDate.getTime() + (position / 100) * totalTimespan;
     return new Date(timeAtPosition);
   };
 
-  // Get position percentage for a date
   const getPositionForDate = (date: Date): number => {
     const timeAtDate = date.getTime();
     return Math.max(0, Math.min(100, ((timeAtDate - startDate.getTime()) / totalTimespan) * 100));
   };
 
-  // Get position percentage for an entry
   const getEntryPosition = (entry: NotebookEntry): number => {
     if (!entry.date) return -1;
     
@@ -99,12 +92,10 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
     }
   };
 
-  // Determine if entry is within the selected date range
   const isEntryInSelectedDateRange = (entry: NotebookEntry): boolean => {
     if (!entry.date) return false;
     
     try {
-      // Create a proper Date object from the entry date
       const [year, month, day] = entry.date.split('-').map(Number);
       let entryDate;
       
@@ -118,11 +109,9 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
         return false;
       }
       
-      // Get the start and end dates from slider values
       const startDate = getDateForPosition(sliderValues[0]);
       const endDate = getDateForPosition(sliderValues[1]);
       
-      // Check if the entry date is within range
       return entryDate >= startDate && entryDate <= endDate;
     } catch (error) {
       console.error("Error in date range check:", error, entry);
@@ -130,7 +119,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
     }
   };
 
-  // When slider changes, update the date filter
   const handleSliderChange = (values: number[]) => {
     setSliderValues(values);
     const startDate = getDateForPosition(values[0]);
@@ -180,16 +168,13 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
     }
   };
 
-  // Generate years and specific months ticks for the timeline
   const generateTimelineTicks = () => {
     const ticks = [];
     
-    // Years: 1915, 1916, 1917
     for (let year = 1915; year <= 1917; year++) {
       const date = new Date(year, 0, 1);
       const position = getPositionForDate(date);
       
-      // Only add years that are within our timeline range
       if (position >= 0 && position <= 100) {
         ticks.push({
           date,
@@ -199,14 +184,12 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
         });
       }
       
-      // Add specific months: April (3), July (6), October (9)
-      const highlightMonths = [3, 6, 9]; // 0-indexed: April, July, October
+      const highlightMonths = [3, 6, 9];
       
       for (const month of highlightMonths) {
         const monthDate = new Date(year, month, 1);
         const monthPosition = getPositionForDate(monthDate);
         
-        // Only add months that are within our timeline range
         if (monthPosition >= 0 && monthPosition < 100) {
           ticks.push({
             date: monthDate,
@@ -220,12 +203,12 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
     
     return ticks.sort((a, b) => a.position - b.position);
   };
-  
+
   const handleEntryHover = (entryId: number, event: React.MouseEvent) => {
     setHoveredEntryId(entryId);
     setHoveredPosition({ x: event.clientX, y: event.clientY });
   };
-  
+
   const handleEntryLeave = () => {
     setHoveredEntryId(null);
     setHoveredPosition(null);
@@ -246,7 +229,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-6">
-        {/* ID Filter */}
         <div>
           <Label htmlFor="id-filter" className="text-sm font-medium mb-1 block">
             Numéro
@@ -262,7 +244,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
           />
         </div>
         
-        {/* Regiment Filter */}
         <div>
           <Label htmlFor="regiment-filter" className="text-sm font-medium mb-1 block">
             Régiment
@@ -285,7 +266,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
           </Select>
         </div>
         
-        {/* Rank Filter */}
         <div>
           <Label htmlFor="rank-filter" className="text-sm font-medium mb-1 block">
             Grade ou fonction
@@ -308,7 +288,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
           </Select>
         </div>
         
-        {/* Author Filter */}
         <div>
           <Label htmlFor="author-filter" className="text-sm font-medium mb-1 block">
             Auteur
@@ -323,7 +302,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
           />
         </div>
         
-        {/* Type Filter */}
         <div>
           <Label htmlFor="type-filter" className="text-sm font-medium mb-1 block">
             Type
@@ -347,7 +325,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
         </div>
       </div>
       
-      {/* Timeline */}
       <div className="mt-2 border-t pt-4">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium">Période: </span>
@@ -357,11 +334,10 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
         </div>
         
         <div className="pt-10 pb-6 px-2 relative" ref={timelineRef}>
-          {/* Month and Year ticks */}
           {generateTimelineTicks().map((tick, index) => (
             <div 
               key={index} 
-              className={`absolute ${tick.isYear ? 'h-full top-4 border-r border-gray-300' : 'h-[30%] top-[40%] border-r border-gray-200'}`}
+              className={`absolute z-0 ${tick.isYear ? 'h-full top-4 border-r border-gray-300' : 'h-[30%] top-[40%] border-r border-gray-200'}`}
               style={{ left: `${tick.position}%` }}
             >
               <span className={`absolute -top-5 transform -translate-x-1/2 text-xs ${tick.isYear ? 'text-gray-500' : 'text-gray-400'}`}>
@@ -370,20 +346,17 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
             </div>
           ))}
           
-          {/* Custom slider styling */}
-          <div className="relative z-20">
+          <div className="relative z-10">
             <Slider
               value={sliderValues}
               min={0}
               max={100}
               step={0.1}
               onValueChange={handleSliderChange}
-              className="z-30"
             />
           </div>
           
-          {/* Entry dots */}
-          <div className="absolute top-1/2 left-0 right-0 h-0 z-10">
+          <div className="absolute top-1/2 left-0 right-0 h-0 z-20">
             {entries.map(entry => {
               const position = getEntryPosition(entry);
               if (position < 0) return null;
@@ -406,7 +379,6 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
             })}
           </div>
           
-          {/* Hover tooltip */}
           {hoveredEntryId && hoveredPosition && (
             <div 
               className="fixed z-50 bg-black text-white px-2 py-1 text-xs rounded pointer-events-none"

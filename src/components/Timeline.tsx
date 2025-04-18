@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from 'react';
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
 import { Slider } from "@/components/ui/slider";
@@ -150,38 +151,42 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
         </div>
         
         <div className="pt-8 pb-6 relative" ref={timelineRef}>
-          {/* Year ticks */}
+          {/* Year ticks - lowest layer */}
           {generateYearTicks()}
           
-          {/* Slider */}
-          <Slider
-            value={sliderValues}
-            min={0}
-            max={100}
-            step={0.1}
-            onValueChange={handleSliderChange}
-          />
+          {/* Entry dots - middle layer with z-10 */}
+          <div className="absolute top-1/2 left-0 right-0 h-0 z-10">
+            {entries.map(entry => {
+              const position = getEntryPosition(entry);
+              if (position < 0) return null;
+              
+              const isFiltered = isEntryFiltered(entry);
+              return (
+                <div 
+                  key={entry.numero}
+                  className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-colors
+                    ${isFiltered ? 'bg-vintage-blue' : 'bg-gray-300'}`}
+                  style={{ left: `${position}%`, top: '50%' }}
+                  onClick={() => onEntryClick(entry.numero)}
+                  onMouseEnter={(e) => handleEntryHover(entry.numero, e.clientX, e.clientY)}
+                  onMouseLeave={handleEntryLeave}
+                />
+              );
+            })}
+          </div>
           
-          {/* Entry dots */}
-          {entries.map(entry => {
-            const position = getEntryPosition(entry);
-            if (position < 0) return null;
-            
-            const isFiltered = isEntryFiltered(entry);
-            return (
-              <div 
-                key={entry.numero}
-                className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-colors
-                  ${isFiltered ? 'bg-vintage-blue' : 'bg-gray-300'}`}
-                style={{ left: `${position}%`, top: '50%' }}
-                onClick={() => onEntryClick(entry.numero)}
-                onMouseEnter={(e) => handleEntryHover(entry.numero, e.clientX, e.clientY)}
-                onMouseLeave={handleEntryLeave}
-              />
-            );
-          })}
+          {/* Slider - top layer with z-5 */}
+          <div className="relative z-5">
+            <Slider
+              value={sliderValues}
+              min={0}
+              max={100}
+              step={0.1}
+              onValueChange={handleSliderChange}
+            />
+          </div>
           
-          {/* Hover tooltip */}
+          {/* Hover tooltip - highest layer */}
           {hoveredEntryId && hoveredPosition && (
             <div 
               className="absolute z-50 bg-black text-white px-2 py-1 text-xs rounded pointer-events-none"
