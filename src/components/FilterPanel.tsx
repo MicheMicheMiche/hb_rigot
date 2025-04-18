@@ -29,9 +29,9 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
   const ranks = getUniqueRanks(entries);
   const types = getUniqueTypes(entries);
 
-  // Define timeline range
-  const startDate = new Date(1914, 8, 1);
-  const endDate = new Date(1917, 4, 12);
+  // Define timeline range - adjusted for more precise date handling
+  const startDate = new Date(1914, 8, 1); // September 1, 1914
+  const endDate = new Date(1917, 4, 12);  // May 12, 1917
   const totalTimespan = endDate.getTime() - startDate.getTime();
 
   // Update the timeline width on resize
@@ -51,10 +51,10 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
   useEffect(() => {
     if (filters.dateRange.start || filters.dateRange.end) {
       const start = filters.dateRange.start 
-        ? getPositionForDate(parse(filters.dateRange.start, 'yyyy-MM-dd', new Date())) 
+        ? getPositionForDate(new Date(filters.dateRange.start)) 
         : 0;
       const end = filters.dateRange.end 
-        ? getPositionForDate(parse(filters.dateRange.end, 'yyyy-MM-dd', new Date())) 
+        ? getPositionForDate(new Date(filters.dateRange.end)) 
         : 100;
       setSliderValues([start, end]);
     } else {
@@ -94,17 +94,40 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
       
       return getPositionForDate(entryDate);
     } catch (error) {
+      console.error("Error processing entry date:", error, entry.date);
       return -1;
     }
   };
 
-  // Determine if entry is within the selected date range based on position
+  // Determine if entry is within the selected date range
   const isEntryInSelectedDateRange = (entry: NotebookEntry): boolean => {
-    const position = getEntryPosition(entry);
-    if (position < 0) return false;
+    if (!entry.date) return false;
     
-    // Simply check if position is between slider values
-    return position >= sliderValues[0] && position <= sliderValues[1];
+    try {
+      // Create a proper Date object from the entry date
+      const [year, month, day] = entry.date.split('-').map(Number);
+      let entryDate;
+      
+      if (year && month && day) {
+        entryDate = new Date(year, month - 1, day);
+      } else if (year && month) {
+        entryDate = new Date(year, month - 1, 1);
+      } else if (year) {
+        entryDate = new Date(year, 0, 1);
+      } else {
+        return false;
+      }
+      
+      // Get the start and end dates from slider values
+      const startDate = getDateForPosition(sliderValues[0]);
+      const endDate = getDateForPosition(sliderValues[1]);
+      
+      // Check if the entry date is within range
+      return entryDate >= startDate && entryDate <= endDate;
+    } catch (error) {
+      console.error("Error in date range check:", error, entry);
+      return false;
+    }
   };
 
   // When slider changes, update the date filter
@@ -329,7 +352,7 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium">Période: </span>
           <div className="text-sm text-gray-500">
-            {format(getDateForPosition(sliderValues[0]), 'MMM yyyy', { locale: fr })} - {format(getDateForPosition(sliderValues[1]), 'MMM yyyy', { locale: fr })}
+            {format(getDateForPosition(sliderValues[0]), 'dd MMM yyyy', { locale: fr })} - {format(getDateForPosition(sliderValues[1]), 'dd MMM yyyy', { locale: fr })}
           </div>
         </div>
         

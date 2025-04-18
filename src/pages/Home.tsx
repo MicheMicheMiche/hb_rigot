@@ -7,30 +7,47 @@ import { NotebookEntry as EntryType } from '@/types/notebook';
 import { loadNotebookEntries } from '@/utils/dataLoader';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Shuffle } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
   const [randomEntry, setRandomEntry] = useState<EntryType | null>(null);
   const [loading, setLoading] = useState(true);
+  const [entries, setEntries] = useState<EntryType[]>([]);
 
   useEffect(() => {
-    const fetchRandomEntry = async () => {
+    const fetchEntries = async () => {
       try {
         setLoading(true);
-        const entries = await loadNotebookEntries();
+        const loadedEntries = await loadNotebookEntries();
+        setEntries(loadedEntries);
         
-        if (entries.length > 0) {
-          const randomIndex = Math.floor(Math.random() * entries.length);
-          setRandomEntry(entries[randomIndex]);
+        if (loadedEntries.length > 0) {
+          const randomIndex = Math.floor(Math.random() * loadedEntries.length);
+          setRandomEntry(loadedEntries[randomIndex]);
         }
       } catch (error) {
-        console.error('Error loading random entry:', error);
+        console.error('Error loading entries:', error);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchRandomEntry();
+    fetchEntries();
   }, []);
+
+  const getRandomEntry = () => {
+    if (entries.length > 0) {
+      setLoading(true);
+      // Get a different entry than the current one
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * entries.length);
+      } while (entries.length > 1 && randomEntry && entries[newIndex].numero === randomEntry.numero);
+      
+      setRandomEntry(entries[newIndex]);
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-vintage-light">
@@ -97,10 +114,20 @@ const Home = () => {
 
           {/* Random Testimony Section */}
           <div className="bg-vintage-paper p-6 rounded-lg shadow-md border border-gray-200 mb-12">
-            <h2 className="font-serif text-2xl font-bold mb-6 text-center text-vintage-blue flex items-center justify-center">
-              <Shuffle className="mr-2" size={22} />
-              Un témoignage au hasard
-            </h2>
+            <div className="flex items-center justify-center mb-6">
+              <h2 className="font-serif text-2xl font-bold text-vintage-blue mr-2">
+                Un témoignage au hasard
+              </h2>
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="flex items-center border-vintage-accent text-vintage-accent hover:bg-vintage-accent/10"
+                onClick={getRandomEntry}
+                title="Afficher un autre témoignage"
+              >
+                <Shuffle size={18} />
+              </Button>
+            </div>
             {loading ? (
               <div className="text-center py-8">
                 <p>Chargement d'un témoignage...</p>
@@ -161,4 +188,3 @@ const Home = () => {
 };
 
 export default Home;
-

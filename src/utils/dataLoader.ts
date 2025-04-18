@@ -21,12 +21,23 @@ export function filterEntries(entries: NotebookEntry[], filters: FilterOptions):
       return false;
     }
 
-    // Filter by date range
-    if (filters.dateRange.start !== null && entry.date && entry.date < filters.dateRange.start) {
-      return false;
+    // Filter by date range - with improved date comparison
+    if (filters.dateRange.start !== null && entry.date) {
+      const entryDate = new Date(entry.date);
+      const startDate = new Date(filters.dateRange.start);
+      
+      if (entryDate < startDate) {
+        return false;
+      }
     }
-    if (filters.dateRange.end !== null && entry.date && entry.date > filters.dateRange.end) {
-      return false;
+    
+    if (filters.dateRange.end !== null && entry.date) {
+      const entryDate = new Date(entry.date);
+      const endDate = new Date(filters.dateRange.end);
+      
+      if (entryDate > endDate) {
+        return false;
+      }
     }
 
     // Filter by regiment
