@@ -1,3 +1,4 @@
+
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
 
 export async function loadNotebookEntries(): Promise<NotebookEntry[]> {
@@ -21,16 +22,17 @@ export function filterEntries(entries: NotebookEntry[], filters: FilterOptions):
     }
 
     // Filter by date range
-    if (filters.dateRange.start !== null && entry.date < filters.dateRange.start) {
+    if (filters.dateRange.start !== null && entry.date && entry.date < filters.dateRange.start) {
       return false;
     }
-    if (filters.dateRange.end !== null && entry.date > filters.dateRange.end) {
+    if (filters.dateRange.end !== null && entry.date && entry.date > filters.dateRange.end) {
       return false;
     }
 
     // Filter by regiment
     if (filters.regiment !== null && filters.regiment !== 'all') {
-      const regimentValue = entry.affectation?.regiment || '';
+      if (!entry.affectation?.regiment) return false;
+      const regimentValue = entry.affectation.regiment;
       if (typeof regimentValue !== 'string' || !regimentValue.toLowerCase().includes(filters.regiment.toLowerCase())) {
         return false;
       }
@@ -38,7 +40,8 @@ export function filterEntries(entries: NotebookEntry[], filters: FilterOptions):
 
     // Filter by rank
     if (filters.rank !== null && filters.rank !== 'all') {
-      const rankValue = entry.affectation?.grade || '';
+      if (!entry.affectation?.grade) return false;
+      const rankValue = entry.affectation.grade;
       if (typeof rankValue !== 'string' || !rankValue.toLowerCase().includes(filters.rank.toLowerCase())) {
         return false;
       }

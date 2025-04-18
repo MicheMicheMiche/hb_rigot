@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
 import { ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
@@ -13,6 +14,7 @@ interface NotebookEntryProps {
 const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => {
   const [expanded, setExpanded] = useState(false);
   const hasUndecipheredContent = entry.texte.includes('?');
+  const isPoem = entry.type === "Poème";
   
   // Update expanded state when forceExpanded changes
   useEffect(() => {
@@ -111,9 +113,9 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
           <span className="font-serif text-lg">Auteur{entry.auteurs.length > 1 ? 's' : ''}: </span>
           <span className="font-medium">{entry.auteurs.join(', ')}</span>
         </div>
-        <div className="notebook-text text-sm md:text-base leading-relaxed">
+        <div className={`notebook-text text-sm md:text-base leading-relaxed ${isPoem ? 'poem-text' : ''}`}>
           {entry.texte.split('\n').map((paragraph, idx) => (
-            <p key={idx} className="mb-4">{paragraph}</p>
+            <p key={idx} className={isPoem ? 'mb-1' : 'mb-4'}>{paragraph}</p>
           ))}
         </div>
       </CardContent>

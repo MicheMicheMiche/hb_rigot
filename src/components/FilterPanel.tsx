@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from 'react';
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
 import { getUniqueRegiments, getUniqueRanks, getUniqueTypes } from '@/utils/dataLoader';
@@ -102,7 +103,7 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
     const position = getEntryPosition(entry);
     if (position < 0) return false;
     
-    // Use the slider values to directly determine if an entry is in the selected range
+    // Simply check if position is between slider values
     return position >= sliderValues[0] && position <= sliderValues[1];
   };
 
@@ -337,7 +338,7 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
           {generateTimelineTicks().map((tick, index) => (
             <div 
               key={index} 
-              className={`absolute ${tick.isYear ? 'h-full top-0 border-r border-gray-300' : 'h-[35%] top-[35%] border-r border-gray-200'}`}
+              className={`absolute ${tick.isYear ? 'h-full top-0 border-r border-gray-300' : 'h-[30%] top-[40%] border-r border-gray-200'}`}
               style={{ left: `${tick.position}%` }}
             >
               <span className={`absolute -top-5 transform -translate-x-1/2 text-xs ${tick.isYear ? 'text-gray-500' : 'text-gray-400'}`}>
@@ -356,55 +357,23 @@ const FilterPanel = ({ entries, filteredEntries, onFilterChange, filters }: Filt
               onValueChange={handleSliderChange}
               className="z-30"
             />
-            
-            {/* Custom circles for slider ends */}
-            <div 
-              className="absolute w-5 h-5 rounded-full border-2 border-blue-500 bg-white z-40 transform -translate-x-1/2 -translate-y-1/2"
-              style={{ left: `${sliderValues[0]}%`, top: '50%' }}
-            />
-            <div 
-              className="absolute w-5 h-5 rounded-full border-2 border-blue-500 bg-white z-40 transform -translate-x-1/2 -translate-y-1/2"
-              style={{ left: `${sliderValues[1]}%`, top: '50%' }}
-            />
           </div>
           
-          {/* Entry dots - first layer (gray dots) */}
+          {/* Entry dots */}
           <div className="absolute top-1/2 left-0 right-0 h-0 z-10">
             {entries.map(entry => {
               const position = getEntryPosition(entry);
               if (position < 0) return null;
               
               const isInSelectedRange = isEntryInSelectedDateRange(entry);
-              if (isInSelectedRange) return null; // Skip if in selected range (will be rendered as blue)
-              
-              return (
-                <div 
-                  key={`gray-${entry.numero}`}
-                  className="absolute w-3 h-3 rounded-full bg-gray-300 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[16px] hover:h-[22px] z-20"
-                  style={{ left: `${position}%`, top: '50%' }}
-                  onMouseEnter={(e) => handleEntryHover(entry.numero, e)}
-                  onMouseLeave={handleEntryLeave}
-                  onClick={() => scrollToEntry(entry.numero)}
-                />
-              );
-            })}
-          </div>
-          
-          {/* Entry dots - second layer (blue dots) */}
-          <div className="absolute top-1/2 left-0 right-0 h-0 z-25">
-            {entries.map(entry => {
-              const position = getEntryPosition(entry);
-              if (position < 0) return null;
-              
-              const isInSelectedRange = isEntryInSelectedDateRange(entry);
-              if (!isInSelectedRange) return null; // Skip if not in selected range
-              
               const isInFilteredEntries = filteredEntries.some(filteredEntry => filteredEntry.numero === entry.numero);
               
               return (
                 <div 
-                  key={`blue-${entry.numero}`}
-                  className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 hover:bg-orange-400 hover:w-[16px] hover:h-[22px] z-30 ${isInFilteredEntries ? 'bg-vintage-blue' : 'bg-gray-300'}`}
+                  key={`dot-${entry.numero}`}
+                  className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 
+                    hover:bg-orange-400 hover:w-[16px] hover:h-[16px] z-20
+                    ${isInSelectedRange && isInFilteredEntries ? 'bg-vintage-blue' : 'bg-gray-300'}`}
                   style={{ left: `${position}%`, top: '50%' }}
                   onMouseEnter={(e) => handleEntryHover(entry.numero, e)}
                   onMouseLeave={handleEntryLeave}

@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from 'react';
 import { NotebookEntry as EntryType, FilterOptions } from '@/types/notebook';
 import { loadNotebookEntries, filterEntries } from '@/utils/dataLoader';
@@ -64,6 +65,7 @@ const Index = () => {
   }, []);
 
   const handleFilterChange = (newFilters: FilterOptions) => {
+    console.log("New filters:", newFilters);
     setFilters(newFilters);
   };
 

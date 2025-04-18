@@ -1,7 +1,37 @@
+
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from '@/components/NavigationBar';
+import NotebookEntry from '@/components/NotebookEntry';
+import { NotebookEntry as EntryType } from '@/types/notebook';
+import { loadNotebookEntries } from '@/utils/dataLoader';
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Random } from 'lucide-react';
 
 const Home = () => {
+  const [randomEntry, setRandomEntry] = useState<EntryType | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchRandomEntry = async () => {
+      try {
+        setLoading(true);
+        const entries = await loadNotebookEntries();
+        
+        if (entries.length > 0) {
+          const randomIndex = Math.floor(Math.random() * entries.length);
+          setRandomEntry(entries[randomIndex]);
+        }
+      } catch (error) {
+        console.error('Error loading random entry:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchRandomEntry();
+  }, []);
+
   return (
     <div className="min-h-screen bg-vintage-light">
       <NavigationBar />
@@ -65,11 +95,33 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-vintage-paper p-4 border border-gray-300 rounded-lg shadow-md mb-12 flex justify-center items-center">
-            <div className="flex justify-center items-center max-w-lg">
-              <img src="/assets/photos/front1.jpg"></img>
-              <img src="/assets/photos/front2.jpg"></img>
-            </div>
+          {/* Random Testimony Section */}
+          <div className="bg-vintage-paper p-6 rounded-lg shadow-md border border-gray-200 mb-12">
+            <h2 className="font-serif text-2xl font-bold mb-6 text-center text-vintage-blue flex items-center justify-center">
+              <Random className="mr-2" size={22} />
+              Un témoignage au hasard
+            </h2>
+            {loading ? (
+              <div className="text-center py-8">
+                <p>Chargement d'un témoignage...</p>
+              </div>
+            ) : randomEntry ? (
+              <NotebookEntry entry={randomEntry} />
+            ) : (
+              <div className="text-center py-8">
+                <p>Aucun témoignage disponible.</p>
+              </div>
+            )}
+          </div>
+
+          {/* Photo Gallery - Scrollable on Mobile */}
+          <div className="bg-vintage-paper p-4 border border-gray-300 rounded-lg shadow-md mb-12">
+            <ScrollArea className="w-full" orientation="horizontal">
+              <div className="flex space-x-2 pb-2">
+                <img src="/assets/photos/front1.jpg" alt="Photo historique 1" className="h-64 object-contain" />
+                <img src="/assets/photos/front2.jpg" alt="Photo historique 2" className="h-64 object-contain" />
+              </div>
+            </ScrollArea>
           </div>
           
           <div className="bg-vintage-paper p-6 rounded-lg shadow-md border border-gray-200 mb-12 transition-colors duration-300 hover:bg-vintage-paper/80">
