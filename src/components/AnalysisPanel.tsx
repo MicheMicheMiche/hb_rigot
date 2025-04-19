@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
 import { Separator } from '@/components/ui/separator';
@@ -17,14 +16,12 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
   const [panelEntries, setPanelEntries] = useState<EntryType[]>([]);
 
   useEffect(() => {
-    // Filter entries based on entriesIds
     const filteredEntries = allEntries.filter(entry => 
       entriesIds.includes(entry.numero)
     ).sort((a, b) => a.numero - b.numero);
     
     setPanelEntries(filteredEntries);
     
-    // Set the first entry as selected by default
     if (filteredEntries.length > 0 && !selectedEntryId) {
       setSelectedEntryId(filteredEntries[0].numero);
     }
@@ -34,10 +31,8 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
     setSelectedEntryId(entryId);
   };
 
-  // Process the analysisContent to replace [number] with EntryReference components
   const renderAnalysisContent = () => {
     if (typeof analysisContent === 'string') {
-      // If string, replace [number] with EntryReference components
       const parts = analysisContent.split(/(\[\d+\])/g);
       return parts.map((part, index) => {
         const match = part.match(/\[(\d+)\]/);
@@ -54,12 +49,11 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
         return <span key={index}>{part}</span>;
       });
     }
-    // If already React nodes, return as is
     return analysisContent;
   };
 
   return (
-    <div className="mb-12 p-6 bg-white rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper/80">
+    <div className="mb-12 p-6 bg-white rounded-lg shadow-md border border-gray-200">
       <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-center text-vintage-blue">
         {title}
       </h2>
@@ -91,4 +85,3 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
 };
 
 export default AnalysisPanel;
-
