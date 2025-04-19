@@ -38,7 +38,7 @@ const Analyses = () => {
               Analyses thématiques
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Exploration de thèmes transversaux à travers les témoignages du livre d'or de l'hôpital Rigot.
+              Quelques thèmes intéressants à découvrir dans le carnet de témoignages
             </p>
           </header>
 

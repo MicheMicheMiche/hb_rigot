@@ -1402,8 +1402,8 @@
   {
     "numero": 101,
     "date": "1916-3-12",
-    "texte": "Le 12 mars 1912 (sic)\nJe soussigné Clocan (?) Gaston avoir été ici pour la durée d’une convalescence d’un mois ici dans l’hôpital Rigot à Fontaines. J’ai toujours été bien soigné et remarque que c’est ma 5e (?) depuis le détroit de (?). J’ai été à Chalons (?) Moulins aller Lescecia (?), Desgettes (?) à Lyon et à Tournon (?) sur Saône dont je dois toujours remercier aussi bien la bonne sœur que l’Infirmier (?) ils nous ont donné des (?) et merveilleux soins et dont nous nous retrouverons aujourd’hui capable d’aller encore une fois défendre (?) notre Pays.\nUn soldat. (Signature)\n",
-    "auteurs": ["CLOCAN Gaston"],
+    "texte": "Le 12 mars 1912 (sic)\nJe soussigné Clouan Gaston avoir été ici pour la durée d’une convalescence d’un mois ici dans l’hôpital Rigot à Fontaines. J’ai toujours été bien soigné et remarque que c’est ma 5e (?) depuis le début des hostilités. J’ai été à Châlons-sur-Marne, Moulins (Allier), Lesceux (?), 4e à Desgenettes à Lyon et 5e à Fontaines sur Saône dont je dois toujours remercier aussi bien la bonne sœur que l’Infirmier dont ils nous ont donné des bons (?) et merveilleux soins et dont nous nous retrouvons aujourd’hui capable d’aller encore une fois défendre notre Pays.\nUn ch'ti mi (?). Clouan Gaston\n",
+    "auteurs": ["CLOUAN Gaston"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2": "",
@@ -1416,8 +1416,8 @@
   {
     "numero": 102,
     "date": "1916-3-12",
-    "texte": "Fontaines, 12-3-16\n(?) mes remerciements au directeur et au personnel de l’hôpital Rigot de l’accueil et de vos bons soins dont je suis (?) pendant mon séjour du 11-12-15 au 12-3-16\n(Signature)\n",
-    "auteurs": ["Illisible"],
+    "texte": "Fontaines, 12-3-16\nTous mes remerciements au directeur et au personnel de l’hôpital Rigot de l’accueil et du bon soin dont je n'ai été (en trop ?) pendant mon séjour du 11-12-15 au 12-3-16\nTrikanne (?) le (?)\n",
+    "auteurs": ["TRIKANNE (?)"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2": "",
@@ -1430,8 +1430,8 @@
   {
     "numero": 103,
     "date": "1916-3-12",
-    "texte": "Fontaines, 12-3-16\nJe regrette de tout cœur de quitter l’hôpital car j’ai passé un très bon séjour. Je remercie bien le personnel de m’avoir si bien soigné.\nBouscoule Hervé\n",
-    "auteurs": ["BOUSCOLE Hervé"],
+    "texte": "Fontaines, 12-3-16\nJe regrette de tout cœur de quitter l’hôpital car j’ai passé un très bon séjour. Je remercie bien le personnel de m’avoir si bien soigné.\nBouscarle Henri\n",
+    "auteurs": ["BOUSCARLE Henri"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2": "",
@@ -1444,8 +1444,8 @@
   {
     "numero": 104,
     "date": "1916-3-12",
-    "texte": "Fontaines, 12-3-16\nAvant de quitter l’hôpital Rigot, je viens lui adresser mes meilleurs remerciements pour les bons soins que j’air reçus depuis mon arrivée. Je remercie aussi la bonne sœur Julie ainsi que M. l’abbé.\nMainette Alcide, 158e d’Infanterie. Un poilu de la classe 15.\n",
-    "auteurs": ["MAINETTE Alcide"],
+    "texte": "Fontaines, 12-3-16\nAvant de quitter l’hôpital Rigot, je viens lui adresser mes meilleurs remerciements pour les bons soins que j’air reçus depuis mon arrivée. Je remercie aussi la bonne sœur Julie ainsi que M. l’abbé.\nMaïnetti Alcide, 158e d’Infanterie. Un poilu de la classe 15.\n",
+    "auteurs": ["MAÏNETTI Alcide"],
     "affectation": {
       "regiment": "158ᵉ Régiment d'Infanterie",
       "affect2": "",
@@ -1458,8 +1458,8 @@
   {
     "numero": 105,
     "date": "1916-3-21",
-    "texte": "Fontaines s/S, le 21.3.16\nAu moment de quitter l’hôpital Rigot (?) M. Rigot, bonne sœur Julie et M. l’abbé Chachuat de tous les bons soins et du bon temps qu’ils ont passé à l’ambulance Rigot et les prie d’accepter les meilleurs sentiments de reconnaissance.\nRambauet (?) Pichone Angles Y. Colombat. (Signature)\n",
-    "auteurs": ["RAMBUAUET PICHONE ANGLES Y. COLOMBAT"],
+    "texte": "Fontaines s/S, le 21.3.16\nAu moment de quitter l’hôpital Rigot, nous tenons à remercier M. Rigot, bonne sœur Julie et M. l’abbé Chachuat de tous les bons soins et du bon temps qu’ils ont passé à l’ambulance Rigot et les prie d’accepter les meilleurs sentiments de reconnaissance.\nRambauel (?), Pichon,  Angles J., Colombat. Tychene (?)\n",
+    "auteurs": ["RAMBAUEL (?)", "PICHON", "ANGLES J.", "COLOMBAT", "TYCHENE (?)"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2": "",
@@ -1471,8 +1471,8 @@
   },
   {
     "numero": 106,
-    "date": "1916-2-28",
-    "texte": "Les moments délicieux passés à l’hôpital Rigot seront certainement un des souvenirs les plus inoubliables de ma vie. Je ne saurais jamais trop remercier Monsieur Rigot, la bonne sœur Julie et Monsieur l’abbé Chachuat des bons soins et des délicates attentions qu’ils ont tous eu pour moi.\nJe leur demanderai de mon côté, de me conserver une place si petite soit-elle dans leurs souvenirs.\nFontaines, ce 28/2 1916. Benassy (?)\n",
+    "date": "1916-3-28",
+    "texte": "Les moments délicieux passés à l’hôpital Rigot seront certainement un des souvenirs les plus inoubliables de ma vie. Je ne saurais jamais trop remercier Monsieur Rigot, la bonne sœur Julie et Monsieur l’abbé Chachuat des bons soins et des délicates attentions qu’ils ont tous eu pour moi.\nJe leur demanderai de mon côté, de me conserver une place si petite soit-elle dans leurs souvenirs.\nFontaines, ce 28/2 1916. Benassy\n",
     "auteurs": ["BENASSY"],
     "affectation": {
       "regiment": "Inconnu",
@@ -1486,8 +1486,8 @@
   {
     "numero": 107,
     "date": "1916-3",
-    "texte": "C’est bien avec un grand regret que nous quittons l’hôpital Rigot où nous avons été si bien, nous en garderons un inoubliable souvenir et avant de partir nous venons dire merci.\nA la bonne sœur Julie des bons soins qu’elle nous a donnés, sans compter ni son temps, ni sa peine, à Monsieur l’abbé Chachuat qui par sa complaisance et son amabilité nous a permis de passer de bons moments, à tout le personnel qui a été si aimable et complaisant pour nous, et aussi à l’aimable Monsieur Rigot dont à chacune de ses visites avait un bon mot et encouragement pour chacun.\nNous serions si heureux que ces aimables personnes gardent de nous un petit souvenir.\nDruret (?) Michel\nParisot Michel\n",
-    "auteurs": ["DRURET Michel", "PARISOT Michel"],
+    "texte": "C’est bien avec un grand regret que nous quittons l’hôpital Rigot où nous avons été si bien, nous en garderons un inoubliable souvenir et avant de partir nous venons dire merci.\nA la bonne sœur Julie des bons soins qu’elle nous a donnés, sans compter ni son temps, ni sa peine, à Monsieur l’abbé Chachuat qui par sa complaisance et son amabilité nous a permis de passer de bons moments, à tout le personnel qui a été si aimable et complaisant pour nous, et aussi à l’aimable Monsieur Rigot dont à chacune de ses visites avait un bon mot et encouragement pour chacun.\nNous serions si heureux que ces aimables personnes gardent de nous un petit souvenir.\nDrivet Michel\nParisot Michel\n",
+    "auteurs": ["DRIVET Michel", "PARISOT Michel"],
     "affectation": {
       "regiment": "Inconnu",
       "affect2": "",
@@ -1500,8 +1500,8 @@
   {
     "numero": 108,
     "date": "1916-3-26",
-    "texte": "Fontaines-sur-Saône, le 26 mars 1916\nAvant de quitter notre chère ambulance, nous venons exprimer tous nos meilleurs sentiments de grande reconnaissance à M. Rigot pour tant de grands soins et de dévouement que nous avons reçus en sa maison avec une grande mesure, d’hospitalité qui sera une œuvre inoubliable en bon lieu de repos là où nous avons tous trouvé le 11 décembre 1915 de grands soins en arrivant par le gentil personnel qui depuis n’a cessé de nous donner tous les bons soins dont nous avons besoin.\nMerci bonne sœur Julie car vous avez voulu et su reconstituer nos forces bien déformées (déprimées ?) par de longues maladies en vous attachant à nous comme une bonne mère (?) notre départ du 27 mars 1916.\nMerci aussi à M. l’abbé Chachuat qui a été toujours très aimable de tous dévouement à sa place dont il est assigné se dévoue pour que tous chacun soit content en tout ce qui nous concerne, pour nous rendre plus de bonheur possible.\nNon pour nous ne pourrons assez vous remercier de ce long séjour passé à Fontaines. A toute la maison merci.\nMaintenant si on est appelés à retourner à notre tâche mais avec encore plus de courage car nous savons maintenant qu’en arrière il y a de la consolation par le grand dévouement.\nUn souvenir inoubliable nous garderons de notre grand séjour à Fontaines. A vous tous nous garderons (?) le plus long souvenir.\nEt nous désirons que vous le rappellerez au notre.\nPerrin Claude du 59e Territorial d’Infanterie.\nMarchal Henri du 43e Territorial d’Infanterie\nDurieux Marcies (?) du 3e Territorial Alpin\n",
-    "auteurs": ["PERRIN Claude", "MARCHAL Henri", "DURIEUX Marcies"],
+    "texte": "Fontaines-sur-Saône, le 26 mars 1916\nAvant de quitter notre chère ambulance, nous venons exprimer tous nos meilleurs sentiments de grande reconnaissance à M. Rigot pour tant de grands soins et de dévouement que nous avons reçus en sa maison avec une grande mesure, d’hospitalité qui sera une œuvre inoubliable en bon lieu de repos là où nous avons tous trouvé le 11 décembre 1915 de grands soins en arrivant, par le gentil personnel qui depuis n’a cessé de nous donner tous les bons soins dont nous avons besoin.\nMerci bonne sœur Julie car vous avez voulu et su reconstituer nos forces bien déprimées par de longues maladies en vous attachant à nous comme une bonne mère notre départ du 27 mars 1916.\nMerci aussi à M. l’abbé Chachuat qui a été toujours très aimable de tous dévouement à sa place dont il est assigné se dévoue pour que tous chacun soit content en tout ce qui nous concerne, pour nous rendre plus de bonheur possible.\nNon pour nous ne pourrons assez vous remercier de ce long séjour passé à Fontaines. A toute la maison merci.\nMaintenant ici on est appelés à retourner à notre tâche mais avec encore plus de courage car nous savons maintenant qu’en arrière il y a de la consolation par de grands dévouements.\nUn souvenir inoubliable nous garderons de notre grand séjour à Fontaines. A vous tous nous vous garderons (et devons ?) le plus long souvenir.\nEt nous désirons que vous le rappellerez au nôtre.\nPerrin Claude du 59e Territorial d’Infanterie.\nMarchal Henri du 43e Territorial d’Infanterie\nDurieux Marius du 3e Territorial Alpin\n",
+    "auteurs": ["PERRIN Claude", "MARCHAL Henri", "DURIEUX Marius"],
     "affectation": {
       "regiment": ["59ᵉ Régiment d'Infanterie Territoriale", "43ᵉ Régiment d'Infanterie Territoriale", "3ᵉ Régiment d'Infanterie Alpine"],
       "affect2": "",

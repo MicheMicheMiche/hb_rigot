@@ -12,15 +12,14 @@ export const analysisData: AnalysisData[] = [
   {
     id: "poilus-poetes",
     title: "Des poilus poètes",
-    content: `Parmi les nombreux témoignages du livre d'or, certains "poilus" ont choisi de s'exprimer en vers. Au-delà de simples remerciements, ces soldats ont transformé leur gratitude en poésie, révélant des talents littéraires insoupçonnés.
+    content: `Au sein du carnet, l'on retrouve plusieurs témoignages rédigés sous la forme de poèmes. Certains des auteurs y expriment, avec élégance, la gratitude qu'ils expriment envers le personnel de l'hôpital [110] [165], d'autres disent leur ferveur patriotique [87], leur solidarité envers leurs frères d'armes [111] ou encore ce qu'ils ont connu au front, comme à Verdun [113] [114].
+Ces poèmes témoignent à la fois d'une écriture intime, personnelle, et d'une forme de mise en scène patriotique et galvanisante. Le livre d'or est un espace d'expression libre dans lequel les poilus peuvent écrire la tête reposée, après s'être éloignés des combats pendant quelques temps.
 
-Ces poèmes, souvent écrits à la main avec un grand soin calligraphique, témoignent d'une volonté de s'élever au-dessus des souffrances de la guerre, comme on peut le voir dans les entrées [87] et [113].
+Durant la Grande Guerre, la poésie est essentiellement publiée dans deux types de médias. D'une part les grandes œuvres, éditées (Blaise Cendrars, Guillaume Apollinaire), et d'autre part les revues de tranchées, plutôt satiriques ou crues.
 
-La simplicité touchante de ces vers contraste parfois avec leur structure travaillée. L'entrée [110] utilise par exemple une forme classique pour exprimer la reconnaissance envers le personnel soignant. On note également dans l'entrée [114] une maîtrise impressionnante du rythme et des rimes.
+L'existence de ces témoignages poétiques montre bien que, loin d'être l'apanage de l'élite culturelle française, la poésie constituait également un exutoire pour les soldats de tous grades, soucis d'inscrire leur présence ou de féliciter les sacrifices de leurs camarades dans la mémoire collective.
 
-Certains, comme dans l'entrée [165], empruntent même aux formes populaires avec des références culturelles de l'époque. La diversité des styles reflète la variété des origines et des niveaux d'éducation des soldats.
-
-Ces expressions poétiques constituent un témoignage précieux sur l'état d'esprit des combattants, leur capacité de résilience et leur besoin d'exprimer par l'art leurs sentiments face à cette parenthèse de paix que représentait l'hôpital Rigot.`,
+On notera en particulier les poèmes d'Emile Cavasse, dont un dédié à un caporal fraîchement cité à l'ordre de son Bataillon [111], ou encore celui destiné à la sœur Julie [110].`,
     entriesIds: [87, 110, 111, 113, 114, 116, 165]
   },
   {
