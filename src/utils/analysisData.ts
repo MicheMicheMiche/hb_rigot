@@ -38,8 +38,8 @@ export const analysisData: AnalysisData[] = [
 
 - D'une façon générale, on entrevoit dans ces témoignages deux générations distinctes qui s'expriment. L'une, plus âgée, qui conserve un style plus ampoulé et multiplie les adjectifs emphatiques (« irréprochable" [1], « admirable » [63], ...). L'autre, plus jeune, préfère des formules plus courtes ou l'argot de tranchée.
 
-- Autre observation amusante : il semble qu'à plusieurs reprises dans le carnet, des lettres successives se ressemblent fortement, ne variant qu'à la marge sur certaines expressions. Par exemple : [45] et [46] qui commençent de la même manière, [48] et [49] structurés similairement, ou encore [77] et [78] qui sont quasiment identiques. Les auteurs qui ont copié en partie le message précédent étaient peut-être peu inspirés par la page blanche, ou bien ne maîtrisaient pas suffisamment le français pour produire une écriture personnelle et spontanée.`,
-    entriesIds: [1, 5, 6, 14, 22, 30, 32, 40, 45, 46, 48, 49, 51, 63, 72, 77, 78, 85, 92, 99, 100, 105, 108, 111, 113, 114, 117, 122, 124, 132, 145, 151, 152, 153, 155, 156, 166, 171, 172, 173, 177, 179, 180, 184, 197]
+- Autre observation amusante : il semble qu'à plusieurs reprises dans le carnet, des lettres successives se ressemblent fortement, ne variant qu'à la marge sur certaines expressions. Par exemple : [45] et [46] qui commençent de la même manière, [48] et [49] structurés similairement, [77] et [78] qui sont quasiment identiques, [151] et [154] qui partagent les mêmes formules, ou encore [162], [163] et [164] qui sont pratiquement identiques. Les auteurs qui ont copié en partie le message précédent étaient peut-être peu inspirés par la page blanche, ou bien ne maîtrisaient pas suffisamment le français pour produire une écriture personnelle et spontanée.`,
+    entriesIds: [1, 5, 6, 14, 22, 30, 32, 40, 45, 46, 48, 49, 51, 63, 72, 77, 78, 85, 92, 99, 100, 105, 108, 111, 113, 114, 117, 122, 124, 132, 145, 151, 152, 153, 154, 155, 156, 162, 163, 164, 166, 171, 172, 173, 177, 179, 180, 184, 197]
   },
   {
     id: "vie-famille",
