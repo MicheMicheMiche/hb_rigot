@@ -1290,8 +1290,8 @@
   {
     "numero": 93,
     "date": "1915-9-15",
-    "texte": "Fontaines sur Saône, ce dimanche 19/9/15\nA la veille de quitter l’hôpital 194 bis, nous voulons laisser un témoignage de notre très vive gratitude à ceux et à celles qui nous ont prodigué leurs soins délicats et qui, par leur inlassable dévouement nous ont rendu inoubliable ce séjour, quoique loin de nos foyers, depuis si longtemps désertés.\nNous ne saurions priser trop haut ces formations privées où le soldat, retour du front, retrouve un peu de la douceur familiale et où une discipline vraiment paternelle fait oublier les heures tragiques vécues sur le champ de bataille.\nIci, nous sommes tous frères et les égards, dont nous sommes indifféremment l’objet constant, nous font préférer infiniment les installations de ce genre aux autres, sortes de caserne de la douleur, où nous ne pouvons jouir du repos d’esprit et de l’indépendance dont on a tant besoin quand on en revient. Du grand drame !\nChacun peut s’y livrer, pour le mieux de sa santé, et dans les limites permises, - qu’on se garde bien d’ailleurs d’outrepasser – à ses délassements favoris.\nChacun, grâce au tact de tous, peut agir, croire et penser librement, sans que le moindre obstacle l’en vienne empêcher.\nC’est avec regret que nous quittons ces bords hospitaliers et verdoyants de la Saône, où nous avons été heureux, où nous avons guéri en nous croyant au sein de nos familles, chacun chez soi.\nJ. Pecquet, 168e Infanterie.\nDriat, 356e\nDesfrez, 164e Infanterie\nH Ledu Roslon (?)\nBablet, 29e Infanterie\nFresco Rochet Chailloz\nHophilippe 88 rue des Entrepreneurs, Paris 15e (?)\nBasilelli (?) Catherine\n(Signature)\n",
-    "auteurs": ["PECQUET, J.", "DRIAT", "DESFREZ", "LEDU ROSLON H.", "BABLET", "ROCHET CHAILLOZ Fresco", "BASILELLI Catherine"],
+    "texte": "Fontaines sur Saône, ce dimanche 19/9/15\nA la veille de quitter l’hôpital 194 bis, nous voulons laisser un témoignage de notre très vive gratitude à ceux et à celles qui nous ont prodigué leurs soins délicats et qui, par leur inlassable dévouement nous ont rendu inoubliable ce séjour, quoique loin de nos foyers, depuis si longtemps désertés.\nNous ne saurions priser trop haut ces formations privées où le soldat, retour du front, retrouve un peu de la douceur familiale et où une discipline vraiment paternelle fait oublier les heures tragiques vécues sur le champ de bataille.\nIci, nous sommes tous frères et les égards, dont nous sommes indifféremment l’objet constant, nous font préférer infiniment les installations de ce genre aux autres, sortes de caserne de la douleur, où nous ne pouvons jouir du repos d’esprit et de l’indépendance dont on a tant besoin quand on en revient. Du grand drame !\nChacun peut s’y livrer, pour le mieux de sa santé, et dans les limites permises, - qu’on se garde bien d’ailleurs d’outrepasser – à ses délassements favoris.\nChacun, grâce au tact de tous, peut agir, croire et penser librement, sans que le moindre obstacle l’en vienne empêcher.\nC’est avec regret que nous quittons ces bords hospitaliers et verdoyants de la Saône, où nous avons été heureux, où nous avons guéri en nous croyant au sein de nos familles, chacun chez soi.\nJ. Pecquet, 168e Infanterie. Driat, 356e. Desfrez, 164e Infanterie\nH Ledru Roslon (?), Bablet, 29e Infanterie\nFresco, Rocher, Chaillez\nAlphilippe (?), 88 rue des Entrepreneurs, Paris 15e\nBasiletti, Catherine, (Illisible)\n",
+    "auteurs": ["PECQUET, J.", "DRIAT", "DESFREZ", "LEDRU ROSLON H.", "BABLET", "FRESCO", "ROCHER", "CHAILLEZ", "BASILETTI", "CATHERINE", "Illisible"],
     "affectation": {
       "regiment": ["168ᵉ Régiment d'Infanterie", "356ᵉ Régiment d'Infanterie", "164ᵉ Régiment d'Infanterie", "29ᵉ Régiment d'Infanterie"],
       "affect2": "",
@@ -1304,10 +1304,10 @@
   {
     "numero": 94,
     "date": "1915-9-27",
-    "texte": "Le 27 septembre 1915\nAvant de quitter ce lieu où j’ai passé un mois, je viens donc remercier de tout cœur le personnel pour le dévouement qu’ils ont eu à mon égard.\nJe remercie en particulier sœur St Jean qui s’est le plus dévouée pour moi. Je n’oublierai pas également M. Rigot pour tous les bienfaits qu’il a fait en donnant sa demeure pour les blessés.\nCalin Albert, 252e Régiment\n",
+    "texte": "Le 27 7ᵇʳᵉ 1915\nAvant de quitter ce lieu où j’ai passé un mois, je viens donc remercier de tout cœur le personnel pour le dévouement qu’ils ont eu à mon égard.\nJe remercie en particulier sœur St Jean qui s’est le plus dévouée pour moi. Je n’oublierai pas également M. Rigot pour tous les bienfaits qu’il a fait en donnant sa demeure pour les blessés.\nCalin Albert, 252e Régiment\n",
     "auteurs": ["CALIN Albert"],
     "affectation": {
-      "regiment": "252ᵉ Régiment (?)",
+      "regiment": "252ᵉ Régiment d'Infanterie",
       "affect2": "",
       "affect3": "",
       "affect4": "",
@@ -1318,10 +1318,10 @@
   {
     "numero": 95,
     "date": "1915-9-27",
-    "texte": "Le 27/9/15\nJe ne puis quitter l’hôpital sans remercier tout le personnel ainsi que la sœur St Jean et l’infirmier et sans oublier M. Rigot pour le service qu’ils m’ont rendu. Je vous remercie encore une fois, tout le personnel.\nVotre malade dévoué, Mamir (?) Marins, 275e Rig. Dépôt Roman.\n",
-    "auteurs": ["MARINS Mamir"],
+    "texte": "Le 27/9/15\nJe ne puis quitter l’hôpital sans remercier tout le personnel ainsi que la sœur St Jean et l’infirmier et sans oublier M. Rigot pour les services qu’ils m’ont rendu. Je vous remercie encore une fois, tout le personnel.\nVotre malade dévoué, Manin Marius, 275e Reg. Dépôt Romans.\n",
+    "auteurs": ["MANIN Marius"],
     "affectation": {
-      "regiment": "275ᵉ Rig (?)",
+      "regiment": "275ᵉ Régiment d'Infanterie",
       "affect2": "",
       "affect3": "",
       "affect4": "",
@@ -1332,10 +1332,10 @@
   {
     "numero": 96,
     "date": "1915",
-    "texte": "Comme je quitte l’hôpital, je remercie toutes les personnes qu’ils sont employés, surtout Mr. l’Infirmier et sœur St Jean, et ainsi que M. Rigot pour tous leurs dévouements.\nGrussière César, 251e Régiment d’Infanterie. St Fortinat (?), Ardèche\n",
-    "auteurs": ["GRUSSIERE César"],
+    "texte": "Comme je quitte l’hôpital, je remercie toutes les personnes qui sont employées, surtout Mr. l’Infirmier et sœur St Jean, et ainsi que M. Rigot pour tous leurs dévouements.\nCrumière César, 261e Régiment d’Infanterie. St Fortinat, Ardèche\n",
+    "auteurs": ["CRUMIERE César"],
     "affectation": {
-      "regiment": "251ᵉ Régiment d'Infanterie",
+      "regiment": "261ᵉ Régiment d'Infanterie",
       "affect2": "",
       "affect3": "",
       "affect4": "",
@@ -1346,8 +1346,8 @@
   {
     "numero": 97,
     "date": "1915-11-21",
-    "texte": "Fontaines, 21 novembre 1915\nAvant de quitter l’hôpital bénévole 194 bis, à tous j’adresse mes vœux de remerciements, particulièrement à Monsieur Rigot, qui s’efforce de tout bon pouvoir pour nous rendre heureux, sur tous les rapports (?), et à Sœur St Jean qui m’a donné les soins les plus minutieux, sans oublier M. l’Infirmier et tout le personnel de la maison.\nA tous, j’adresse mes sincères remerciements.\nHenri Lanneau (?), 315e Infanterie.\nJ’oublie de remercier Sœur Julie qui nous a fait passer d’agréables soirées.\nTous mes remerciements.\n",
-    "auteurs": ["LANNEAU Henri"],
+    "texte": "Fontaines, 21 novembre 1915\nAvant de quitter l’hôpital bénévole 194 bis, à tous j’adresse mes vœux de remerciements, particulièrement à Monsieur Rigot, qui s’efforce de tout son pouvoir pour nous rendre heureux sur tous les rapports, et à Sœur St Jean qui m’a donné les soins les plus minutieux, sans oublier M. l’Infirmier et tout le personnel de la maison.\nA tous, j’adresse mes sincères remerciements.\nHenri Luneau, 315e Infanterie.\nJ’oublie de remercier Sœur Julie qui nous a fait passer d’agréables soirées.\nTous mes remerciements.\n",
+    "auteurs": ["LUNEAU Henri"],
     "affectation": {
       "regiment": "315ᵉ Régiment d'Infanterie",
       "affect2": "",
@@ -1360,7 +1360,7 @@
   {
     "numero": 98,
     "date": "1915-11-21",
-    "texte": "Fontaines sur Saône, le 21 novembre 1915\nJe viens exprimer à M. Rigot tous mes sentiments de vive reconnaissance que j’éprouve pour la large hospitalité que j’ai reçue dans sa maison qu’il a mis avec tant de grand cœur à la disposition de la Croix-Rouge, cette œuvre si belle de dévouements et que représente chez lui avec tant de bonté Mlle. Caillies, Mlle. Magnin et Mlle. Meyer, que j’aurais garde d’oublier de remercier ainsi que les sœurs Saint-Jean et Julie, M. l’Infirmier que nous étions contents de voir arriver en vaguemestre le matin.\nJ’adresse aussi tous mes remerciements au personnel de service, Mlle. Saron, et Mme. Dupuis, ainsi que Marie qui cuisinent de si bons plats.\nC’est donc de tout cœur que j’adresse à tous mes sincères sentiments de reconnaissance pour les bons soins impartiaux que j’ai reçus dans cette bonne maison d’où j’emporte et conserverais longtemps le meilleur souvenir.\nJ. Martzolf (?), 94e Régiment d’Infanterie\n",
+    "texte": "Fontaines s/ Saône, le 21 novembre 1915\nJe viens exprimer à M. Rigot tous mes sentiments de vive reconnaissance que j’éprouve pour la large hospitalité que j’ai reçue dans sa maison qu’il a mise avec tant de grand cœur à la disposition de la Croix-Rouge, cette œuvre si belle de dévouements, et que représentent chez lui avec tant de bonté Mlle. Caillies, Mlle. Magnin et Mlle. Meyer, que j’aurais garde d’oublier de remercier ainsi que les sœurs Saint-Jean et Julie, M. l’Infirmier que nous étions contents de voir arriver en vaguemestre le matin.\nJ’adresse aussi tous mes remerciements au personnel de service, Mlle. Saron, et Mme. Dupuis, ainsi que Marie qui cuisinent de si bons plats.\nC’est donc de tout cœur que j’adresse à tous mes sincères sentiments de reconnaissance pour les bons soins impartiaux que j’ai reçus dans cette bonne maison d’où j’emporte et conserverais longtemps le meilleur souvenir.\nJ. Martzolf, 94e Régiment d’Infanterie\n",
     "auteurs": ["MARTZOLF J."],
     "affectation": {
       "regiment": "94ᵉ Régiment d'Infanterie",
@@ -1374,10 +1374,10 @@
   {
     "numero": 99,
     "date": "1916-2-28",
-    "texte": "Fontaines s/ Saône, le 28 février 1916\nAvant de quitter l’ambulance Rigot, je viens exprimer tous mes sentiments de bonne reconnaissance. D’abord à la bonne sœur Julie, ainsi qu’à M. l’abbé, sans oublier M. Rigot.\nJ’adresse aussi tous mes remerciements au personnel de service.\nM. Chonesson (?), 3e Coloniale (?) alpin, Caporal\n",
-    "auteurs": ["CHONESSON M."],
+    "texte": "Fontaines s/ Saône, le 28 février 1916\nAvant de quitter l’ambulance Rigot, je viens exprimer tous mes sentiments de bonne reconnaissance. D’abord à bonne sœur Julie, ainsi qu’à M. l’abbé, sans oublier M. Rigot.\nJ’adresse aussi tous mes remerciements au personnel de service.\nM. Thévenon, 3e Tᵃˡ alpin, caporal\n",
+    "auteurs": ["THEVENON Mathieu"],
     "affectation": {
-      "regiment": "3ᵉ Régiment d'Infanterie Coloniale",
+      "regiment": "3ᵉ Régiment Territorial des Chasseurs Alpins",
       "affect2": "",
       "affect3": "",
       "affect4": "",
@@ -1388,8 +1388,8 @@
   {
     "numero": 100,
     "date": "1916-2-28",
-    "texte": "Fontaines-sur-Saône, 28 février 1916\nQuoique je ne sois resté que 12 jours en cette ambulance, je ne puis quitter sans adresser à Monsieur Rigot, Directeur, et à toute sa famille, de même qu’à Sœur Julie, infirmière, et à Monsieur l’abbé Chachuat, et à tout le personnel, mes meilleurs remerciements, et mon bon souvenir.\nSouvent et longtemps je me rappellerai mon court mais bon séjour en cette digne maison.\nBetonfleurif (?), Caporal, 42e de ligne\n",
-    "auteurs": ["BETONFLEURIF (?)"],
+    "texte": "Fontaines-sur-Saône, 28 février 1916\nQuoique je ne sois resté que 12 jours en cette ambulance, je ne puis quitter sans adresser à Monsieur Rigot, Directeur, et à toute sa famille, de même qu’à Sœur Julie, infirmière, et à Monsieur l’abbé Chachuat, et à tout le personnel, mes meilleurs remerciements, et mon bon souvenir.\nSouvent et longtemps je me rappellerai mon court mais bon séjour en cette digne maison.\nDeton Henri, caporal, 42e de ligne\n",
+    "auteurs": ["DETON Henri"],
     "affectation": {
       "regiment": "42ᵉ Régiment d'Infanterie",
       "affect2": "",
