@@ -103,7 +103,7 @@ const Home = () => {
               </div>
               <div className="mt-auto pt-4">
                 <Link 
-                  to="/hopital" 
+                  to="/analyses" 
                   className="inline-block px-4 py-2 bg-vintage-accent text-white font-medium rounded-md hover:bg-vintage-accent/80 transition-colors">
                   Lire les analyses
                 </Link>
