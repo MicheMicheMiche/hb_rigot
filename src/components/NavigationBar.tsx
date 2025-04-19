@@ -27,6 +27,13 @@ const NavigationBar = () => {
             >
               L'hôpital bénévole Rigot
             </Link>
+            <span className="text-vintage-dark/30">|</span>
+            <Link 
+              to="/analyses" 
+              className="text-lg font-medium text-vintage-blue hover:text-vintage-accent transition-colors"
+            >
+              Analyses
+            </Link>
           </div>
         </div>
       </div>
