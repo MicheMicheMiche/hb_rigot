@@ -64,22 +64,22 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
         {title}
       </h2>
       
-      <div className="flex flex-col md:flex-row">
-        <div className="md:w-2/5 p-4">
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full lg:w-2/5 p-4">
           <div className="prose max-w-none text-vintage-dark">
             {renderAnalysisContent()}
           </div>
         </div>
         
-        <div className="hidden md:block mx-4">
+        <div className="hidden lg:block mx-4">
           <Separator orientation="vertical" className="h-full bg-vintage-dark/20" />
         </div>
         
-        <div className="md:hidden my-4">
+        <div className="my-4 lg:hidden">
           <Separator orientation="horizontal" className="w-full bg-vintage-dark/20" />
         </div>
         
-        <div className="md:w-3/5 p-4">
+        <div className="w-full lg:w-3/5 p-4">
           <EntriesCarousel 
             entries={panelEntries} 
             selectedEntryId={selectedEntryId}
@@ -91,3 +91,4 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
 };
 
 export default AnalysisPanel;
+
