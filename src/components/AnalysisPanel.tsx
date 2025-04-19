@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
 import { Separator } from '@/components/ui/separator';
@@ -33,20 +34,33 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
 
   const renderAnalysisContent = () => {
     if (typeof analysisContent === 'string') {
-      const parts = analysisContent.split(/(\[\d+\])/g);
-      return parts.map((part, index) => {
-        const match = part.match(/\[(\d+)\]/);
-        if (match) {
-          const entryId = parseInt(match[1], 10);
-          return (
-            <EntryReference 
-              key={index} 
-              entryNumber={entryId} 
-              onClick={handleEntryReferenceClick} 
-            />
-          );
-        }
-        return <span key={index}>{part}</span>;
+      // Split the content by line breaks first
+      const paragraphs = analysisContent.split('\n').filter(p => p.trim() !== '');
+      
+      return paragraphs.map((paragraph, paragraphIndex) => {
+        // Then process each paragraph for entry references
+        const parts = paragraph.split(/(\[\d+\])/g);
+        const processedParagraph = parts.map((part, partIndex) => {
+          const match = part.match(/\[(\d+)\]/);
+          if (match) {
+            const entryId = parseInt(match[1], 10);
+            return (
+              <EntryReference 
+                key={`${paragraphIndex}-${partIndex}`} 
+                entryNumber={entryId} 
+                onClick={handleEntryReferenceClick} 
+              />
+            );
+          }
+          return <span key={`${paragraphIndex}-${partIndex}`}>{part}</span>;
+        });
+        
+        // Return each paragraph as a separate block with margin
+        return (
+          <p key={paragraphIndex} className="mb-4">
+            {processedParagraph}
+          </p>
+        );
       });
     }
     return analysisContent;
