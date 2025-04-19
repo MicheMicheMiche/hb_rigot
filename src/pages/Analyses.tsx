@@ -63,7 +63,7 @@ const Analyses = () => {
         </div>
         
         <footer className="mt-16 text-center text-sm text-gray-500">
-          <p>© Alexandre Cochard</p>
+          <p>© Alexandre Cochard - 2025</p>
         </footer>
       </div>
     </div>

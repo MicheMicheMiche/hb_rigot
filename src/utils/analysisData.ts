@@ -13,45 +13,46 @@ export const analysisData: AnalysisData[] = [
     id: "poilus-poetes",
     title: "Des poilus poètes",
     content: `Au sein du carnet, l'on retrouve plusieurs témoignages rédigés sous la forme de poèmes. Certains des auteurs y expriment, avec élégance, la gratitude qu'ils expriment envers le personnel de l'hôpital [110] [165], d'autres disent leur ferveur patriotique [87], leur solidarité envers leurs frères d'armes [111] ou encore ce qu'ils ont connu au front, comme à Verdun [113] [114].
-Ces poèmes témoignent à la fois d'une écriture intime, personnelle, et d'une forme de mise en scène patriotique et galvanisante. Le livre d'or est un espace d'expression libre dans lequel les poilus peuvent écrire la tête reposée, après s'être éloignés des combats pendant quelques temps.
+- Ces poèmes témoignent à la fois d'une écriture intime, personnelle, et d'une forme de mise en scène patriotique et galvanisante. Le livre d'or est un espace d'expression libre dans lequel les poilus peuvent écrire la tête reposée, après s'être éloignés des combats pendant quelques temps.
 
-Durant la Grande Guerre, la poésie est essentiellement publiée dans deux types de médias. D'une part les grandes œuvres, éditées (Blaise Cendrars, Guillaume Apollinaire), et d'autre part les revues de tranchées, plutôt satiriques ou crues.
+- Durant la Grande Guerre, la poésie est essentiellement publiée dans deux types de médias. D'une part les grandes œuvres, éditées (Blaise Cendrars, Guillaume Apollinaire), et d'autre part les revues de tranchées, plutôt satiriques ou crues. Ces poèmes écrits dans des livres d'or d'hôpitaux sont donc particulièrement intéressants.
 
-L'existence de ces témoignages poétiques montre bien que, loin d'être l'apanage de l'élite culturelle française, la poésie constituait également un exutoire pour les soldats de tous grades, soucis d'inscrire leur présence ou de féliciter les sacrifices de leurs camarades dans la mémoire collective.
+- L'existence de ces témoignages poétiques montre bien que, loin d'être l'apanage de l'élite culturelle française, la poésie était aussi un exutoire pour les soldats de tous grades, soucieux d'inscrire leur présence ou de féliciter les sacrifices de leurs camarades dans la mémoire collective.
 
-On notera en particulier les poèmes d'Emile Cavasse, dont un dédié à un caporal fraîchement cité à l'ordre de son Bataillon [111], ou encore celui destiné à la sœur Julie [110].`,
+- On notera en particulier les poèmes d'Emile Cavasse, dont un dédié à un caporal fraîchement cité à l'ordre de son Bataillon [111], ou encore celui destiné à la sœur Julie [110].`,
     entriesIds: [87, 110, 111, 113, 114, 116, 165]
   },
   {
     id: "evolution-langage",
-    title: "L'évolution du langage : exemple du terme d'ambulance",
-    content: `L'analyse des entrées du livre d'or révèle une évolution intéressante de la terminologie médicale militaire, notamment autour du terme "ambulance".
+    title: "L'évolution du langage",
+    content: `Les témoignages du carnet forment un observatoire linguistique exceptionnel. Ils rendent visible la transition progressive du français militaire et populaire, qui lie l'héritage de la langue de la Belle Epoque et sa modernisation lexicale et stylistique. Plusieurs exemples :
 
-Au début du conflit, comme en témoignent les entrées [32] et [40], le mot "ambulance" fait référence à une structure médicale mobile suivant les troupes au front. On parle alors d'"ambulance de corps" ou d'"ambulance divisionnaire".
+- Si la majorité des auteurs désignent bien leur lieu de repos comme étant un « hôpital » (officiellement, hôpital bénévole), certains préfèrent le terme d' « ambulance » [32] [40] [72] [99] [100] [105] [108] [111] [113] [114] [117] [122] [132] [151] [153] [155] [156] [166] [171] [172] [173] [177] [179] [180] [184], un terme hérité de la guerre de 1870 - qui désigne un hôpital de campagne - et dont l'usage se raréfie déjà.
 
-Progressivement, ce terme s'élargit pour désigner également le transport des blessés. Les entrées [72] et [99] évoquent ainsi le "service d'ambulance" qui achemine les soldats vers l'arrière.
 
-À partir de 1916, comme le montrent les entrées [105], [108] et [114], le terme commence à être utilisé pour désigner les véhicules eux-mêmes. Les soldats mentionnent "l'ambulance automobile" ou simplement "l'ambulance" pour parler du véhicule sanitaire.
+- Plusieurs poilus désignent leur régiment comme était un régiment « d'infanterie de ligne » [92] [100] [124] [152] [153] [197], ce qui renvoie à l'infanterie de ligne de l'époque napoléonienne. Or, depuis la fin du XIXe siècle, les régiments sont sobrement renommés « Régiments d'Infanterie ». Dans l'imaginaire collectif de certains poilus, cette appellation perdure cependant : la « ligne » est synonyme de bravoure, de discipline, et d'héroïsme face au feu nourri de l'ennemi. Selon l'historien André Loez, un certain nombre de poilus sont en effet instruits à l'école républicaine sur la mémoire des batailles napoléoniennes. Sorte d'appropriation symbolique et mythifiée de la part des auteurs de ces témoignages.
 
-Cette évolution sémantique est particulièrement visible dans les entrées [122], [132] et [151], où la distinction entre structure médicale et véhicule devient floue. L'entrée [153] utilise même le terme dans les deux sens au sein du même témoignage.
 
-Vers la fin de la guerre, comme l'illustrent les entrées [171], [173] et [180], l'usage moderne du terme comme véhicule sanitaire tend à s'imposer. Les entrées [177] et [184] montrent néanmoins que l'acception originale reste employée parallèlement.
+- Certains des mots employés ont aujourd'hui complètement disparu du registre courant, comme « tringlot » [111] (argot des fantassins des troupes de marine ou coloniales), "artiflot" [111] (artilleur), ou alors sont issus du lexique spécifique des poilus dans les tranchées, comme « marmite » [111] (un obus) ou un « grognard » [111] (un vétéran). Certaines expressions, très couramment employées dans les témoignages, ont aujourd'hui disparu, comme les « bons soins » qu'un médecin ou une infirmière prodigue à un malade ([5] [6] [14] [22] [30] [51] [85] [145] ...).
 
-Ce glissement sémantique témoigne de l'évolution rapide des pratiques médicales durant le conflit et de l'adaptation du langage à ces transformations.`,
-    entriesIds: [32, 40, 72, 99, 100, 105, 108, 111, 113, 114, 117, 122, 132, 151, 153, 155, 156, 166, 171, 172, 173, 177, 179, 180, 184]
+
+- D'une façon générale, on entrevoit dans ces témoignages deux générations distinctes qui s'expriment. L'une, plus âgée, qui conserve un style plus ampoulé et multiplie les adjectifs emphatiques (« irréprochable" [1], « admirable » [63], ...). L'autre, plus jeune, préfère des formules plus courtes ou l'argot de tranchée.
+
+- Autre observation amusante : il semble qu'à plusieurs reprises dans le carnet, des lettres successives se ressemblent fortement, ne variant qu'à la marge sur certaines expressions. Par exemple : [45] et [46] qui commençent de la même manière, [48] et [49] structurés similairement, ou encore [77] et [78] qui sont quasiment identiques. Les auteurs qui ont copié en partie le message précédent étaient peut-être peu inspirés par la page blanche, ou bien ne maîtrisaient pas suffisamment le français pour produire une écriture personnelle et spontanée.`,
+    entriesIds: [1, 5, 6, 14, 22, 30, 32, 40, 45, 46, 48, 49, 51, 63, 72, 77, 78, 85, 92, 99, 100, 105, 108, 111, 113, 114, 117, 122, 124, 132, 145, 151, 152, 153, 155, 156, 166, 171, 172, 173, 177, 179, 180, 184, 197]
   },
   {
     id: "vie-famille",
     title: "Une vie de famille retrouvée",
-    content: `Un thème récurrent dans le livre d'or est l'ambiance familiale que les blessés ont trouvée à l'hôpital Rigot. Ce sentiment de "famille retrouvée" apparaît comme un contrepoint essentiel à la déshumanisation du front.
+    content: `Certains des témoignages insistent sur la parenthèse quasi familiale qu'a constitué leur séjour à l'hôpital bénévole Rigot.
 
-Les entrées [85] et [92] évoquent explicitement cette atmosphère, avec des expressions comme "seconde famille" ou "foyer retrouvé". Ces métaphores familiales traduisent le besoin profond de relations humaines chaleureuses au milieu du chaos de la guerre.
+- Ce qui marque en premier lieu, c'est l'esprit d'une « douce vie de famille » [150] qui règne à l'HB Rigot. On s'y retrouve comme "en famille », l'on reçoit une affection « quasi paternelle », comme « pupille » [85]. On y « retrouve un peu de la douceur familiale », ainsi qu'une « discipline vraiment paternelle (qui) fait oublier les heures tragiques vécues sur le champ de bataille », et où l'on guérit « en nous croyant au sein de nos familles » [93]. Le dévouement du personnel est à même de « remplacer nos familles depuis si longtemps absentes » [92], dans cette "maison de famille où nous oublions que nous sommes soldats" [109].
 
-L'entrée [93] développe particulièrement ce sentiment en détaillant les petites attentions quotidiennes qui ont recréé un environnement familial. De même, l'entrée [109] souligne l'importance des conversations et moments partagés qui dépassent le simple cadre médical.
+- Il se marque une distinction nette entre les établissements hospitaliers classiques et les hôpitaux bénévoles administrés par des particuliers. On note l'opposition imagée entre les hôpitaux militaires (« casernes de la douleur ») [93] et l'hôpital bénévole (« une fraîche et bienfaisante oasis ») [85], lieu où l'on peut « s'y livrer à ses délassements favoris », et où chacun peut « croire et penser librement, sans que le moindre obstacle l'en vienne empêcher » [93].
 
-La dimension humaine des soins est mise en avant dans l'entrée [112], où le soldat distingue clairement l'aspect technique du traitement et la chaleur humaine qui l'accompagne. Cette humanité est présentée comme un facteur déterminant dans le processus de guérison.
+- "Bons soins semblables à ceux qu'une maman donnerait à ses enfants » [150], « gaufrettes » [70], la « Sœur Julie qui nous a fait passer d'agréables soirées » [97], les « bons petits plats » [144] de la « distinguée cordon bleu » [109] : autant de marques d'attentions particulières de l'ensemble du personnel envers les malades.
 
-L'entrée [150] résume parfaitement ce sentiment général en évoquant "un îlot de paix et de douceur familiale" au milieu de la tourmente. Ces témoignages illustrent comment l'hôpital Rigot a su dépasser sa fonction médicale première pour offrir un véritable refuge émotionnel aux combattants traumatisés par l'expérience du front.`,
-    entriesIds: [85, 92, 93, 109, 112, 150]
+- Un passage à l'HB Rigot qui aura marqué de nombreux blessés : « je garderai un souvenir ineffaçable du temps passé en ce lieu et au milieu de si bons amis. » [112]`,
+    entriesIds: [70, 85, 92, 93, 97, 109, 112, 144, 150]
   }
 ];

@@ -73,8 +73,8 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
       </h2>
       
       <div className="flex flex-col lg:flex-row">
-        <div className="w-full lg:w-2/5 p-4">
-          <div className="prose max-w-none text-vintage-dark">
+        <div className="w-full lg:w-1/2 p-4">
+          <div className="prose max-w-none text-gray-800">
             {renderAnalysisContent()}
           </div>
         </div>
@@ -87,7 +87,7 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
           <Separator orientation="horizontal" className="w-full bg-vintage-dark/20" />
         </div>
         
-        <div className="w-full lg:w-3/5 p-4">
+        <div className="w-full lg:w-1/2 p-4">
           <EntriesCarousel 
             entries={panelEntries} 
             selectedEntryId={selectedEntryId}

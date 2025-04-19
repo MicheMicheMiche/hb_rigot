@@ -70,7 +70,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper flex flex-col">
               <div className="flex-grow">
                 <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Les témoignages</h2>
@@ -91,6 +91,25 @@ const Home = () => {
               </div>
             </div>
     
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper flex flex-col">
+              <div className="flex-grow">
+                <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">Quelques analyses thématiques</h2>
+                <p className="text-gray-700 mb-4">
+                  Ces témoignages inédits mettent à nu les pensées de soldats issus de toutes origines et catégories sociales, acteurs de la transformation de la société française au sortir de la Belle Epoque.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Quelques commentaires sur les thèmes abordés dans ces témoignages et leur façon de s'exprimer. 
+                </p>
+              </div>
+              <div className="mt-auto pt-4">
+                <Link 
+                  to="/hopital" 
+                  className="inline-block px-4 py-2 bg-vintage-accent text-white font-medium rounded-md hover:bg-vintage-accent/80 transition-colors">
+                  Lire les analyses
+                </Link>
+              </div>
+            </div>
+
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-colors duration-300 hover:bg-vintage-paper flex flex-col">
               <div className="flex-grow">
                 <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">L'Hôpital Bénévole</h2>
@@ -180,7 +199,7 @@ const Home = () => {
         </div>
         
         <footer className="mt-16 text-center text-sm text-gray-500">
-          <p>© Alexandre Cochard</p>
+          <p>© Alexandre Cochard - 2025</p>
         </footer>
       </div>
     </div>
