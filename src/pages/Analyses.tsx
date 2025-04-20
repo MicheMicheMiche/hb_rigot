@@ -4,6 +4,7 @@ import { NotebookEntry as EntryType } from '@/types/notebook';
 import { loadNotebookEntries } from '@/utils/dataLoader';
 import { analysisData } from '@/utils/analysisData';
 import NavigationBar from '@/components/NavigationBar';
+import BackToTop from '@/components/BackToTop';
 import AnalysisPanel from '@/components/AnalysisPanel';
 import { Loader } from 'lucide-react';
 
@@ -66,6 +67,7 @@ const Analyses = () => {
           <p>© Alexandre Cochard - 2025</p>
         </footer>
       </div>
+      <BackToTop />
     </div>
   );
 };

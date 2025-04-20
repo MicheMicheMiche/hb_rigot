@@ -1,4 +1,5 @@
 import NavigationBar from '@/components/NavigationBar';
+import BackToTop from '@/components/BackToTop';
 
 const Hospital = () => {
   return (
@@ -116,6 +117,7 @@ const Hospital = () => {
           <p>© Alexandre Cochard - 2025</p>
         </footer>
       </div>
+      <BackToTop />
     </div>
   );
 };
