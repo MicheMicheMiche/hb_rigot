@@ -1,6 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
+import { useIsMobile } from '@/hooks/use-mobile';
 import NotebookEntry from '@/components/NotebookEntry';
 import CarouselNavButton from '@/components/carousel/CarouselNavButton';
 
@@ -13,6 +13,7 @@ interface EntriesCarouselProps {
 const EntriesCarousel = ({ entries, selectedEntryId, onEntryChange }: EntriesCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentEntry, setCurrentEntry] = useState<EntryType | null>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (entries.length > 0) {
@@ -57,14 +58,26 @@ const EntriesCarousel = ({ entries, selectedEntryId, onEntryChange }: EntriesCar
   }
 
   return (
-    <div className="flex h-full">
-      <CarouselNavButton direction="previous" onClick={goToPrevious} />
+    <div className="flex flex-col h-full">
+      {isMobile && (
+        <div className="flex justify-between items-center mb-4 px-2">
+          <CarouselNavButton direction="previous" onClick={goToPrevious} />
+          <span className="text-sm text-gray-500">
+            {currentIndex + 1} / {entries.length}
+          </span>
+          <CarouselNavButton direction="next" onClick={goToNext} />
+        </div>
+      )}
       
-      <div className="flex-grow overflow-auto">
-        <NotebookEntry entry={currentEntry} forceExpanded={false} />
+      <div className="flex flex-grow">
+        {!isMobile && <CarouselNavButton direction="previous" onClick={goToPrevious} />}
+        
+        <div className={`flex-grow overflow-auto ${isMobile ? 'px-0' : 'px-4'}`}>
+          <NotebookEntry entry={currentEntry} forceExpanded={false} />
+        </div>
+        
+        {!isMobile && <CarouselNavButton direction="next" onClick={goToNext} />}
       </div>
-      
-      <CarouselNavButton direction="next" onClick={goToNext} />
     </div>
   );
 };
