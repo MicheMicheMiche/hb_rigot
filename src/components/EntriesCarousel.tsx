@@ -2,8 +2,7 @@
 import { useState, useEffect } from 'react';
 import { NotebookEntry as EntryType } from '@/types/notebook';
 import NotebookEntry from '@/components/NotebookEntry';
-import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import CarouselNavButton from '@/components/carousel/CarouselNavButton';
 
 interface EntriesCarouselProps {
   entries: EntryType[];
@@ -59,33 +58,13 @@ const EntriesCarousel = ({ entries, selectedEntryId, onEntryChange }: EntriesCar
 
   return (
     <div className="flex h-full">
-      <div className="flex flex-col justify-center px-2">
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          onClick={goToPrevious} 
-          className="text-vintage-accent hover:bg-vintage-accent/10 hover:text-vintage-accent"
-          aria-label="Entrée précédente"
-        >
-          <ArrowLeft />
-        </Button>
-      </div>
+      <CarouselNavButton direction="previous" onClick={goToPrevious} />
       
       <div className="flex-grow overflow-auto">
         <NotebookEntry entry={currentEntry} forceExpanded={false} />
       </div>
       
-      <div className="flex flex-col justify-center px-2">
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          onClick={goToNext} 
-          className="text-vintage-accent hover:bg-vintage-accent/10 hover:text-vintage-accent"
-          aria-label="Entrée suivante"
-        >
-          <ArrowRight />
-        </Button>
-      </div>
+      <CarouselNavButton direction="next" onClick={goToNext} />
     </div>
   );
 };
