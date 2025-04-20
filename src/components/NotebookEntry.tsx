@@ -137,9 +137,9 @@ const NotebookEntry = ({ entry, forceExpanded = false }: NotebookEntryProps) => 
       <CardFooter className="border-t border-vintage-dark/20 p-2 bg-vintage-paper flex justify-between">
         <div className="text-sm text-vintage-dark">Type: {entry.type}</div>
         <Button 
-          variant="ghost" 
+          variant="default"
           size="sm" 
-          className="text-vintage-accent hover:text-vintage-accent hover:bg-vintage-accent/10"
+          className="bg-vintage-accent text-white hover:bg-vintage-accent/80"
           onClick={() => setExpanded(!expanded)}
         >
           {expanded ? (

@@ -79,7 +79,7 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
           </div>
         </div>
         
-        <div className="hidden lg:block mx-4">
+        <div className="hidden lg:block mx-2">
           <Separator orientation="vertical" className="h-full bg-vintage-dark/20" />
         </div>
         
@@ -87,7 +87,7 @@ const AnalysisPanel = ({ title, entriesIds, analysisContent, allEntries }: Analy
           <Separator orientation="horizontal" className="w-full bg-vintage-dark/20" />
         </div>
         
-        <div className="w-full lg:w-1/2 p-4">
+        <div className="w-full lg:w-1/2 p-2">
           <EntriesCarousel 
             entries={panelEntries} 
             selectedEntryId={selectedEntryId}

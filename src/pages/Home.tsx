@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from '@/components/NavigationBar';
@@ -8,6 +7,7 @@ import { loadNotebookEntries } from '@/utils/dataLoader';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Shuffle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import BackToTop from '@/components/BackToTop';
 
 const Home = () => {
   const [randomEntry, setRandomEntry] = useState<EntryType | null>(null);
@@ -202,6 +202,7 @@ const Home = () => {
           <p>© Alexandre Cochard - 2025</p>
         </footer>
       </div>
+      <BackToTop />
     </div>
   );
 };

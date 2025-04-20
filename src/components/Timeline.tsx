@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { NotebookEntry, FilterOptions } from '@/types/notebook';
 import { Slider } from "@/components/ui/slider";
@@ -20,12 +19,10 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
   const [hoveredEntryId, setHoveredEntryId] = useState<number | null>(null);
   const [hoveredPosition, setHoveredPosition] = useState<{ x: number, y: number } | null>(null);
 
-  // Define timeline range
   const startDate = new Date(1914, 7, 1);
   const endDate = new Date(1917, 4, 31);
   const totalTimespan = endDate.getTime() - startDate.getTime();
 
-  // Update the timeline width on resize
   useEffect(() => {
     const updateWidth = () => {
       if (timelineRef.current) {
@@ -38,7 +35,6 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
-  // When filter date range changes, update the slider
   useEffect(() => {
     if (filters.dateRange.start || filters.dateRange.end) {
       const start = filters.dateRange.start 
@@ -53,19 +49,16 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
     }
   }, [filters.dateRange]);
 
-  // Get date from a position percentage
   const getDateForPosition = (position: number): Date => {
     const timeAtPosition = startDate.getTime() + (position / 100) * totalTimespan;
     return new Date(timeAtPosition);
   };
 
-  // Get position percentage for a date
   const getPositionForDate = (date: Date): number => {
     const timeAtDate = date.getTime();
     return ((timeAtDate - startDate.getTime()) / totalTimespan) * 100;
   };
 
-  // Get position percentage for an entry
   const getEntryPosition = (entry: NotebookEntry): number => {
     if (!entry.date) return -1;
     
@@ -89,7 +82,6 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
     }
   };
 
-  // When slider changes, update the date filter
   const handleSliderChange = (values: number[]) => {
     setSliderValues(values);
     const startDate = getDateForPosition(values[0]);
@@ -108,7 +100,6 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
     return filteredEntries.some(filteredEntry => filteredEntry.numero === entry.numero);
   };
 
-  // Generate years ticks for the timeline
   const generateYearTicks = () => {
     const years = [];
     for (let year = 1914; year <= 1917; year++) {
@@ -129,16 +120,63 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
       );
     });
   };
-  
+
   const handleEntryHover = (entryId: number, x: number, y: number) => {
     setHoveredEntryId(entryId);
     setHoveredPosition({ x, y });
   };
-  
+
   const handleEntryLeave = () => {
     setHoveredEntryId(null);
     setHoveredPosition(null);
   };
+
+  useEffect(() => {
+    const timeline = timelineRef.current;
+    if (!timeline) return;
+
+    let isScrolling = false;
+    let startX: number;
+    let scrollLeft: number;
+
+    const startDragging = (e: TouchEvent | MouseEvent) => {
+      isScrolling = true;
+      timeline.style.cursor = 'grabbing';
+      startX = 'touches' in e ? e.touches[0].pageX : e.pageX;
+      scrollLeft = timeline.scrollLeft;
+    };
+
+    const stopDragging = () => {
+      isScrolling = false;
+      timeline.style.cursor = 'grab';
+    };
+
+    const scroll = (e: TouchEvent | MouseEvent) => {
+      if (!isScrolling) return;
+      e.preventDefault();
+      const x = 'touches' in e ? e.touches[0].pageX : e.pageX;
+      const dist = (startX - x) * 2;
+      timeline.scrollLeft = scrollLeft + dist;
+    };
+
+    timeline.addEventListener('touchstart', startDragging);
+    timeline.addEventListener('touchend', stopDragging);
+    timeline.addEventListener('touchmove', scroll);
+    timeline.addEventListener('mousedown', startDragging);
+    timeline.addEventListener('mouseup', stopDragging);
+    timeline.addEventListener('mousemove', scroll);
+    timeline.addEventListener('mouseleave', stopDragging);
+
+    return () => {
+      timeline.removeEventListener('touchstart', startDragging);
+      timeline.removeEventListener('touchend', stopDragging);
+      timeline.removeEventListener('touchmove', scroll);
+      timeline.removeEventListener('mousedown', startDragging);
+      timeline.removeEventListener('mouseup', stopDragging);
+      timeline.removeEventListener('mousemove', scroll);
+      timeline.removeEventListener('mouseleave', stopDragging);
+    };
+  }, []);
 
   return (
     <div className="mt-8 bg-white p-6 rounded-lg shadow-md border border-gray-200">
@@ -150,54 +188,60 @@ const Timeline = ({ entries, filteredEntries, onEntryClick, filters, onFilterCha
           </div>
         </div>
         
-        <div className="pt-8 pb-6 relative" ref={timelineRef}>
-          {/* Year ticks - lowest layer */}
-          {generateYearTicks()}
-          
-          {/* Entry dots - middle layer with z-10 */}
-          <div className="absolute top-1/2 left-0 right-0 h-0 z-10">
-            {entries.map(entry => {
-              const position = getEntryPosition(entry);
-              if (position < 0) return null;
-              
-              const isFiltered = isEntryFiltered(entry);
-              return (
-                <div 
-                  key={entry.numero}
-                  className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-colors
-                    ${isFiltered ? 'bg-vintage-blue' : 'bg-gray-300'}`}
-                  style={{ left: `${position}%`, top: '50%' }}
-                  onClick={() => onEntryClick(entry.numero)}
-                  onMouseEnter={(e) => handleEntryHover(entry.numero, e.clientX, e.clientY)}
-                  onMouseLeave={handleEntryLeave}
-                />
-              );
-            })}
-          </div>
-          
-          {/* Slider - top layer with z-5 */}
-          <div className="relative z-5">
-            <Slider
-              value={sliderValues}
-              min={0}
-              max={100}
-              step={0.1}
-              onValueChange={handleSliderChange}
-            />
-          </div>
-          
-          {/* Hover tooltip - highest layer */}
-          {hoveredEntryId && hoveredPosition && (
-            <div 
-              className="absolute z-50 bg-black text-white px-2 py-1 text-xs rounded pointer-events-none"
-              style={{ 
-                left: hoveredPosition.x + window.scrollX, 
-                top: hoveredPosition.y + window.scrollY - 40
-              }}
-            >
-              Entrée N°{hoveredEntryId}
+        <div 
+          className="pt-8 pb-6 relative overflow-x-auto cursor-grab" 
+          ref={timelineRef}
+          style={{ 
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            WebkitOverflowScrolling: 'touch'
+          }}
+        >
+          <div className="min-w-[200%] md:min-w-full relative">
+            {generateYearTicks()}
+            
+            <div className="absolute top-1/2 left-0 right-0 h-0 z-10">
+              {entries.map(entry => {
+                const position = getEntryPosition(entry);
+                if (position < 0) return null;
+                
+                const isFiltered = isEntryFiltered(entry);
+                return (
+                  <div 
+                    key={entry.numero}
+                    className={`absolute w-3 h-3 rounded-full cursor-pointer transform -translate-x-1/2 -translate-y-1/2 transition-colors
+                      ${isFiltered ? 'bg-vintage-blue' : 'bg-gray-300'}`}
+                    style={{ left: `${position}%`, top: '50%' }}
+                    onClick={() => onEntryClick(entry.numero)}
+                    onMouseEnter={(e) => handleEntryHover(entry.numero, e.clientX, e.clientY)}
+                    onMouseLeave={handleEntryLeave}
+                  />
+                );
+              })}
             </div>
-          )}
+            
+            <div className="relative z-5">
+              <Slider
+                value={sliderValues}
+                min={0}
+                max={100}
+                step={0.1}
+                onValueChange={handleSliderChange}
+              />
+            </div>
+            
+            {hoveredEntryId && hoveredPosition && (
+              <div 
+                className="absolute z-50 bg-black text-white px-2 py-1 text-xs rounded pointer-events-none"
+                style={{ 
+                  left: hoveredPosition.x + window.scrollX, 
+                  top: hoveredPosition.y + window.scrollY - 40
+                }}
+              >
+                Entrée N°{hoveredEntryId}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
