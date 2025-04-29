@@ -92,7 +92,7 @@ const Hospital = () => {
               <span className="font-bold">Personnel de service</span> : Mlle Caron/Sarron/Sarrou, Mme. Dupuis/Dupuy, Mlle. Mélanie.
             </p>
             <p className="text-gray-700 mb-3">
-              <span className="font-bold">Cuisine</span> : Marie, Maria, Mme. Zalan.
+              <span className="font-bold">Cuisine</span> : Marie, Maria.
             </p>
             <p className="text-gray-700 mb-3">
               <span className="font-bold">Comptable</span> : M. Simon.
