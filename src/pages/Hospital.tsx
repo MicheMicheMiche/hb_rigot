@@ -30,7 +30,7 @@ const Hospital = () => {
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-12">
             <h2 className="font-serif text-2xl font-bold mb-4 text-vintage-blue">L'établissement Rigot</h2>
             <p className="text-gray-700 mb-3">
-              La maison dite "de la Roselierre", à Fontaines-sur-Saône (Rhône), est le lieu d'habitation d'Ernest Rigot, avocat issu d'une famille de notaires. Lorsque la guerre éclate en 1914, Ernest Rigot, âgé de 37 ans, est célibataire (il se marie en 1915). Ses parents étant décédés, il a hérité de la grande maison familiale.
+              La maison dite "de la Roselière", à Fontaines-sur-Saône (Rhône), est le lieu d'habitation d'Ernest Rigot, avocat issu d'une famille de notaires. Lorsque la guerre éclate en 1914, Ernest Rigot, âgé de 37 ans, est célibataire (il se marie en 1915). Ses parents étant décédés, il a hérité de la grande maison familiale.
               Fontaines est une commune tranquille de bord de Saône, à quelques kilomètres au Nord de Lyon.
             </p>
             <p className="text-gray-700 mb-3">
